@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html class="no-js" <?php language_attributes() ?>>
 <head>
-	<meta charset="<?php bloginfo('charset') ?>">
+	<meta charset="<?php bloginfo( 'charset' ) ?>">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
-	<link rel="pingback" href="<?php bloginfo('pingback_url') ?>">
+	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ) ?>">
 	
 	<!-- Favicons -->
 	<link rel="apple-touch-icon" sizes="180x180" href="<?php echo THEME_URL ?>/assets/favicons/apple-touch-icon.png">
@@ -22,10 +22,10 @@
 	<!--[if IE]><script> document.documentElement.className += ' outdated-browser'; </script><![endif]-->
 	<script>
 		if(navigator.appVersion.indexOf('MSIE 10') !== -1) {
-				document.documentElement.className += ' outdated-browser';
+			document.documentElement.className += ' outdated-browser';
 		} else if(navigator.userAgent.indexOf('Trident') !== -1 && navigator.userAgent.indexOf('rv:11') !== -1) {
-				document.documentElement.className += ' ie11';
-			}
+			document.documentElement.className += ' ie11';
+		}
 	</script>
 	
 	<!-- Load styles and scripts -->
