@@ -1,0 +1,29 @@
+{
+  "name": "boilerplate-wp-theme",
+  "version": "1.0.0",
+  "description": "Starting point for building WordPress themes",
+  "main": "webpack.mix.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "hot": "NODE_ENV=development webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "production": "NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/romanmz/boilerplate-wp-theme.git"
+  },
+  "author": "Roman Martinez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/romanmz/boilerplate-wp-theme/issues"
+  },
+  "homepage": "https://github.com/romanmz/boilerplate-wp-theme#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.24.4",
+    "browser-sync-webpack-plugin": "^2.0.1",
+    "laravel-mix": "^2.1.11"
+  }
+}
