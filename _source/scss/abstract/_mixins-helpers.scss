@@ -1,0 +1,242 @@
+// ==================================================
+// Mixins
+// ==================================================
+
+
+// Media queries
+// ------------------------------
+@mixin screen-below( $breakpoint ) {
+	@media (max-width: (map-get( $breakpoints, $breakpoint ) - 1)) {
+		@content;
+	}
+}
+@mixin screen-above( $breakpoint ) {
+	@media (min-width: map-get( $breakpoints, $breakpoint )) {
+		@content;
+	}
+}
+@mixin screen-between( $breakpoint1, $breakpoint2 ) {
+	@include screen-above( $breakpoint1 ) {
+		@include screen-below( $breakpoint2 ) {
+			@content;
+		}
+	}
+}
+
+
+// Clearfix
+// ------------------------------
+@mixin clearfix {
+	// http://cssmojo.com/the-very-latest-clearfix-reloaded/
+	&:after {
+		content: '';
+		display: block;
+		clear: both;
+	}
+}
+
+
+// Hide visually but keep for screen readers
+// ------------------------------
+@mixin visually-hidden {
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+	clip: rect(1px, 1px, 1px, 1px);
+	word-wrap: normal !important;
+
+	&.focusable:active,
+	&.focusable:focus {
+		height: auto;
+		width: auto;
+		overflow: visible;
+		clip: rect(auto, auto, auto, auto);
+	}
+}
+
+
+// Smooth scrolling on mobile
+// ------------------------------
+@mixin smooth-scroll {
+	overflow: auto;
+	-webkit-overflow-scrolling: touch;
+}
+
+
+// Fixed ratios
+// ------------------------------
+@mixin fixed-ratio( $width, $height ) {
+	position: relative;
+	height: 0;
+	@include fixed-ratio-override( $width, $height );
+	
+	> * {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		box-sizing: border-box;
+	}
+}
+@mixin fixed-ratio-override( $width, $height ) {
+	padding-bottom: ( $height / $width ) * 100%;
+}
+
+
+// Bleed backgrounds
+// ------------------------------
+@mixin bleed-left {
+	position: relative;
+	
+	&:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		width: 100vw;
+		z-index: -1;
+		background: inherit;
+	}
+}
+@mixin bleed-right {
+	position: relative;
+	
+	&:after {
+		content: '';
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		width: 100vw;
+		z-index: -1;
+		background: inherit;
+	}
+}
+
+
+// Form selectors
+// ------------------------------
+@mixin text-inputs {
+	input[type="text"],
+	input[type="password"],
+	input[type="email"],
+	input[type="url"],
+	input[type="tel"],
+	input[type="search"],
+	.ie11 input[type="color"],
+	input[type="number"],
+	input[type="date"],
+	input[type="time"],
+	input[type="datetime-local"],
+	input[type="month"],
+	input[type="week"] {
+		@content;
+	}
+}
+@mixin stylable-inputs {
+	input[type="text"],
+	input[type="password"],
+	input[type="email"],
+	input[type="url"],
+	input[type="tel"],
+	input[type="search"],
+	.ie11 input[type="color"],
+	input[type="number"],
+	input[type="date"],
+	input[type="time"],
+	input[type="datetime-local"],
+	input[type="month"],
+	input[type="week"],
+	textarea,
+	select {
+		@content;
+	}
+}
+@mixin form-buttons() {
+	input[type="button"],
+	input[type="submit"],
+	input[type="reset"],
+	button {
+		@content;
+	}
+	::-webkit-file-upload-button {
+		@content;
+	}
+}
+
+
+// Support for legacy grid
+// ------------------------------
+@mixin display-grid {
+	display: grid;
+	.no-cssgrid & {
+		display: -ms-grid;
+	}
+}
+@mixin grid-template-rows($value) {
+	grid-template-rows: $value;
+	.no-cssgrid & {
+		-ms-grid-rows: $value;
+	}
+}
+@mixin grid-template-columns($value) {
+	grid-template-columns: $value;
+	.no-cssgrid & {
+		-ms-grid-columns: $value;
+	}
+}
+@mixin grid-row($value1, $value2:null) {
+	@if $value2 == null {
+		grid-row: $value1;
+		.no-cssgrid & {
+			-ms-grid-row: $value1;
+		}
+	} @else {
+		grid-row: #{$value1} / #{$value2};
+		.no-cssgrid & {
+			-ms-grid-row: $value1;
+			-ms-grid-row-span: #{$value2 - $value1};
+		}
+	}
+}
+@mixin grid-column($value1, $value2:null) {
+	@if $value2 == null {
+		grid-column: $value1;
+		.no-cssgrid & {
+			-ms-grid-column: $value1;
+		}
+	} @else {
+		grid-column: #{$value1} / #{$value2};
+		.no-cssgrid & {
+			-ms-grid-column: $value1;
+			-ms-grid-column-span: #{$value2 - $value1};
+		}
+	}
+}
+@mixin align-items($value) {
+	align-items: $value;
+	.no-cssgrid & > * {
+		-ms-grid-row-align: $value;
+	}
+}
+@mixin justify-items($value) {
+	justify-items: $value;
+	.no-cssgrid & > * {
+		-ms-grid-column-align: $value;
+	}
+}
+@mixin align-self($value) {
+	align-self: $value;
+	.no-cssgrid & {
+		-ms-grid-row-align: $value;
+	}
+}
+@mixin justify-self($value) {
+	justify-self: $value;
+	.no-cssgrid & {
+		-ms-grid-column-align: $value;
+	}
+}

@@ -1,0 +1,65 @@
+// ==================================================
+// HTML Tables
+// ==================================================
+
+
+// Default table styles
+// ------------------------------
+table {
+	width: 100%;
+	border-collapse: collapse;
+	border-top: 1px solid $grey-lighter;
+}
+caption {
+	@include caption;
+	margin-bottom: .5em;
+}
+td, th {
+	padding: .5em 1em;
+	border-bottom: 1px solid $grey-lighter;
+	text-align: left;
+	vertical-align: top;
+	
+	thead &,
+	tfoot & {
+		background-color: $grey-lighter;
+	}
+}
+
+
+// Responsive table styles
+// ------------------------------
+.responsive-table {
+	@include screen-below( small ) {
+		border: none;
+		&, thead, tfoot, tbody, tr, th, td, caption {
+			display: block;
+		}
+		thead tr,
+		tfoot tr {
+			position: absolute;
+			right: 100vw;
+			visibility: hidden;
+		}
+		th {
+			background: $grey-lighter;
+		}
+		td[data-column-name],
+		th[data-column-name] {
+			padding-left: 12rem;
+			padding-right: 0;
+			overflow: hidden;
+			
+			&:before {
+				content: attr( data-column-name );
+				float: left;
+				margin-left: -12rem;
+				width: 12rem;
+				padding-left: 1em;
+				box-sizing: border-box;
+				overflow: hidden;
+				font-weight: bolder;
+			}
+		}
+	}
+}

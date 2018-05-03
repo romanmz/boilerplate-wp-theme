@@ -1,0 +1,119 @@
+// ==================================================
+// Utility Classes
+// ==================================================
+
+
+// Spacing
+// ------------------------------
+.no-margin {
+	margin-bottom: 0;
+}
+.margin-1 {
+	margin-bottom: $space;
+}
+.margin-2 {
+	margin-bottom: ($space * 2);
+}
+.margin-3 {
+	margin-bottom: ($space * 3);
+}
+.margin-4 {
+	margin-bottom: ($space * 4);
+}
+
+
+// Sizing
+// ------------------------------
+.full-width {
+	display: block;
+	box-sizing: border-box;
+	width: 100%;
+}
+
+
+// Fixed ratios
+// ------------------------------
+.ratio-16-9 {
+	@include fixed-ratio( 16, 9 );
+}
+.ratio-4-3 {
+	@extend .ratio-16-9;
+	@include fixed-ratio-override( 4, 3 );
+}
+.ratio-1-1 {
+	@extend .ratio-16-9;
+	@include fixed-ratio-override( 1, 1 );
+}
+
+
+// Bleed backgrounds
+// ------------------------------
+.bleed-left {
+	@include bleed-left;
+}
+.bleed-right {
+	@include bleed-right;
+}
+
+
+// Visibility
+// ------------------------------
+.visually-hidden {
+	@include visually-hidden;
+}
+.invisible {
+	visibility: hidden;
+}
+.print-only {
+	display: none;
+}
+
+
+// Text
+// ------------------------------
+.text-left {
+	text-align: left;
+}
+.text-center {
+	text-align: center;
+}
+.text-right {
+	text-align: right;
+}
+.hyphens {
+	hyphens: auto;
+}
+
+
+// Float
+// ------------------------------
+.float-left {
+	float: left;
+}
+.float-right {
+	float: right;
+}
+.clear{
+	clear: both;
+}
+img, figure {
+	&.float-left {
+		margin: 0 $space $space 0;
+	}
+	&.float-right {
+		margin: 0 0 $space $space;
+	}
+}
+
+
+// Overflow
+// ------------------------------
+.clearfix {
+	@include clearfix;
+}
+.scroll {
+	@include smooth-scroll;
+}
+.no-overflow {
+	overflow: hidden;
+}

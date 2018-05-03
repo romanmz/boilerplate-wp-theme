@@ -1,0 +1,60 @@
+// ==================================================
+// HTML Base
+// ==================================================
+
+
+// Fonts
+// ------------------------------
+
+
+// Document
+// ------------------------------
+html {
+	// set base font size to 10px to make rem units easier to use
+	font-size: 62.5%;
+}
+body {
+	font-family: $font-sans;
+	@include body-text;
+	color: $grey-dark;
+	background-color: white;
+	// nicer looking fonts on macs
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+::selection {
+	color: white;
+	background-color: $grey-dark;
+	text-shadow: none;
+}
+
+
+// Blocks
+// ------------------------------
+main {
+	// set the correct display mode in IE
+	display: block;
+}
+address {
+	// remove default style
+	font-style: inherit;
+}
+p, h1, h2, h3, h4, h5, h6,
+ul, ol, dl, table, pre, blockquote,
+fieldset, legend, figure, details {
+	// set default spacing for block elements
+	margin: 0 0 $space;
+}
+
+
+// Embedded media
+// ------------------------------
+img, iframe,
+video, audio, canvas, svg,
+embed, object {
+	box-sizing: border-box;
+	max-width: 100%;
+}
+img {
+	height: auto;
+}

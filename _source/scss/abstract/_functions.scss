@@ -1,0 +1,17 @@
+// ==================================================
+// Functions
+// ==================================================
+
+
+// Viewport units calculators
+// ------------------------------
+@function vw-calc( $size, $screenmax:1920 ) {
+	@return $size / $screenmax * 100 * 1vw;
+}
+@function vw-range( $min, $max, $screenmin:320, $screenmax:1920 ) {
+	$diff: $max - $min;
+	$screendiff: $screenmax - $screenmin;
+	$vw: $diff / $screendiff * 100;
+	$base: $min - ( $screenmin / 100 * $vw );
+	@return calc( #{ $base }px + #{ $vw }vw );
+}

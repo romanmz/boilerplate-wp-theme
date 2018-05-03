@@ -1,0 +1,56 @@
+// ==================================================
+// Variables
+// ==================================================
+
+
+// Breakpoints
+// ------------------------------
+// Reference [http://iosres.com]
+// iPhone 5:        320x568    @2
+// iPhone 8:        375x667    @2
+// iPhone 8+:       414x736    @3   Downsampled from 1242x2208 to 1080x1920
+// iPhone X:        375x812    @3
+// iPad:            768x1024   @2
+// iPad Pro 10.5":  834x1112   @2
+// iPad Pro 12.9":  1024x1366  @2
+//  Watch 38mm:    272x340    @1
+//  Watch 42mm:    312x390    @1
+$breakpoints: (
+	'xsmall': 380px,
+	'small':  580px,
+	'medium': 768px,
+	'large':  1024px,
+	'xlarge': 1400px,
+);
+
+
+// Fonts
+// ------------------------------
+$font-sans: Helvetica, Arial, sans-serif;
+$font-code: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", monospace;
+
+
+// Colours
+// ------------------------------
+
+// Greys
+$grey-aa:      #717171; // Lightest grey that passes WCAG2.0-AA contrast on white
+$grey-dark:    #333;
+$grey-medium:  #888;
+$grey-light:   #BBB;
+$grey-lighter: #EEE;
+
+// Messages
+$info:         #06A;
+$alert:        #FD0;
+$error:        #C00;
+$success:      #090;
+
+// Branding
+$blue:         #069;
+$blue-light:   lighten( $blue, 30% );
+
+
+// Spacing
+// ------------------------------
+$space: 2rem;

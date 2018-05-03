@@ -1,0 +1,66 @@
+// ==================================================
+// Messages
+// ==================================================
+
+
+// Info message
+// ------------------------------
+.message {
+	display: block;
+	padding: .5em 1em;
+	border: none;
+	margin: 0 0 $space;
+	color: $info;
+	background: $grey-lighter;
+	border-left: 5px solid currentColor;
+	
+	> * {
+		margin-bottom: 0;
+	}
+	ul {
+		padding-left: 1em;
+	}
+	a {
+		color: inherit;
+		text-decoration: underline;
+	}
+	a:hover,
+	a:focus {
+		color: white;
+		background-color: $info;
+		text-decoration: none;
+	}
+}
+
+
+// Message variations
+// ------------------------------
+.message--error {
+	color: $error;
+	a:hover,
+	a:focus {
+		background-color: $error;
+	}
+}
+.message--success {
+	color: $success;
+	a:hover,
+	a:focus {
+		background-color: $success;
+	}
+}
+.message--alert {
+	color: black;
+	background-color: $alert;
+	a:hover,
+	a:focus {
+		background-color: black;
+	}
+}
+
+
+// Outdated browser alert
+// ------------------------------
+html.outdated-browser #outdated-browser-alert {
+	display: block !important;
+}
