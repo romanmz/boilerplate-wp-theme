@@ -1,0 +1,44 @@
+// ==================================================
+// Pagination
+// ==================================================
+
+
+// Numbered pagination
+// ------------------------------
+.numbered-pagination {
+	ul {
+		display: flex;
+		justify-content: center;
+	}
+	li {
+		margin: 0.5em;
+	}
+	a, span {
+		display: block;
+		min-width: 2em;
+		line-height: 2;
+		text-align: center;
+		text-decoration: none;
+		background: $grey-lighter;
+	}
+	a:hover,
+	a:focus {
+		color: white;
+		background-color: $blue;
+	}
+}
+
+
+// Prev/next pagination
+// ------------------------------
+.pagination {
+	ul {
+		display: flex;
+	}
+	.pagination-previous {
+		margin-right: $space;
+	}
+	.pagination-next {
+		margin-left: auto;
+	}
+}

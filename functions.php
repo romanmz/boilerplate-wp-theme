@@ -9,4 +9,4 @@ define( 'THEME_URL', get_template_directory_uri() );
 define( 'THEME_DIR', get_template_directory() );
 
 // Include files
-require_once THEME_DIR.'/inc/helper-functions.php';
+require_once THEME_DIR.'/inc/theme-functions.php';
