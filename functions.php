@@ -11,3 +11,4 @@ define( 'THEME_DIR', get_template_directory() );
 // Include files
 require_once THEME_DIR.'/inc/theme-functions.php';
 require_once THEME_DIR.'/inc/theme-init.php';
+require_once THEME_DIR.'/inc/theme-filters.php';
