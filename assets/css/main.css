@@ -353,6 +353,8 @@ img.float-right, img.alignright, figure.float-right, figure.alignright { margin:
 
 .pagination .pagination-next { margin-left: auto; }
 
+.search-form form { display: -webkit-box; display: -ms-flexbox; display: flex; }
+
 @media (max-width: 767px) { .page-sidebar { margin-top: 4rem; } }
 
 @media (min-width: 768px) { .page-container { display: grid; grid-template-columns: 1fr 3fr; }
