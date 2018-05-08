@@ -315,22 +315,4 @@ img.float-right, img.alignright, figure.float-right, figure.alignright { margin:
 
 .wp-caption { max-width: 100%; }
 
-.main-row { overflow: hidden; }
-
-.wrapper { max-width: 120rem; padding: 0 3rem; margin: 0 auto; }
-
-.wrapper:after { content: ''; display: block; clear: both; }
-
-.numbered-pagination ul { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
-
-.numbered-pagination li { margin: 0.5em; }
-
-.numbered-pagination a, .numbered-pagination span { display: block; min-width: 2em; line-height: 2; text-align: center; text-decoration: none; background: #EEE; }
-
-.numbered-pagination a:hover, .numbered-pagination a:focus { color: white; background-color: #069; }
-
-.pagination ul { display: -webkit-box; display: -ms-flexbox; display: flex; }
-
-.pagination .pagination-previous { margin-right: 2rem; }
-
-.pagination .pagination-next { margin-left: auto; }
+body { margin: 20px; }

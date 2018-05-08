@@ -1,0 +1,55 @@
+
+// Configuration
+@import 'abstract/functions';
+@import 'abstract/variables';
+@import 'abstract/mixins-helpers';
+@import 'abstract/mixins-styles';
+
+
+
+// ==================================================
+// Login Screen
+// ==================================================
+body {
+	background-color: $grey-lighter;
+}
+.login h1 {
+	// height: 100px;
+	// background: url(../images/logo.svg) no-repeat center center;
+	// background-size: contain;
+	// margin-bottom: 10px;
+	// a {
+	// 	display: none;
+	// }
+}
+@include stylable-inputs {
+	&:focus {
+		border-color: $blue;
+		box-shadow: 0 0 5px rgba( $blue-light, .5 );
+	}
+}
+.wp-core-ui .button-primary {
+	background: $blue;
+	border: none;
+	box-shadow: none;
+	text-shadow: none;
+	transition: all 0.5s;
+	
+	&:hover,
+	&:focus {
+		background: $blue-light;
+		box-shadow: none;
+	}
+}
+.login #backtoblog,
+.login #nav {
+	a {
+		color: $blue;
+		transition: all 0.5s;
+		
+		&:hover,
+		&:focus {
+			color: $blue-light;
+		}
+	}
+}

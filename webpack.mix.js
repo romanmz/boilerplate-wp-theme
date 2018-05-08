@@ -15,6 +15,9 @@ mix.js([
 
 // Compile CSS
 // ------------------------------
+mix.sass('_source/scss/admin.scss', 'assets/css/', {outputStyle: 'compact'});
+mix.sass('_source/scss/editor.scss', 'assets/css/', {outputStyle: 'compact'});
+mix.sass('_source/scss/login.scss', 'assets/css/', {outputStyle: 'compact'});
 mix.sass('_source/scss/main.scss', 'assets/css/', {outputStyle: 'compact'});
 mix.sass('_source/scss/print.scss', 'assets/css/', {outputStyle: 'compact'});
 mix.options({
