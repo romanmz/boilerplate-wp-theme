@@ -1,3 +1,55 @@
 // ==================================================
 // Header
 // ==================================================
+
+
+// Container
+// ------------------------------
+.header-row {
+	padding: $space 0;
+	margin-bottom: ($space * 2);
+	background: $grey-lighter;
+
+	.wrapper {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	@include screen-below( small ) {
+		.wrapper {
+			flex-direction: column;
+		}
+	}
+}
+
+
+// Site logo
+// ------------------------------
+.site-logo {
+	a {
+		display: block;
+		padding: .5rem 1rem;
+	}
+}
+
+
+// Main navigation
+// ------------------------------
+.main-nav {
+	ul {
+		display: flex;
+		margin: 0;
+	}
+	a {
+		display: block;
+		padding: .5rem 1rem;
+	}
+
+	@include screen-below( small ) {
+		ul {
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+	}
+}

@@ -39,3 +39,22 @@
 <!-- Browser support alerts -->
 <noscript><div id="javascript-disabled-alert" class="message message--alert no-margin">This site requires JavaScript. <a href="http://enable-javascript.com/" target="_blank">Click here for instructions on enabling it in your browser</a>.</div></noscript>
 <div id="outdated-browser-alert" class="message message--alert no-margin" style="display:none">You are using an <strong>outdated browser</strong>. Please <a href="http://browsehappy.com/" target="_blank">upgrade your browser</a> to improve your experience.</div>
+
+
+
+<header class="header-row">
+	<div class="wrapper">
+		
+		
+		<div class="site-logo">
+			<a href="<?php echo home_url() ?>"><?php bloginfo( 'name' ) ?></a>
+		</div><!-- .site-logo -->
+		
+		
+		<nav class="main-nav">
+			<?php wp_nav_menu( ['theme_location'=>'main', 'depth'=>1] ) ?>
+		</nav><!-- .main-nav -->
+		
+		
+	</div><!-- .wrapper -->
+</header><!-- .header-row -->
