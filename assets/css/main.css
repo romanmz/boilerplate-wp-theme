@@ -319,6 +319,12 @@ img.float-right, img.alignright, figure.float-right, figure.alignright { margin:
 
 .wrapper { max-width: 120rem; padding: 0 3rem; margin: 0 auto; }
 
+.footer-row { padding: 2rem 0; margin-top: 4rem; background: #EEE; overflow: hidden; text-align: center; }
+
+.footer-nav ul { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -ms-flex-wrap: wrap; flex-wrap: wrap; }
+
+.footer-nav a { display: block; padding: .5rem 1rem; }
+
 .header-row { padding: 2rem 0; margin-bottom: 4rem; background: #EEE; }
 
 .header-row .wrapper { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }

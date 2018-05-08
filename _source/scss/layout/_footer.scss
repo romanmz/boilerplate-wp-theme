@@ -1,3 +1,29 @@
 // ==================================================
 // Footer
 // ==================================================
+
+
+// Container
+// ------------------------------
+.footer-row {
+	padding: $space 0;
+	margin-top: ($space * 2);
+	background: $grey-lighter;
+	overflow: hidden;
+	text-align: center;
+}
+
+
+// Footer navigation
+// ------------------------------
+.footer-nav {
+	ul {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+	a {
+		display: block;
+		padding: .5rem 1rem;
+	}
+}
