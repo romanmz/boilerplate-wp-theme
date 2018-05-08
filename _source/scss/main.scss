@@ -17,15 +17,15 @@
 // Content Area
 @import 'content/buttons';
 @import 'content/messages';
+@import 'content/grids';
 @import 'content/utility';
 @import 'content/wordpress';
 
 // Layouts
-@import 'content/pagination';
 @import 'layout/containers';
 @import 'layout/footer';
-@import 'layout/grids';
 @import 'layout/header';
+@import 'layout/pagination';
 
 // Page Templates
 @import 'pages/home';
