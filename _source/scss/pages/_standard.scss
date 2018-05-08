@@ -5,6 +5,11 @@
 
 // Page layout
 // ------------------------------
+@include screen-below( medium ) {
+	.page-sidebar {
+		margin-top: $space * 2;
+	}
+}
 @include screen-above( medium ) {
 	.page-container {
 		@include display-grid;
