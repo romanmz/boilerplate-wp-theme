@@ -1,3 +1,25 @@
 // ==================================================
 // Standard Page Template
 // ==================================================
+
+
+// Page layout
+// ------------------------------
+@include screen-above( medium ) {
+	.page-container {
+		@include display-grid;
+		@include grid-template-columns( 1fr 3fr );
+	}
+	.page-content {
+		order: 2;
+		@include grid-column( 2 );
+	}
+	.page-sidebar {
+		@include grid-column( 1 );
+	}
+}
+@include screen-above( large ) {
+	.page-container {
+		@include grid-template-columns( 1fr 4fr );
+	}
+}

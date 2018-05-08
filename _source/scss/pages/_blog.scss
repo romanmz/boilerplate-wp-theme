@@ -1,0 +1,35 @@
+// ==================================================
+// Blog
+// ==================================================
+
+
+// Blog items
+// ------------------------------
+.blog-item {
+	padding: ($space * 2) 0;
+	border-top: 1px solid $grey-lighter;
+}
+.blog-item--thumb {
+	display: block;
+	margin: 0 auto $space;
+}
+.blog-item--content {
+	> :last-child {
+		margin-bottom: 0;
+	}
+}
+@include screen-above( xsmall ) {
+	.blog-item {
+		display: flex;
+		align-items: flex-start;
+	}
+	.blog-item--thumb {
+		margin: 0 $space 0 0;
+		width: 7.5rem;
+	}
+}
+@include screen-above( small ) {
+	.blog-item--thumb {
+		width: 10rem;
+	}
+}
