@@ -1,9 +1,9 @@
 
-// Configuration
-@import 'abstract/functions';
-@import 'abstract/variables';
-@import 'abstract/mixins-helpers';
-@import 'abstract/mixins-styles';
+// Abstracts
+@import 'abstracts/functions';
+@import 'abstracts/variables';
+@import 'abstracts/mixins-helpers';
+@import 'abstracts/mixins-styles';
 
 // Vendor
 @import 'vendor/normalize';
@@ -14,12 +14,11 @@
 @import 'base/forms';
 @import 'base/tables';
 
-// Content Area
-@import 'content/buttons';
-@import 'content/messages';
-@import 'content/grids';
-@import 'content/utility';
-@import 'content/wordpress';
+// Small components / Content area
+@import 'components/buttons';
+@import 'components/messages';
+@import 'components/utility';
+@import 'components/wordpress';
 
 
 
