@@ -3,24 +3,17 @@
 // ==================================================
 
 
-// Sample grid
+// Multi-column grid
 // ------------------------------
-.sample-grid {
-	@include display-grid;
-	@include grid-template-columns( 1fr 2fr 4fr 3fr );
-	grid-gap: $space;
-	margin-bottom: $space;
-	
-	.col {
-		color: white;
-		background: $blue;
-		padding: 0.5em;
-		text-align: center;
+.multi-column-grid {
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: -$space;
+
+	> * {
+		flex: 1 1 0;
+		margin-bottom: $space;
+		margin-left: $space;
+		min-width: 20rem;
 	}
-	.col:nth-child( even ) {
-		background: $blue-light;
-	}
-	.col-2 { @include grid-column(2) }
-	.col-3 { @include grid-column(3) }
-	.col-4 { @include grid-column(4) }
 }

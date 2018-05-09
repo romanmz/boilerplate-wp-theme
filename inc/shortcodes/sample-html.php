@@ -6,10 +6,10 @@ if( !defined( 'ABSPATH' ) ) exit;
 
 
 // ==================================================
-// [sample_html] SHORTCODE
+// [sample-html] SHORTCODE
 // ==================================================
 
-add_shortcode( 'sample_html', 'shortcode_sample_html' );
+add_shortcode( 'sample-html', 'shortcode_sample_html' );
 function shortcode_sample_html( $atts=[], $content='' ) {
 	ob_start();
 	?>
@@ -207,12 +207,12 @@ log: <samp>Chinese food is Yummy!</samp></pre>
 
 
 <hr>
-<h3>Sample Grid</h3>
-<div class="sample-grid">
-	<div class="col col-1">1</div>
-	<div class="col col-2">2</div>
-	<div class="col col-3">3</div>
-	<div class="col col-4">4</div>
+<h3>Grids</h3>
+<div class="multi-column-grid">
+	<div><strong>Multi-column grid.</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pulvinar diam quis dictum scelerisque.</div>
+	<div>Aliquam porttitor est non congue sollicitudin.</div>
+	<div>Proin mollis dapibus vehicula. Pellentesque aliquam arcu eu sapien consectetur vehicula. Mauris interdum congue ex.</div>
+	<div>In vel feugiat tortor. Praesent et posuere mi. Cras ut vulputate diam. Vestibulum cursus, tellus vel dictum varius, justo sapien dictum magna.</div>
 </div>
 	<?php
 	return ob_get_clean();
