@@ -8,14 +8,14 @@
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ) ?>">
 	
 	<!-- Favicons -->
-	<link rel="apple-touch-icon" sizes="180x180" href="<?php echo THEME_URL ?>/assets/favicons/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="<?php echo THEME_URL ?>/assets/favicons/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="<?php echo THEME_URL ?>/assets/favicons/favicon-16x16.png">
-	<link rel="manifest" href="<?php echo THEME_URL ?>/assets/favicons/site.webmanifest">
-	<link rel="mask-icon" href="<?php echo THEME_URL ?>/assets/favicons/safari-pinned-tab.svg" color="#ffc40d">
-	<link rel="shortcut icon" href="<?php echo THEME_URL ?>/assets/favicons/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="<?php echo THEME_FAVICONS ?>/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="<?php echo THEME_FAVICONS ?>/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="<?php echo THEME_FAVICONS ?>/favicon-16x16.png">
+	<link rel="manifest" href="<?php echo THEME_FAVICONS ?>/site.webmanifest">
+	<link rel="mask-icon" href="<?php echo THEME_FAVICONS ?>/safari-pinned-tab.svg" color="#ffc40d">
+	<link rel="shortcut icon" href="<?php echo THEME_FAVICONS ?>/favicon.ico">
 	<meta name="msapplication-TileColor" content="#ffc40d">
-	<meta name="msapplication-config" content="<?php echo THEME_URL ?>/assets/favicons/browserconfig.xml">
+	<meta name="msapplication-config" content="<?php echo THEME_FAVICONS ?>/browserconfig.xml">
 	<meta name="theme-color" content="#ffffff">
 	
 	<!-- Detect old browsers -->
