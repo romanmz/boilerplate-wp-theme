@@ -18,13 +18,15 @@
 	<meta name="msapplication-config" content="<?php echo THEME_FAVICONS ?>/browserconfig.xml">
 	<meta name="theme-color" content="#ffffff">
 	
-	<!-- Detect old browsers -->
-	<!--[if IE]><script> document.documentElement.className += ' outdated-browser'; </script><![endif]-->
+	<!-- Detect browsers -->
+	<!--[if IE]><script> document.documentElement.className += ' is-unsupported-browser'; </script><![endif]-->
 	<script>
-		if(navigator.appVersion.indexOf('MSIE 10') !== -1) {
-			document.documentElement.className += ' outdated-browser';
-		} else if(navigator.userAgent.indexOf('Trident') !== -1 && navigator.userAgent.indexOf('rv:11') !== -1) {
-			document.documentElement.className += ' ie11';
+		if(navigator.appVersion.indexOf("MSIE 10") !== -1){
+			document.documentElement.classList.add('is-unsupported-browser');
+		} else if(navigator.userAgent.indexOf("Trident") !== -1 && navigator.userAgent.indexOf("rv:11") !== -1){
+			document.documentElement.classList.add('is-ie11');
+		} else if(navigator.appVersion.indexOf("Edge") !== -1) {
+			document.documentElement.classList.add('is-edge');
 		}
 	</script>
 	
@@ -37,8 +39,8 @@
 <a id="skip-to-content" href="#content" class="screen-reader-text focusable button">Skip to content</a>
 
 <!-- Browser support alerts -->
-<noscript><div id="javascript-disabled-alert" class="message message--alert no-margin">This site requires JavaScript. <a href="http://enable-javascript.com/" target="_blank">Click here for instructions on enabling it in your browser</a>.</div></noscript>
-<div id="outdated-browser-alert" class="message message--alert no-margin" style="display:none">You are using an <strong>outdated browser</strong>. Please <a href="http://browsehappy.com/" target="_blank">upgrade your browser</a> to improve your experience.</div>
+<noscript><div id="javascript-alert" class="message message--alert no-margin">This site requires JavaScript. <a href="http://enable-javascript.com/" target="_blank">Click here for instructions on enabling it in your browser</a>.</div></noscript>
+<div id="browser-alert" class="message message--alert no-margin" style="display:none">You are using an <strong>outdated browser</strong>. Please <a href="http://browsehappy.com/" target="_blank">upgrade your browser</a> to improve your experience.</div>
 
 
 

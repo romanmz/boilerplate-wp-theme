@@ -227,7 +227,7 @@ thead td, tfoot td, thead th, tfoot th { background-color: #EEE; }
 
 .message--alert a:hover, .message--alert a:focus { background-color: black; }
 
-html.outdated-browser #outdated-browser-alert { display: block !important; }
+html.is-unsupported-browser #browser-alert { display: block !important; }
 
 .no-margin { margin-bottom: 0; }
 
