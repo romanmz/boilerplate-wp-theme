@@ -155,7 +155,7 @@
 		@content;
 	}
 }
-@mixin form-buttons() {
+@mixin form-buttons {
 	input[type="button"],
 	input[type="submit"],
 	input[type="reset"],
@@ -164,6 +164,22 @@
 	}
 	::-webkit-file-upload-button {
 		@content;
+	}
+}
+@mixin placeholder {
+	// autoprefixer should take care of this automatically, kept just in case
+	&::-webkit-input-placeholder { @content; }
+	&:-ms-input-placeholder { @content; }
+	&::-ms-input-placeholder { @content; }
+	&::placeholder { @content; }
+}
+@mixin reset-appearance {
+	// Remove the default appearance of a field
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	&::-ms-expand {
+		display: none;
 	}
 }
 

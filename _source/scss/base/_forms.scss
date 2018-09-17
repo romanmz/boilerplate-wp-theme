@@ -18,6 +18,9 @@ label {}
 
 // Text inputs and buttons
 // ------------------------------
+select {
+	@include reset-appearance;
+}
 @include stylable-inputs {
 	line-height: inherit;
 	border: 1px solid $grey-medium;
@@ -26,7 +29,7 @@ label {}
 	width: 100%;
 	box-sizing: border-box;
 	
-	&::placeholder {
+	@include placeholder {
 		color: $grey-aa;
 	}
 	&[readonly],
