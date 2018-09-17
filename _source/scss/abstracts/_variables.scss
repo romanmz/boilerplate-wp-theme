@@ -6,15 +6,20 @@
 // Breakpoints
 // ------------------------------
 // Reference [http://iosres.com]
-// iPhone 5:        320x568    @2
+// iPhone 4:        320x480    @2
+// iPhone SE:       320x568    @2
 // iPhone 8:        375x667    @2
 // iPhone 8+:       414x736    @3   Downsampled from 1242x2208 to 1080x1920
-// iPhone X:        375x812    @3
+// iPhone Xs:       375x812    @3
+// iPhone Xs Max:   414x896    @3
+// iPhone Xr:       414x896    @2
 // iPad:            768x1024   @2
 // iPad Pro 10.5":  834x1112   @2
 // iPad Pro 12.9":  1024x1366  @2
 //  Watch 38mm:    272x340    @1
 //  Watch 42mm:    312x390    @1
+//  Watch S4 40mm: 324x394    @1
+//  Watch S4 44mm: 368x448    @1
 $breakpoints: (
 	'xsmall': 380px,
 	'small':  580px,
