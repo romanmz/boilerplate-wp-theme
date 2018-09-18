@@ -131,11 +131,11 @@ function is_svg_file( $file_path ) {
 	);
 }
 function get_inline_svg( $filename ) {
-	$path = THEME_IMAGES.'/'.$filename.'.svg';
+	$path = THEME_DIR.'/assets/images/'.$filename.'.svg';
 	return is_svg_file( $path ) ? file_get_contents( $path ) : false;
 }
 function inline_svg( $filename ) {
-	$path = THEME_IMAGES.'/'.$filename.'.svg';
+	$path = THEME_DIR.'/assets/images/'.$filename.'.svg';
 	return is_svg_file( $path ) ? readfile( $path ) : false;
 }
 
