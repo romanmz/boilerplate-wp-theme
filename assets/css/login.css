@@ -1,11 +1,51 @@
-body { background-color: #EEE; }
+body{
+  background-color:#EEE;
+}
 
-input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="tel"]:focus, input[type="search"]:focus, .ie11 input[type="color"]:focus, input[type="number"]:focus, input[type="date"]:focus, input[type="time"]:focus, input[type="datetime-local"]:focus, input[type="month"]:focus, input[type="week"]:focus, textarea:focus, select:focus { border-color: #069; -webkit-box-shadow: 0 0 5px rgba(51, 187, 255, 0.5); box-shadow: 0 0 5px rgba(51, 187, 255, 0.5); }
+input[type=text]:focus,
+input[type=password]:focus,
+input[type=email]:focus,
+input[type=url]:focus,
+input[type=tel]:focus,
+input[type=search]:focus,
+.ie11 input[type=color]:focus,
+input[type=number]:focus,
+input[type=date]:focus,
+input[type=time]:focus,
+input[type=datetime-local]:focus,
+input[type=month]:focus,
+input[type=week]:focus,
+textarea:focus,
+select:focus{
+  border-color:#069;
+  -webkit-box-shadow:0 0 5px rgba(51, 187, 255, 0.5);
+          box-shadow:0 0 5px rgba(51, 187, 255, 0.5);
+}
 
-.wp-core-ui .button-primary { background: #069; border: none; -webkit-box-shadow: none; box-shadow: none; text-shadow: none; -webkit-transition: all 0.5s; transition: all 0.5s; }
+.wp-core-ui .button-primary{
+  background:#069;
+  border:none;
+  -webkit-box-shadow:none;
+          box-shadow:none;
+  text-shadow:none;
+  -webkit-transition:all 0.5s;
+  transition:all 0.5s;
+}
+.wp-core-ui .button-primary:hover, .wp-core-ui .button-primary:focus{
+  background:#33bbff;
+  -webkit-box-shadow:none;
+          box-shadow:none;
+}
 
-.wp-core-ui .button-primary:hover, .wp-core-ui .button-primary:focus { background: #33bbff; -webkit-box-shadow: none; box-shadow: none; }
-
-.login #backtoblog a, .login #nav a { color: #069; -webkit-transition: all 0.5s; transition: all 0.5s; }
-
-.login #backtoblog a:hover, .login #backtoblog a:focus, .login #nav a:hover, .login #nav a:focus { color: #33bbff; }
+.login #backtoblog a,
+.login #nav a{
+  color:#069;
+  -webkit-transition:all 0.5s;
+  transition:all 0.5s;
+}
+.login #backtoblog a:hover, .login #backtoblog a:focus,
+.login #nav a:hover,
+.login #nav a:focus{
+  color:#33bbff;
+}
+/*# sourceMappingURL=login.css.map*/
