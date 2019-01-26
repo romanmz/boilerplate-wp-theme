@@ -499,29 +499,39 @@ thead td, tfoot td, thead th, tfoot th{
   }
   .responsive-table thead tr,
 .responsive-table tfoot tr{
-    position:absolute;
-    right:100vw;
-    visibility:hidden;
+    position:absolute !important;
+    height:1px;
+    width:1px;
+    overflow:hidden;
+    clip:rect(1px, 1px, 1px, 1px);
+    word-wrap:normal !important;
+  }
+  .responsive-table thead tr.focusable:active, .responsive-table thead tr.focusable:focus,
+.responsive-table tfoot tr.focusable:active,
+.responsive-table tfoot tr.focusable:focus{
+    height:auto;
+    width:auto;
+    overflow:visible;
+    clip:rect(auto, auto, auto, auto);
   }
   .responsive-table th{
     background:#EEE;
   }
   .responsive-table td[data-column-name],
 .responsive-table th[data-column-name]{
-    padding-left:12rem;
-    padding-right:0;
-    overflow:hidden;
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
   }
   .responsive-table td[data-column-name]:before,
 .responsive-table th[data-column-name]:before{
     content:attr(data-column-name);
-    float:left;
-    margin-left:-12rem;
-    width:12rem;
-    padding-left:1em;
-    -webkit-box-sizing:border-box;
-            box-sizing:border-box;
-    overflow:hidden;
+    min-width:10rem;
+    max-width:50%;
+    margin-right:1rem;
+    -webkit-box-flex:0;
+        -ms-flex:none;
+            flex:none;
     font-weight:bolder;
   }
 }
