@@ -1,12 +1,12 @@
 
+// Vendor
+@import 'vendor/normalize';
+
 // Abstracts
 @import 'abstracts/functions';
 @import 'abstracts/variables';
 @import 'abstracts/mixins';
 @import 'abstracts/typography';
-
-// Vendor
-@import 'vendor/normalize';
 
 // Base HTML
 @import 'base/base';
