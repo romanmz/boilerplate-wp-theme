@@ -1,0 +1,20 @@
+// ==================================================
+// Quotes
+// ==================================================
+
+
+// Standard quotes
+// ------------------------------
+blockquote {
+	@include h4-size;
+	color: $grey-medium;
+	
+	cite {
+		display: block;
+		text-align: right;
+		font-weight: bolder;
+	}
+}
+q {
+	color: $grey-medium;
+}

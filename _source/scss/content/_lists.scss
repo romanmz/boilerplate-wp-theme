@@ -1,0 +1,26 @@
+// ==================================================
+// Lists
+// ==================================================
+
+
+// Standard lists
+// ------------------------------
+ul, ol {
+	padding: 0 0 0 $space;
+	
+	ul, ol, dl {
+		margin-bottom: 0;
+	}
+	nav & {
+		list-style: none;
+		padding: 0;
+	}
+}
+dl {}
+dt {
+	@include caption-text;
+	margin: $space 0 0;
+}
+dd {
+	margin: 0;
+}

@@ -3,6 +3,13 @@
 // ==================================================
 
 
+// Outdated browser alert
+// ------------------------------
+html.is-unsupported-browser #browser-alert {
+	display: block !important;
+}
+
+
 // Container
 // ------------------------------
 .header-row {

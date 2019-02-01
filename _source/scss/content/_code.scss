@@ -1,0 +1,22 @@
+// ==================================================
+// Code
+// ==================================================
+
+
+// Standard code elements
+// ------------------------------
+pre, code {
+	font-family: $font-code;
+	background-color: $grey-lighter;
+}
+pre {
+	padding: .5em 1em;
+	overflow: auto;
+}
+var, kbd {
+	font-family: inherit;
+}
+samp {
+	font-family: inherit;
+	font-weight: bolder;
+}

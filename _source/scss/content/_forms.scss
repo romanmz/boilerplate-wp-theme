@@ -1,9 +1,9 @@
 // ==================================================
-// HTML Forms
+// Forms
 // ==================================================
 
 
-// Form
+// Standard forms
 // ------------------------------
 form {}
 fieldset {
@@ -15,9 +15,7 @@ legend {
 }
 label {}
 
-
 // Text inputs and buttons
-// ------------------------------
 select {
 	@include reset-appearance;
 }
@@ -50,14 +48,8 @@ select {
 textarea {
 	resize: vertical;
 }
-@include form-buttons {
-	// left with default styles, to apply styles add the appropiate class names to the elements (see /components/_buttons.scss)
-	// this is to avoid having to constantly override styles in sites where there's multiple button styles
-}
-
 
 // Other inputs
-// ------------------------------
 input[type="checkbox"] {}
 input[type="radio"] {}
 input[type="file"] {}
@@ -68,3 +60,6 @@ datalist {}
 output {}
 progress {}
 meter {}
+
+// Buttons
+// to style form buttons, go to the _buttons.scss file

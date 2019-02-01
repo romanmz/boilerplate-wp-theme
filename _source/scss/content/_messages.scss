@@ -3,7 +3,7 @@
 // ==================================================
 
 
-// Info message
+// Info messages
 // ------------------------------
 .message {
 	display: block;
@@ -31,10 +31,6 @@
 		text-decoration: none;
 	}
 }
-
-
-// Message variations
-// ------------------------------
 .message--error {
 	color: $error;
 	a:hover,
@@ -56,11 +52,4 @@
 	a:focus {
 		background-color: black;
 	}
-}
-
-
-// Outdated browser alert
-// ------------------------------
-html.is-unsupported-browser #browser-alert {
-	display: block !important;
 }

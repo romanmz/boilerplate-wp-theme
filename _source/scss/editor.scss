@@ -8,17 +8,22 @@
 @import 'abstracts/mixins';
 @import 'abstracts/typography';
 
-// Base HTML
-@import 'base/base';
-@import 'base/content';
-@import 'base/forms';
-@import 'base/tables';
-
-// Small components / Content area
-@import 'components/buttons';
-@import 'components/messages';
-@import 'components/utility';
-@import 'components/wordpress';
+// Content elements
+@import 'content/base';
+@import 'content/headings';
+@import 'content/dividers';
+@import 'content/links';
+@import 'content/buttons';
+@import 'content/lists';
+@import 'content/quotes';
+@import 'content/code';
+@import 'content/figures';
+@import 'content/forms';
+@import 'content/tables';
+@import 'content/messages';
+@import 'content/grids';
+@import 'content/utility';
+@import 'content/wordpress';
 
 
 

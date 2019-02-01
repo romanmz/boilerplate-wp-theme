@@ -1,5 +1,5 @@
 // ==================================================
-// HTML Content
+// Base Elements
 // ==================================================
 
 
@@ -62,4 +62,12 @@ embed, object {
 }
 img {
 	height: auto;
+}
+
+
+// Other markup
+// ------------------------------
+abbr[title] {
+	border-bottom: 1px dotted;
+	text-decoration: none;
 }

@@ -5,6 +5,14 @@
 
 // Standard buttons
 // ------------------------------
+@include form-buttons {
+	// form buttons are left with their default styles, it's better to use custom class names instead
+	// this is to avoid having to constantly override styles in sites where there's multiple button styles
+}
+
+
+// Simple buttons
+// ------------------------------
 // If the site will use WooCommerce, beware of possible conflicts with WC's own .button class (you can just rename this class to something else)
 .button {
 	display: inline-block;
@@ -19,7 +27,7 @@
 	text-align: center;
 	font-weight: normal;
 	
-	border-radius: 3px;
+	border-radius: 5px;
 	box-sizing: border-box;
 	transition: color .5s, background-color .5s, border .5s;
 	position: relative;

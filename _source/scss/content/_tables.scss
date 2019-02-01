@@ -1,9 +1,9 @@
 // ==================================================
-// HTML Tables
+// Tables
 // ==================================================
 
 
-// Default table styles
+// Standard tables
 // ------------------------------
 table {
 	width: 100%;
@@ -27,7 +27,7 @@ td, th {
 }
 
 
-// Responsive table styles
+// Responsive tables
 // ------------------------------
 .responsive-table {
 	@include screen-below( small ) {

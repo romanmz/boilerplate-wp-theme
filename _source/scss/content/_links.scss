@@ -1,0 +1,20 @@
+// ==================================================
+// Links
+// ==================================================
+
+
+// Standard links
+// ------------------------------
+a {
+	color: $blue;
+	background-color: transparent;
+	text-decoration: underline;
+	transition: color $default-transition, background-color $default-transition, border $default-transition;
+	
+	&:hover,
+	&:focus {
+		color: white;
+		background-color: $blue;
+		text-decoration: none;
+	}
+}

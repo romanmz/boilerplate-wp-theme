@@ -8,26 +8,30 @@
 @import 'abstracts/mixins';
 @import 'abstracts/typography';
 
-// Base HTML
-@import 'base/base';
-@import 'base/content';
-@import 'base/forms';
-@import 'base/tables';
+// Content elements
+@import 'content/base';
+@import 'content/headings';
+@import 'content/dividers';
+@import 'content/links';
+@import 'content/buttons';
+@import 'content/lists';
+@import 'content/quotes';
+@import 'content/code';
+@import 'content/figures';
+@import 'content/forms';
+@import 'content/tables';
+@import 'content/messages';
+@import 'content/grids';
+@import 'content/utility';
+@import 'content/wordpress';
 
-// Small components / Content area
-@import 'components/buttons';
-@import 'components/messages';
-@import 'components/utility';
-@import 'components/wordpress';
-
-// Template layouts
+// Layout elements
 @import 'layout/containers';
-@import 'layout/grids';
 @import 'layout/header';
 @import 'layout/footer';
 @import 'layout/search-form';
 
-// Page / Sections
-@import 'pages/home-page';
-@import 'pages/standard-page';
-@import 'pages/blog';
+// Templates
+@import 'templates/home';
+@import 'templates/standard';
+@import 'templates/blog';
