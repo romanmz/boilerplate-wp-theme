@@ -6,22 +6,22 @@
 // Headings
 // ------------------------------
 h1, .h1 {
-	@include h1;
+	@include h1-size;
 }
 h2, .h2 {
-	@include h2;
+	@include h2-size;
 }
 h3, .h3 {
-	@include h3;
+	@include h3-size;
 }
 h4, .h4 {
-	@include h4;
+	@include h4-size;
 }
 h5, .h5 {
-	@include h5;
+	@include h5-size;
 }
 h6, .h6 {
-	@include h6;
+	@include h6-size;
 }
 
 
@@ -34,7 +34,7 @@ hr {
 	border-top: 1px solid $grey-light;
 	padding: 0;
 	height: 1px;
-	margin: ($space * 2) 0;
+	margin: $space 0;
 }
 
 
@@ -44,7 +44,7 @@ a {
 	color: $blue;
 	background-color: transparent;
 	text-decoration: underline;
-	transition: color .5s, background-color .5s, border .5s;
+	transition: color $default-transition, background-color $default-transition, border $default-transition;
 	
 	&:hover,
 	&:focus {
@@ -70,7 +70,7 @@ ul, ol {
 }
 dl {}
 dt {
-	@include caption;
+	@include caption-text;
 	margin: $space 0 0;
 }
 dd {
@@ -81,7 +81,7 @@ dd {
 // Quotes
 // ------------------------------
 blockquote {
-	@include h4;
+	@include h4-size;
 	color: $grey-medium;
 	
 	cite {

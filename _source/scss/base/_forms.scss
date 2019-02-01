@@ -11,7 +11,7 @@ fieldset {
 	border: none;
 }
 legend {
-	@include caption;
+	@include caption-text;
 }
 label {}
 
@@ -24,10 +24,11 @@ select {
 @include stylable-inputs {
 	line-height: inherit;
 	border: 1px solid $grey-medium;
-	color: inherit;
 	padding: .5em 1em;
 	width: 100%;
 	box-sizing: border-box;
+	color: inherit;
+	border-radius: 5px;
 	
 	@include placeholder {
 		color: $grey-aa;

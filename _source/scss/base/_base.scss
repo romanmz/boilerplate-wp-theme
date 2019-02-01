@@ -1,10 +1,6 @@
 // ==================================================
-// HTML Base
+// HTML Content
 // ==================================================
-
-
-// Fonts
-// ------------------------------
 
 
 // Document
@@ -14,9 +10,7 @@ html {
 	font-size: 62.5%;
 }
 body {
-	font-family: $font-body;
 	@include body-text;
-	color: $grey-dark;
 	background-color: white;
 	// nicer looking fonts on macs
 	-webkit-font-smoothing: antialiased;
@@ -31,6 +25,18 @@ body {
 
 // Blocks
 // ------------------------------
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p,
+blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img,
+ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary, time, mark, audio, video, svg {
+	// set border-box on all tags (except for inputs)
+	box-sizing: border-box;
+}
 main {
 	// set the correct display mode in IE
 	display: block;
@@ -52,7 +58,6 @@ fieldset, legend, figure, details {
 img, iframe,
 video, audio, canvas, svg,
 embed, object {
-	box-sizing: border-box;
 	max-width: 100%;
 }
 img {
