@@ -31,8 +31,21 @@ $breakpoints: (
 
 // Fonts
 // ------------------------------
-$font-sans: Helvetica, Arial, sans-serif;
+
+// Font families
+$font-body: Helvetica, Arial, sans-serif;
 $font-code: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", monospace;
+
+// Font weight reference
+$font-thin:      100;
+$font-light:     200;
+$font-book:      300;
+$font-normal:    400;
+$font-medium:    500;
+$font-semibold:  600;
+$font-bold:      700;
+$font-extrabold: 800;
+$font-black:     900;
 
 
 // Colours
@@ -59,3 +72,10 @@ $blue-light:   lighten( $blue, 30% );
 // Spacing
 // ------------------------------
 $space: 2rem;
+
+
+// Animations
+// ------------------------------
+$default-easing: cubic-bezier(0.25, 1, 0.2, 1);
+$default-timing: 0.8s;
+$default-transition: $default-timing $default-easing;

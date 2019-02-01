@@ -14,7 +14,7 @@ html {
 	font-size: 62.5%;
 }
 body {
-	font-family: $font-sans;
+	font-family: $font-body;
 	@include body-text;
 	color: $grey-dark;
 	background-color: white;
