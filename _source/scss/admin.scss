@@ -10,3 +10,8 @@
 // ==================================================
 // Backend Styles
 // ==================================================
+
+// Fix for 'rem' units when using the Gutenberg editor
+html {
+	font-size: 62.5%;
+}

@@ -795,4 +795,14 @@ img.float-right, img.alignright, figure.float-right, figure.alignright{
 body{
   margin:20px;
 }
+
+.wp-block{
+  max-width:120rem;
+}
+.wp-block[data-align=wide]{
+  max-width:144rem;
+}
+.wp-block[data-align=full]{
+  max-width:none;
+}
 /*# sourceMappingURL=editor.css.map*/

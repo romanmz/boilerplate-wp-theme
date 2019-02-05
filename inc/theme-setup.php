@@ -26,13 +26,7 @@ function theme_setup() {
 	add_editor_style( 'assets/css/editor.css' );
 	add_theme_support( 'post-thumbnails' );
 	add_theme_support( 'title-tag' );
-	add_theme_support( 'html5', [
-		'search-form',
-		'comment-form',
-		'comment-list',
-		'gallery',
-		'caption',
-	]);
+	add_theme_support( 'html5', ['search-form', 'comment-form', 'comment-list', 'gallery', 'caption'] );
 	//add_theme_support( 'woocommerce' );
 	
 	// Register menus
@@ -44,6 +38,26 @@ function theme_setup() {
 	// Image sizes
 	// set_post_thumbnail_size( 960, 250, true );
 	// add_image_size( 'promo-pic', 320, 180 );
+}
+
+
+// Setup "Gutenberg" editor
+// ------------------------------
+add_action( 'after_setup_theme', 'theme_setup_gutenberg' );
+function theme_setup_gutenberg() {
+	
+	// General settings
+	// Declare support for gutenberg, makes it load the same css file specified in add_editor_style()
+	add_theme_support( 'editor-styles' );
+	// Reverse colour of the editor's ui elements if your styles have dark body background and light text
+	// add_theme_support( 'dark-editor-style' );
+	// Enable the 'wide' and 'full' alignment options
+	add_theme_support( 'align-wide' );
+	// Load the full standard block styles on the frontend (by default only basic styles are loaded on the frontend so you can easily theme the blocks)
+	// add_theme_support( 'wp-block-styles' );
+	// Automatically makes the embedded media elements responsive (note that this may cause conflicts with existing filters that do the same thing)
+	// add_theme_support( 'responsive-embeds' );
+	
 }
 
 

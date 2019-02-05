@@ -33,3 +33,26 @@
 body {
 	margin: 20px;
 }
+
+
+
+// ==================================================
+// Gutenberg Editor
+// ==================================================
+// A fix for rem units was added to admin.scss
+// this is because gutenberg automatically prefixes a class to all rules included in this stylesheet
+// but we need the fix for rem units to be on the root <html> element
+
+
+// Column widths
+// ------------------------------
+.wp-block {
+	max-width: 120rem;
+	
+	&[data-align="wide"] {
+		max-width: 144rem;
+	}
+	&[data-align="full"] {
+		max-width: none;
+	}
+}
