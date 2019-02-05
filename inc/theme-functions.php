@@ -264,3 +264,15 @@ function theme_comments_link_attributes( $attributes ) {
 	$attributes .= ' class="button"';
 	return $attributes;
 }
+
+
+// Page content pagination
+// ------------------------------
+function get_content_pagination() {
+	return wp_link_pages([
+		'before' => '<p class="content-pagination">'.__( 'Pages:' ),
+		'link_before' => '<span>',
+		'link_after' => '</span>',
+		'echo' => 0,
+	]);
+}

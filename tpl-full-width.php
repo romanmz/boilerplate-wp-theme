@@ -11,6 +11,7 @@
 		<article id="content" <?php post_class() ?>>
 			<h1><?php the_title() ?></h1>
 			<?php the_content() ?>
+			<?php echo get_content_pagination() ?>
 		</article><!-- #content -->
 		
 		
