@@ -298,7 +298,7 @@ a:hover, a:focus{
   text-decoration:none;
 }
 
-.button, .wp-block-file a.wp-block-file__button{
+.button, .wp-block-file a.wp-block-file__button, .wp-block-button__link{
   font-size:inherit;
   display:inline-block;
   width:auto;
@@ -318,11 +318,26 @@ a:hover, a:focus{
   position:relative;
   cursor:pointer;
 }
-.button:hover, .wp-block-file a.wp-block-file__button:hover, .button:focus, .wp-block-file a.wp-block-file__button:focus{
+.button:hover, .wp-block-file a.wp-block-file__button:hover, .wp-block-button__link:hover, .button:focus, .wp-block-file a.wp-block-file__button:focus, .wp-block-button__link:focus{
   color:white;
   background:#33bbff;
 }
 
+.wp-block-button{
+  margin:0 0 2rem;
+}
+@media (max-width: 579px){
+  .wp-block-button.wp-block-button{
+    text-align:center;
+  }
+}
+
+.is-style-outline .wp-block-button__link:not(.has-text-color){
+  color:#069;
+}
+.is-style-outline .wp-block-button__link:hover, .is-style-outline .wp-block-button__link:focus{
+  color:white;
+}
 .wp-block-file{
   margin:0 0 2rem;
   border:1px solid #EEE;

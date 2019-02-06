@@ -42,6 +42,51 @@
 }
 
 
+// Button block [gutenberg]
+// ------------------------------
+.wp-block-button {
+	margin: 0 0 2rem;
+	
+	@include screen-below( small ) {
+		&.wp-block-button {
+			text-align: center;
+		}
+	}
+}
+.wp-block-button__link {
+	@extend .button;
+	
+	// Style variation: Rounded (default)
+	.is-style-default & {}
+	
+	// Style variation: Outline
+	.is-style-outline & {
+		&:not( .has-text-color ) {
+			color: $blue;
+		}
+		&:hover, &:focus {
+			color: white;
+		}
+	}
+	
+	// Style variation: Squared
+	.is-style-squared & {}
+	
+	// Custom text colours
+	&.has-text-color
+	// &.has-[color-name]-color
+	
+	// Custom background colours
+	&.has-background {}
+	// &.has-[color-name]-background-color
+	
+	// Alignment variations
+	.aligncenter & {}
+	.alignleft & {}
+	.alignright & {}
+}
+
+
 // File block [gutenberg]
 // ------------------------------
 .wp-block-file {
