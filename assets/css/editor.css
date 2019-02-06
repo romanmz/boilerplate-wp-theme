@@ -376,8 +376,8 @@ q{
 }
 
 .wp-block-quote.is-style-large{
-  font-size:3.6rem;
-  line-height:1.3;
+  font-size:3rem;
+  line-height:1.4;
   margin:0 0 2rem;
   padding:0;
 }
@@ -389,6 +389,39 @@ q{
   line-height:1.5;
 }
 
+.wp-block-pullquote{
+  display:block;
+  border-top:3px solid #888;
+  border-bottom:3px solid #888;
+  padding:4rem 0;
+}
+.wp-block-pullquote blockquote{
+  font-size:2.4rem;
+  line-height:1.4;
+  margin:0 auto;
+  max-width:100rem;
+}
+.wp-block-pullquote p{
+  font:inherit !important;
+}
+.wp-block-pullquote cite{
+  font-size:2rem;
+  line-height:1.5;
+  font-style:normal;
+}
+.wp-block-pullquote.is-style-solid-color{
+  padding:4rem 3rem;
+}
+.wp-block-pullquote.is-style-solid-color blockquote{
+  max-width:100rem;
+}
+.wp-block-pullquote.is-style-solid-color blockquote:not(.has-text-color){
+  color:#333;
+}
+.wp-block-pullquote.is-style-solid-color blockquote p{
+  font:inherit;
+  margin:0 0 2rem;
+}
 pre, code{
   font-family:Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", monospace;
   background-color:#EEE;
@@ -903,27 +936,29 @@ thead td, tfoot td, thead th, tfoot th{
           hyphens:auto;
 }
 
-.float-left, .alignleft, .wp-block-image .alignleft, .wp-block-gallery.alignleft{
+.float-left, .alignleft, .wp-block-pullquote.alignleft, .wp-block-image .alignleft, .wp-block-gallery.alignleft{
   float:left;
   margin:0 2rem 2rem 0;
 }
 
-.float-right, .alignright, .wp-block-image .alignright, .wp-block-gallery.alignright{
+.float-right, .alignright, .wp-block-pullquote.alignright, .wp-block-image .alignright, .wp-block-gallery.alignright{
   float:right;
   margin:0 0 2rem 2rem;
 }
 
-.float-left, .alignleft, .wp-block-image .alignleft, .wp-block-gallery.alignleft,
+.float-left, .alignleft, .wp-block-pullquote.alignleft, .wp-block-image .alignleft, .wp-block-gallery.alignleft,
 .float-right,
 .alignright,
+.wp-block-pullquote.alignright,
 .wp-block-image .alignright,
 .wp-block-gallery.alignright{
   max-width:calc( 50% - 2rem );
 }
 @media (max-width: 579px){
-  .float-left, .alignleft, .wp-block-image .alignleft, .wp-block-gallery.alignleft,
+  .float-left, .alignleft, .wp-block-pullquote.alignleft, .wp-block-image .alignleft, .wp-block-gallery.alignleft,
 .float-right,
 .alignright,
+.wp-block-pullquote.alignright,
 .wp-block-image .alignright,
 .wp-block-gallery.alignright{
     float:none;
