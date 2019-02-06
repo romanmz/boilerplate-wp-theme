@@ -40,3 +40,37 @@ p {
 	}
 	// .has-[custom-color-name]-background-color.has-[custom-color-name]-background-color
 }
+
+
+// Cover block [gutenberg]
+// ------------------------------
+.wp-block-cover {
+	:before {}
+	.wp-block-cover__video-background {}
+	.wp-block-cover-text {}
+	
+	// Background settings
+	&.has-parallax {}
+	&.has-background-dim::before {}
+	&.has-background-dim-10::before {}
+	&.has-background-dim-20::before {}
+	&.has-background-dim-30::before {}
+	&.has-background-dim-40::before {}
+	&.has-background-dim-50::before {}
+	&.has-background-dim-60::before {}
+	&.has-background-dim-70::before {}
+	&.has-background-dim-80::before {}
+	&.has-background-dim-90::before {}
+	&.has-background-dim-100::before {}
+	
+	// Content variations
+	&.has-left-content {}
+	&.has-right-content {}
+	
+	// Alignment variations
+	&.aligncenter {}
+	&.alignleft {}
+	&.alignright {}
+	&.alignwide {}
+	&.alignfull {}
+}
