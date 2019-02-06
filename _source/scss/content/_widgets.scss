@@ -97,3 +97,67 @@
 	&.alignwide {}
 	&.alignfull {}
 }
+
+
+// Latest Posts block [gutenberg]
+// ------------------------------
+.wp-block-latest-posts {
+	li {}
+	a {}
+	.wp-block-latest-posts__post-date {
+		font: inherit;
+		color: $grey-medium;
+	}
+	
+	// Block settings
+	&.has-dates {}
+	
+	// Style variation: Grid
+	&.is-grid {
+		margin: 0 0 0 -#{$space};
+		
+		li {
+			flex: none;
+			margin: 0 0 $space $space;
+			border: 1px solid $grey-lighter;
+			padding: 1rem;
+			border-radius: 5px;
+			width: calc( 100% - #{$space} );
+			box-sizing: border-box;
+			
+			@include screen-above( small ) {
+				width: calc( 100% / 2 - #{$space} );
+			}
+		}
+	}
+	@include screen-above( medium ) {
+		&.columns-3 li {
+			width: calc( 100% / 3 - #{$space} );
+		}
+		&.columns-4 li {
+			width: calc( 100% / 4 - #{$space} );
+		}
+		&.columns-5 li {
+			width: calc( 100% / 5 - #{$space} );
+		}
+		&.columns-6 li {
+			width: calc( 100% / 6 - #{$space} );
+		}
+	}
+	
+	// Alignment variations
+	&.aligncenter {}
+	&.alignwide {
+		&.is-grid {
+			margin-left: calc( 50% - #{$space / 2} );
+			width: calc( 100% + 24rem + #{$space} );
+			max-width: calc( 100vw + #{$space} );
+		}
+	}
+	&.alignfull {
+		&.is-grid {
+			margin-left: calc( 50% - #{$space / 2} );
+			width: calc( 100vw + #{$space} );
+		}
+	}
+}
