@@ -23,3 +23,28 @@
 	&.alignwide {}
 	&.alignfull {}
 }
+
+
+// Video block [gutenberg]
+// ------------------------------
+.wp-block-video {
+	margin-left: auto;
+	margin-right: auto;
+	
+	video {
+		width: 100%;
+	}
+	figcaption {
+		margin: 1rem 0 0;
+		font: inherit;
+		color: inherit;
+		text-align: inherit;
+	}
+	
+	// Alignment variations
+	&.aligncenter {}
+	&.alignleft {}
+	&.alignright {}
+	&.alignwide {}
+	&.alignfull {}
+}
