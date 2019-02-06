@@ -12,5 +12,33 @@ hr {
 	border-top: 1px solid $grey-light;
 	padding: 0;
 	height: 1px;
-	margin: $space 0;
+	margin: $space auto;
+}
+
+
+// Separator block [gutenberg]
+// ------------------------------
+.wp-block-separator {
+	
+	// Style variation: Short line (default)
+	&.is-style-default,
+	&:not(.is-style-wide):not(.is-style-dots) {
+		max-width: 100px;
+	}
+	
+	// Style variation: Wide
+	&.is-style-wide {}
+	
+	// Style variation: dots
+	&.is-style-dots {
+		&:before {
+			font-family: inherit;
+			@include font-size-xlarge;
+			line-height: 1;
+			font-weight: $font-bold;
+			letter-spacing: 1.2em;
+			padding-left: 1em;
+			color: $grey-medium;
+		}
+	}
 }

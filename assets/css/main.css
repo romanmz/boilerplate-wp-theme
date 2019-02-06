@@ -268,7 +268,21 @@ hr{
   border-top:1px solid #BBB;
   padding:0;
   height:1px;
-  margin:2rem 0;
+  margin:2rem auto;
+}
+
+.wp-block-separator.is-style-default, .wp-block-separator:not(.is-style-wide):not(.is-style-dots){
+  max-width:100px;
+}
+.wp-block-separator.is-style-dots:before{
+  font-family:inherit;
+  font-size:3rem;
+  line-height:1.4;
+  line-height:1;
+  font-weight:700;
+  letter-spacing:1.2em;
+  padding-left:1em;
+  color:#888;
 }
 
 a{
