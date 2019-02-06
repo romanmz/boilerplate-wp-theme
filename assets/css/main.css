@@ -918,6 +918,24 @@ thead td, tfoot td, thead th, tfoot th{
 .wp-block-categories{
   margin:0 0 2rem;
 }
+.wp-block-latest-comments{
+  padding:0;
+}
+.wp-block-latest-comments .wp-block-latest-comments__comment{
+  font:inherit;
+  margin-bottom:1rem;
+}
+.wp-block-latest-comments .wp-block-latest-comments__comment-date{
+  font:inherit;
+  color:#888;
+}
+.wp-block-latest-comments .wp-block-latest-comments__comment-excerpt p{
+  font:inherit;
+  margin:0 0 2rem;
+}
+.wp-block-latest-comments .wp-block-latest-comments__comment-excerpt > :last-child{
+  margin-bottom:0;
+}
 .no-margin{
   margin-bottom:0;
 }
