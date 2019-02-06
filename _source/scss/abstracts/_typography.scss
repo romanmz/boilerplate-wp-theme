@@ -11,45 +11,41 @@
 
 // Font sizes
 // ------------------------------
-@mixin base-size {
-	font-size: 1.6rem;
-	line-height: 1.8;
-}
-@mixin h1-size {
+@mixin font-size-h1 {
 	font-size: 5rem;
 	line-height: 1.2;
 }
-@mixin h2-size {
+@mixin font-size-xlarge {
 	font-size: 3.6rem;
 	line-height: 1.3;
 }
-@mixin h3-size {
+@mixin font-size-large {
 	font-size: 2.4rem;
 	line-height: 1.4;
 }
-@mixin h4-size {
+@mixin font-size-medium {
 	font-size: 2rem;
 	line-height: 1.5;
 }
-@mixin h5-size {
+@mixin font-size-normal {
 	font-size: 1.6rem;
 	line-height: 1.8;
 }
-@mixin h6-size {
-	font-size: 1.6rem;
-	line-height: 1.8;
+@mixin font-size-small {
+	font-size: 1.2rem;
+	line-height: 1.6;
 }
 
 
 // Font styles
 // ------------------------------
 @mixin body-text {
-	@include base-size;
+	@include font-size-normal;
 	font-family: $font-body;
 	color: $grey-dark;
 }
 @mixin caption-text {
-	@include base-size;
+	@include font-size-normal;
 	font-weight: $font-semibold;
 	text-transform: uppercase;
 }

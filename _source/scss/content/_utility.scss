@@ -3,6 +3,25 @@
 // ==================================================
 
 
+// Standard headings
+// ------------------------------
+.has-small-font-size {
+	@include font-size-small;
+}
+.has-normal-font-size {
+	@include font-size-normal;
+}
+.has-medium-font-size {
+	@include font-size-medium;
+}
+.has-large-font-size {
+	@include font-size-large;
+}
+.has-huge-font-size {
+	@include font-size-xlarge;
+}
+
+
 // Spacing
 // ------------------------------
 .no-margin {

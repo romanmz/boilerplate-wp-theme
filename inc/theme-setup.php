@@ -58,6 +58,42 @@ function theme_setup_gutenberg() {
 	// Automatically makes the embedded media elements responsive (note that this may cause conflicts with existing filters that do the same thing)
 	// add_theme_support( 'responsive-embeds' );
 	
+	// Custom font sizes
+	// Disable the option for users to enter any font size on paragraph blocks, but they can still select an option from the dropdown
+	add_theme_support( 'disable-custom-font-sizes' );
+	// Customize the list of font sizes available on the font size dropdown
+	// for any new or updated sizes you'll need to manually edit the frontend stylesheets to match those new settings (the editor should work automatically)
+	add_theme_support( 'editor-font-sizes', [
+		// these sizes are the ones available by default
+		// NOTE: the 'normal' setting won't output any class name or inline styles on the frontend, so it will always fall back to your default font size
+		['name' => 'Small',  'size' => 14, 'slug' => 'small'],  // default is 13
+		['name' => 'Normal', 'size' => 16, 'slug' => 'normal'], // default is 16
+		['name' => 'Medium', 'size' => 20, 'slug' => 'medium'], // default is 20
+		['name' => 'Large',  'size' => 24, 'slug' => 'large'],  // default is 36
+		['name' => 'Huge',   'size' => 36, 'slug' => 'huge'],   // default is 42
+		// these are not enabled by default, but are included on the default frontend styles
+		// ['name' => 'Regular', 'size' => 16, 'slug' => 'regular'],
+		// ['name' => 'Larger',  'size' => 42, 'slug' => 'larger'],
+	]);
+	
+	// Custom colours
+	// Disable the option for users to enter any hex values on blocks that allow colour variations, but they can still select from the predefined options
+	add_theme_support( 'disable-custom-colors' );
+	// Customize the list of colours available
+	// for any new or updated colours you'll need to manually edit the frontend stylesheets to match those new settings (the editor should work automatically)
+	add_theme_support( 'editor-color-palette', [
+		['name' => 'Pale pink',             'slug' => 'pale-pink',             'color' => '#f78da7'],
+		['name' => 'Vivid red',             'slug' => 'vivid-red',             'color' => '#cf2e2e'],
+		['name' => 'Luminous vivid orange', 'slug' => 'luminous-vivid-orange', 'color' => '#ff6900'],
+		['name' => 'Luminous vivid amber',  'slug' => 'luminous-vivid-amber',  'color' => '#fcb900'],
+		['name' => 'Light green cyan',      'slug' => 'light-green-cyan',      'color' => '#7bdcb5'],
+		['name' => 'Vivid green cyan',      'slug' => 'vivid-green-cyan',      'color' => '#00d084'],
+		['name' => 'Pale cyan blue',        'slug' => 'pale-cyan-blue',        'color' => '#8ed1fc'],
+		['name' => 'Vivid cyan blue',       'slug' => 'vivid-cyan-blue',       'color' => '#0693e3'],
+		['name' => 'Very light grey',       'slug' => 'very-light-gray',       'color' => '#eeeeee'],
+		['name' => 'Cyan bluish grey',      'slug' => 'cyan-bluish-gray',      'color' => '#abb8c3'],
+		['name' => 'Very dark gray',        'slug' => 'very-dark-gray',        'color' => '#313131'],
+	]);
 }
 
 

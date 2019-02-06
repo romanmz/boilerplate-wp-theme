@@ -6,20 +6,20 @@
 // Standard headings
 // ------------------------------
 h1, .h1 {
-	@include h1-size;
+	@include font-size-h1;
 }
 h2, .h2 {
-	@include h2-size;
+	@include font-size-xlarge;
 }
 h3, .h3 {
-	@include h3-size;
+	@include font-size-large;
 }
 h4, .h4 {
-	@include h4-size;
+	@include font-size-medium;
 }
 h5, .h5 {
-	@include h5-size;
+	@include font-size-normal;
 }
 h6, .h6 {
-	@include h6-size;
+	@include font-size-normal;
 }

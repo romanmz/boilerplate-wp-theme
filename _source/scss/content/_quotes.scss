@@ -6,7 +6,7 @@
 // Standard quotes
 // ------------------------------
 blockquote {
-	@include h4-size;
+	@include font-size-medium;
 	color: $grey-medium;
 	
 	cite {
