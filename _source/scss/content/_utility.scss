@@ -128,7 +128,7 @@ p.has-background {
 .float-right {
 	float: right;
 }
-.clear{
+.clear {
 	clear: both;
 }
 img, figure {
@@ -137,6 +137,17 @@ img, figure {
 	}
 	&.float-right {
 		margin: 0 0 $space $space;
+	}
+	&.float-left,
+	&.float-right {
+		max-width: calc( 50% - #{ $space } );
+		
+		@include screen-below( small ) {
+			float: none;
+			margin-left: auto;
+			margin-right: auto;
+			max-width: 100%;
+		}
 	}
 }
 

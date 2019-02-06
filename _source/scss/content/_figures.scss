@@ -6,11 +6,49 @@
 // Standard figures
 // ------------------------------
 figure {
+	display: table;
 	margin-left: auto;
 	margin-right: auto;
 	padding: $space;
-	max-width: 60rem;
 	text-align: center;
 	background: $grey-lighter;
+	box-sizing: border-box;
+	
+	img {
+		display: block;
+		margin: 0 auto;
+	}
 }
-figcaption {}
+figcaption {
+	margin: 1rem 0 0;
+}
+
+
+// Image block [gutenberg]
+// ------------------------------
+.wp-block-image {
+	margin: 0 auto $space;
+	
+	figcaption {
+		display: block !important;
+		margin: 1rem 0 0;
+		font: inherit;
+		color: inherit;
+		text-align: inherit;
+	}
+	
+	// Size and alignment variations
+	&.is-resized {
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.aligncenter {}
+	.alignleft {
+		@extend .alignleft;
+	}
+	.alignright {
+		@extend .alignright;
+	}
+	&.alignwide {}
+	&.alignfull {}
+}
