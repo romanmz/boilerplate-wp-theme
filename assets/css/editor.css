@@ -501,6 +501,7 @@ figure img{
 
 figcaption,
 .figcaption,
+.wp-block-embed figcaption,
 .wp-block-video figcaption,
 .wp-block-audio figcaption,
 .wp-block-image figcaption{
@@ -549,6 +550,10 @@ figcaption,
 }
 .wp-block-video video{
   width:100%;
+}
+.wp-block-embed{
+  display:block;
+  margin:0 auto 2rem;
 }
 fieldset{
   padding:0;
@@ -1094,32 +1099,34 @@ thead td, tfoot td, thead th, tfoot th{
           hyphens:auto;
 }
 
-.float-left, .alignleft, .wp-block-pullquote.alignleft, .wp-block-image .alignleft, .wp-block-gallery.alignleft, .wp-block-categories.alignleft{
+.float-left, .alignleft, .wp-block-pullquote.alignleft, .wp-block-image .alignleft, .wp-block-gallery.alignleft, .wp-block-embed.alignleft, .wp-block-categories.alignleft{
   float:left;
   margin:0 2rem 2rem 0;
 }
 
-.float-right, .alignright, .wp-block-pullquote.alignright, .wp-block-image .alignright, .wp-block-gallery.alignright, .wp-block-categories.alignright{
+.float-right, .alignright, .wp-block-pullquote.alignright, .wp-block-image .alignright, .wp-block-gallery.alignright, .wp-block-embed.alignright, .wp-block-categories.alignright{
   float:right;
   margin:0 0 2rem 2rem;
 }
 
-.float-left, .alignleft, .wp-block-pullquote.alignleft, .wp-block-image .alignleft, .wp-block-gallery.alignleft, .wp-block-categories.alignleft,
+.float-left, .alignleft, .wp-block-pullquote.alignleft, .wp-block-image .alignleft, .wp-block-gallery.alignleft, .wp-block-embed.alignleft, .wp-block-categories.alignleft,
 .float-right,
 .alignright,
 .wp-block-pullquote.alignright,
 .wp-block-image .alignright,
 .wp-block-gallery.alignright,
+.wp-block-embed.alignright,
 .wp-block-categories.alignright{
   max-width:calc( 50% - 2rem );
 }
 @media (max-width: 579px){
-  .float-left, .alignleft, .wp-block-pullquote.alignleft, .wp-block-image .alignleft, .wp-block-gallery.alignleft, .wp-block-categories.alignleft,
+  .float-left, .alignleft, .wp-block-pullquote.alignleft, .wp-block-image .alignleft, .wp-block-gallery.alignleft, .wp-block-embed.alignleft, .wp-block-categories.alignleft,
 .float-right,
 .alignright,
 .wp-block-pullquote.alignright,
 .wp-block-image .alignright,
 .wp-block-gallery.alignright,
+.wp-block-embed.alignright,
 .wp-block-categories.alignright{
     float:none;
     margin-left:auto;

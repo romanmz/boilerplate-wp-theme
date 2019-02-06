@@ -147,8 +147,8 @@ function theme_show_kitchensink( $args ) {
 
 // Add <div> to embeds
 // ------------------------------
-add_filter( 'embed_oembed_html', 'theme_responsive_embeds', 99, 4 );
-add_filter( 'embed_handler_html', 'theme_responsive_embeds', 99, 3 );
+// add_filter( 'embed_oembed_html', 'theme_responsive_embeds', 99, 4 );
+// add_filter( 'embed_handler_html', 'theme_responsive_embeds', 99, 3 );
 function theme_responsive_embeds( $html, $url, $attr, $post_id=0 ) {
 	
 	// Apply only to some embeds

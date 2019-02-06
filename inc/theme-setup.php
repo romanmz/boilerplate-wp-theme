@@ -55,8 +55,8 @@ function theme_setup_gutenberg() {
 	add_theme_support( 'align-wide' );
 	// Load the full standard block styles on the frontend (by default only basic styles are loaded on the frontend so you can easily theme the blocks)
 	// add_theme_support( 'wp-block-styles' );
-	// Automatically makes the embedded media elements responsive (note that this may cause conflicts with existing filters that do the same thing)
-	// add_theme_support( 'responsive-embeds' );
+	// Automatically makes the embedded media elements responsive (if you enable this, disable any existing filters that do the same thing to avoid conflicts)
+	add_theme_support( 'responsive-embeds' );
 	
 	// Custom font sizes
 	// Disable the option for users to enter any font size on paragraph blocks, but they can still select an option from the dropdown

@@ -42,3 +42,36 @@
 	&.alignwide {}
 	&.alignfull {}
 }
+
+
+// Embed blocks [gutenberg]
+// ------------------------------
+.wp-block-embed {
+	display: block;
+	margin: 0 auto $space;
+	
+	.wp-block-embed__wrapper {
+		&:before {}
+		iframe {}
+	}
+	figcaption {
+		@extend .figcaption;
+	}
+	
+	// Embed settings
+	// &.is-type-[embed-type]
+	// &.is-provider-[embed-provider]
+	// &.wp-has-aspect-ratio
+	// &.wp-embed-aspect-[embed-aspect-ratio]
+	
+	// Alignment variations
+	&.aligncenter {}
+	&.alignleft {
+		@extend .alignleft;
+	}
+	&.alignright {
+		@extend .alignright;
+	}
+	&.alignwide {}
+	&.alignfull {}
+}
