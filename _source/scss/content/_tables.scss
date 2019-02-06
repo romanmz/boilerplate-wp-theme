@@ -57,3 +57,64 @@ td, th {
 		}
 	}
 }
+
+
+// Table block [gutenberg]
+// ------------------------------
+.wp-block-table {
+	
+	// Table settings
+	&.has-fixed-layout {}
+	
+	// Style variation: Stripes
+	&.is-style-stripes {
+		border-collapse: collapse;
+		
+		tr:nth-child(odd) {
+			background-color: $grey-lighter;
+		}
+		td, th {
+			border: none;
+		}
+		thead,
+		tfoot {
+			tr {
+				background: none !important;
+			}
+			td, th {
+				color: $grey-lighter;
+				background-color: $grey-dark;
+			}
+		}
+		
+		&.responsive-table {
+			@include screen-below( small ) {
+				tr:nth-child(odd) {
+					background-color: transparent;
+				}
+				th {
+					color: $grey-lighter;
+					background: $grey-dark;
+				}
+				td:nth-child(even) {
+					background-color: $grey-lighter;
+				}
+			}
+		}
+	}
+	
+	// Alignment variations
+	&.aligncenter,
+	&.alignleft,
+	&.alignright {
+		@include screen-below( small ) {
+			width: 100%;
+		}
+	}
+	&.alignwide {
+		@extend .alignwide;
+	}
+	&.alignfull {
+		@extend .alignfull;
+	}
+}
