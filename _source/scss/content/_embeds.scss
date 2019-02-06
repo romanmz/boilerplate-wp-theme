@@ -10,10 +10,7 @@
 		min-width: 0;
 	}
 	figcaption {
-		margin: 1rem 0 0;
-		font: inherit;
-		color: inherit;
-		text-align: inherit;
+		@extend .figcaption;
 	}
 	
 	// Alignment variations
@@ -35,10 +32,7 @@
 		width: 100%;
 	}
 	figcaption {
-		margin: 1rem 0 0;
-		font: inherit;
-		color: inherit;
-		text-align: inherit;
+		@extend .figcaption;
 	}
 	
 	// Alignment variations

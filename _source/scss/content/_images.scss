@@ -19,8 +19,12 @@ figure {
 		margin: 0 auto;
 	}
 }
-figcaption {
+figcaption,
+.figcaption {
 	margin: 1rem 0 0;
+	font: inherit;
+	color: inherit;
+	text-align: inherit;
 	box-sizing: border-box;
 }
 
@@ -32,10 +36,7 @@ figcaption {
 	
 	figcaption {
 		display: block !important;
-		margin: 1rem 0 0;
-		font: inherit;
-		color: inherit;
-		text-align: inherit;
+		@extend .figcaption;
 	}
 	
 	// Size variations
