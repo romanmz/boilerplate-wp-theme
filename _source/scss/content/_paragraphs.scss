@@ -32,13 +32,13 @@ p {
 	
 	// Custom text colours
 	&.has-text-color {}
-	// .has-[custom-color-name]-color.has-[custom-color-name]-color
+	// .has-[color-name]-color.has-[color-name]-color
 	
 	// Custom background colours
 	&.has-background {
 		padding: 2rem 3rem;
 	}
-	// .has-[custom-color-name]-background-color.has-[custom-color-name]-background-color
+	// .has-[color-name]-background-color.has-[color-name]-background-color
 }
 
 
@@ -48,6 +48,9 @@ p {
 	:before {}
 	.wp-block-cover__video-background {}
 	.wp-block-cover-text {}
+	
+	// Custom background colours
+	// .has-[color-name]-background-color
 	
 	// Background settings
 	&.has-parallax {}
