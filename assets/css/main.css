@@ -912,6 +912,9 @@ thead td, tfoot td, thead th, tfoot th{
 .wp-block-media-text .wp-block-media-text__content > :last-child{
   margin-bottom:0;
 }
+.wp-block-archives{
+  margin:0 0 2rem;
+}
 .no-margin{
   margin-bottom:0;
 }

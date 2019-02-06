@@ -1,0 +1,26 @@
+// ==================================================
+// Widgets
+// ==================================================
+
+
+// Archives block [gutenberg]
+// ------------------------------
+.wp-block-archives {
+	margin: 0 0 2rem;
+	
+	// Style variation: List (default)
+	&.wp-block-archives-list {
+		li {}
+		a {}
+	}
+	
+	// Style variation: Dropdown
+	&.wp-block-archives-dropdown {
+		label {}
+		select {}
+	}
+	
+	&.aligncenter {}
+	&.alignleft {}
+	&.alignright {}
+}
