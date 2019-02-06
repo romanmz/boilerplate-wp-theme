@@ -20,6 +20,7 @@
 .has-huge-font-size {
 	@include font-size-xlarge;
 }
+// .has-[font-size]-font-size {}
 
 
 // Paragraphs decoration [gutenberg]
@@ -28,11 +29,8 @@ p.has-drop-cap:not(:focus) {
 	&:first-letter {
 		font-size: 6.3em;
 	}
-	&:after {}
 }
-p.has-text-color {
-	a {}
-}
+p.has-text-color {}
 // .has-[custom-color-name]-color.has-[custom-color-name]-color
 p.has-background {
 	padding: 2rem 3rem;

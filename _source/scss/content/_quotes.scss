@@ -18,3 +18,19 @@ blockquote {
 q {
 	color: $grey-medium;
 }
+
+
+// Large quotes [gutenberg]
+// ------------------------------
+.wp-block-quote.is-style-large {
+	@include font-size-xlarge;
+	margin: 0 0 $space;
+	padding: 0;
+	
+	p {
+		font: inherit;
+	}
+	cite {
+		@include font-size-medium;
+	}
+}
