@@ -230,7 +230,7 @@ h6, .h6{
 }
 
 .has-small-font-size{
-  font-size:1.2rem;
+  font-size:1.4rem;
   line-height:1.6;
 }
 
@@ -284,7 +284,8 @@ a:hover, a:focus{
   text-decoration:none;
 }
 
-.button{
+.button, .wp-block-file a.wp-block-file__button{
+  font-size:inherit;
   display:inline-block;
   width:auto;
   border:none;
@@ -303,11 +304,39 @@ a:hover, a:focus{
   position:relative;
   cursor:pointer;
 }
-.button:hover, .button:focus{
+.button:hover, .wp-block-file a.wp-block-file__button:hover, .button:focus, .wp-block-file a.wp-block-file__button:focus{
   color:white;
   background:#33bbff;
 }
 
+.wp-block-file{
+  margin:0 0 2rem;
+  border:1px solid #EEE;
+  padding:2rem;
+  border-radius:5px;
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-box-align:center;
+      -ms-flex-align:center;
+          align-items:center;
+  -webkit-box-pack:center;
+      -ms-flex-pack:center;
+          justify-content:center;
+}
+.wp-block-file a{
+  text-align:left;
+}
+.wp-block-file a.wp-block-file__button{
+  -webkit-box-flex:0;
+      -ms-flex:none;
+          flex:none;
+  font-size:1.4rem;
+  line-height:1.6;
+  padding:0.5rem 1rem;
+  margin-left:1rem;
+  border-radius:100vw;
+}
 ul, ol{
   padding:0 0 0 2rem;
 }
@@ -423,7 +452,7 @@ figcaption{
   padding:0;
 }
 .wp-block-gallery .blocks-gallery-item figcaption{
-  font-size:1.2rem;
+  font-size:1.4rem;
   line-height:1.6;
   padding-bottom:1rem;
 }

@@ -15,6 +15,7 @@
 // ------------------------------
 // If the site will use WooCommerce, beware of possible conflicts with WC's own .button class (you can just rename this class to something else)
 .button {
+	font-size: inherit;
 	display: inline-block;
 	width: auto;
 	border: none;
@@ -38,4 +39,36 @@
 		color: white;
 		background: $blue-light;
 	}
+}
+
+
+// File block [gutenberg]
+// ------------------------------
+.wp-block-file {
+	margin: 0 0 $space;
+	border: 1px solid $grey-lighter;
+	padding: 2rem;
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+	a {
+		text-align: left;
+	}
+	a.wp-block-file__button {
+		flex: none;
+		@extend .button;
+		@include font-size-small;
+		padding: 0.5rem 1rem;
+		margin-left: 1rem;
+		border-radius: 100vw;
+	}
+	
+	// Alignment variations
+	&.aligncenter {}
+	&.alignleft {}
+	&.alignright {}
+	&.alignwide {}
+	&.alignfull {}
 }
