@@ -73,8 +73,8 @@ function shortcode_sample_html( $atts=[], $content='' ) {
 <pre>
 // &lt;pre&gt; formatted text:
 function food_alert( <var>taste</var> ) {
-var <var>chinese_food</var> = "Chinese food is "+<var>taste</var>;
-console.log( <var>chinese_food</var> );
+    var <var>chinese_food</var> = "Chinese food is "+<var>taste</var>;
+    console.log( <var>chinese_food</var> );
 }
 food_alert( <kbd>"Yummy!"</kbd> );
 log: <samp>Chinese food is Yummy!</samp></pre>
