@@ -17,3 +17,26 @@
 		min-width: 20rem;
 	}
 }
+
+
+// Columns block [gutenberg]
+// ------------------------------
+.wp-block-columns {
+	margin-left: -$space;
+	flex-wrap: wrap !important;
+	
+	&.has-2-columns {}
+	&.has-3-columns {}
+	&.has-4-columns {}
+	&.has-5-columns {}
+	&.has-6-columns {}
+}
+.wp-block-column {
+	flex: 1 1 0;
+	margin: 0 0 $space $space !important;
+	min-width: 20rem;
+	
+	> :last-child {
+		margin-bottom: 0;
+	}
+}

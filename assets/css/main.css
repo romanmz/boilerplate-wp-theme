@@ -882,6 +882,22 @@ thead td, tfoot td, thead th, tfoot th{
   min-width:20rem;
 }
 
+.wp-block-columns{
+  margin-left:-2rem;
+  -ms-flex-wrap:wrap !important;
+      flex-wrap:wrap !important;
+}
+.wp-block-column{
+  -webkit-box-flex:1;
+      -ms-flex:1 1 0px;
+          flex:1 1 0;
+  margin:0 0 2rem 2rem !important;
+  min-width:20rem;
+}
+.wp-block-column > :last-child{
+  margin-bottom:0;
+}
+
 .no-margin{
   margin-bottom:0;
 }
