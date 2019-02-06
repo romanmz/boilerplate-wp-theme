@@ -20,7 +20,37 @@
 		select {}
 	}
 	
+	// Alignment variations
 	&.aligncenter {}
 	&.alignleft {}
 	&.alignright {}
+}
+
+
+// Categories block [gutenberg]
+// ------------------------------
+.wp-block-categories {
+	margin: 0 0 2rem;
+	
+	// Style variation: List (default)
+	&.wp-block-categories-list {
+		li {}
+		a {}
+		ul.children {}
+	}
+	
+	// Style variation: Dropdown
+	&.wp-block-categories-dropdown {
+		select {}
+	}
+	
+	// Alignment variations
+	&.aligncenter {}
+	&.alignleft {
+		@extend .alignleft;
+	}
+	&.alignright {
+		@extend .alignright;
+	}
+	&.alignfull {}
 }

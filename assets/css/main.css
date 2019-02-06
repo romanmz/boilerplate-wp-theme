@@ -915,6 +915,9 @@ thead td, tfoot td, thead th, tfoot th{
 .wp-block-archives{
   margin:0 0 2rem;
 }
+.wp-block-categories{
+  margin:0 0 2rem;
+}
 .no-margin{
   margin-bottom:0;
 }
@@ -1034,31 +1037,33 @@ thead td, tfoot td, thead th, tfoot th{
           hyphens:auto;
 }
 
-.float-left, .alignleft, .wp-block-pullquote.alignleft, .wp-block-image .alignleft, .wp-block-gallery.alignleft{
+.float-left, .alignleft, .wp-block-pullquote.alignleft, .wp-block-image .alignleft, .wp-block-gallery.alignleft, .wp-block-categories.alignleft{
   float:left;
   margin:0 2rem 2rem 0;
 }
 
-.float-right, .alignright, .wp-block-pullquote.alignright, .wp-block-image .alignright, .wp-block-gallery.alignright{
+.float-right, .alignright, .wp-block-pullquote.alignright, .wp-block-image .alignright, .wp-block-gallery.alignright, .wp-block-categories.alignright{
   float:right;
   margin:0 0 2rem 2rem;
 }
 
-.float-left, .alignleft, .wp-block-pullquote.alignleft, .wp-block-image .alignleft, .wp-block-gallery.alignleft,
+.float-left, .alignleft, .wp-block-pullquote.alignleft, .wp-block-image .alignleft, .wp-block-gallery.alignleft, .wp-block-categories.alignleft,
 .float-right,
 .alignright,
 .wp-block-pullquote.alignright,
 .wp-block-image .alignright,
-.wp-block-gallery.alignright{
+.wp-block-gallery.alignright,
+.wp-block-categories.alignright{
   max-width:calc( 50% - 2rem );
 }
 @media (max-width: 579px){
-  .float-left, .alignleft, .wp-block-pullquote.alignleft, .wp-block-image .alignleft, .wp-block-gallery.alignleft,
+  .float-left, .alignleft, .wp-block-pullquote.alignleft, .wp-block-image .alignleft, .wp-block-gallery.alignleft, .wp-block-categories.alignleft,
 .float-right,
 .alignright,
 .wp-block-pullquote.alignright,
 .wp-block-image .alignright,
-.wp-block-gallery.alignright{
+.wp-block-gallery.alignright,
+.wp-block-categories.alignright{
     float:none;
     margin-left:auto;
     margin-right:auto;
