@@ -21,6 +21,7 @@ figure {
 }
 figcaption {
 	margin: 1rem 0 0;
+	box-sizing: border-box;
 }
 
 
@@ -37,16 +38,61 @@ figcaption {
 		text-align: inherit;
 	}
 	
-	// Size and alignment variations
+	// Size variations
 	&.is-resized {
 		margin-left: auto;
 		margin-right: auto;
 	}
+	
+	// Alignment variations
 	.aligncenter {}
 	.alignleft {
 		@extend .alignleft;
 	}
 	.alignright {
+		@extend .alignright;
+	}
+	&.alignwide {}
+	&.alignfull {}
+}
+
+
+// Gallery block [gutenberg]
+// ------------------------------
+.wp-block-gallery {
+	.blocks-gallery-item {
+		flex-grow: 0;
+		
+		figure {
+			padding: 0;
+		}
+		figcaption {
+			@include font-size-small;
+			padding-bottom: 1rem;
+		}
+	}
+	
+	// Size variations
+	&.is-cropped {}
+	
+	// Column variations
+	&.columns-1 {}
+	&.columns-2 {}
+	&.columns-3 {}
+	&.columns-4 {}
+	&.columns-5 {}
+	&.columns-6 {}
+	&.columns-7 {}
+	&.columns-8 {}
+	
+	// Alignment variations
+	&.aligncenter {
+		justify-content: center;
+	}
+	&.alignleft {
+		@extend .alignleft;
+	}
+	&.alignright {
 		@extend .alignright;
 	}
 	&.alignwide {}

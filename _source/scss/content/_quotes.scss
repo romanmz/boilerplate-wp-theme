@@ -23,6 +23,8 @@ q {
 // Quote block [gutenberg]
 // ------------------------------
 .wp-block-quote{
+	
+	// Style variation: Large
 	&.is-style-large {
 		@include font-size-xlarge;
 		margin: 0 0 $space;
