@@ -1,0 +1,25 @@
+// ==================================================
+// Embeds
+// ==================================================
+
+
+// Audio block [gutenberg]
+// ------------------------------
+.wp-block-audio {
+	audio {
+		min-width: 0;
+	}
+	figcaption {
+		margin: 1rem 0 0;
+		font: inherit;
+		color: inherit;
+		text-align: inherit;
+	}
+	
+	// Alignment variations
+	&.aligncenter {}
+	&.alignleft {}
+	&.alignright {}
+	&.alignwide {}
+	&.alignfull {}
+}

@@ -13,11 +13,13 @@
 	@extend .float-right;
 }
 .aligncenter {
+	clear: both;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
 }
 .alignwide {
+	clear: both;
 	margin-left: 50%;
 	transform: translateX( -50% );
 	max-width: 100vw;
@@ -25,6 +27,7 @@
 	box-sizing: border-box;
 }
 .alignfull {
+	clear: both;
 	margin-left: 50%;
 	transform: translateX( -50% );
 	max-width: none;
