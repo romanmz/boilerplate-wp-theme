@@ -408,6 +408,20 @@ samp{
   font-weight:bolder;
 }
 
+.wp-block-code{
+  color:#EEE;
+  background:#333;
+}
+.wp-block-code code{
+  color:inherit;
+  background:inherit;
+}
+
+.wp-block-verse{
+  font:inherit;
+  color:inherit;
+}
+
 figure{
   display:table;
   margin-left:auto;

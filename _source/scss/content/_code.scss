@@ -1,9 +1,9 @@
 // ==================================================
-// Code
+// Preformatted
 // ==================================================
 
 
-// Standard code elements
+// Standard preformatted elements
 // ------------------------------
 pre, code {
 	font-family: $font-code;
@@ -19,4 +19,31 @@ var, kbd {
 samp {
 	font-family: inherit;
 	font-weight: bolder;
+}
+
+
+// Preformatted block [gutenberg]
+// ------------------------------
+.wp-block-preformatted {
+}
+
+
+// Code block [gutenberg]
+// ------------------------------
+.wp-block-code {
+	color: $grey-lighter;
+	background: $grey-dark;
+	
+	code {
+		color: inherit;
+		background: inherit;
+	}
+}
+
+
+// Verse block [gutenberg]
+// ------------------------------
+.wp-block-verse {
+	font: inherit;
+	color: inherit;
 }
