@@ -898,6 +898,20 @@ thead td, tfoot td, thead th, tfoot th{
   margin-bottom:0;
 }
 
+.wp-block-media-text{
+  margin:0 0 2rem;
+  background:#EEE;
+}
+.wp-block-media-text figure.wp-block-media-text__media{
+  padding:0;
+}
+.wp-block-media-text .wp-block-media-text__content{
+  padding-top:2rem;
+  padding-bottom:2rem;
+}
+.wp-block-media-text .wp-block-media-text__content > :last-child{
+  margin-bottom:0;
+}
 .no-margin{
   margin-bottom:0;
 }

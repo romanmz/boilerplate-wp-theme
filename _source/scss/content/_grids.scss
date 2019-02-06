@@ -40,3 +40,39 @@
 		margin-bottom: 0;
 	}
 }
+
+
+// Media & Text block [gutenberg]
+// ------------------------------
+.wp-block-media-text {
+	margin: 0 0 $space;
+	background: $grey-lighter;
+	
+	figure.wp-block-media-text__media {
+		padding: 0;
+		
+		img {}
+		video {}
+	}
+	.wp-block-media-text__content {
+		padding-top: $space;
+		padding-bottom: $space;
+		
+		> :last-child {
+			margin-bottom: 0;
+		}
+	}
+	
+	// Block settings
+	&.is-stacked-on-mobile {}
+	
+	// Layout variations
+	&.has-media-on-the-right {}
+	
+	// Custom background colours
+	// &.has-[colorname]-background-color {}
+	
+	// Alignment variations
+	&.alignwide {}
+	&.alignfull {}
+}
