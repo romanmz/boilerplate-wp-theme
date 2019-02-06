@@ -654,6 +654,13 @@ thead td, tfoot td, thead th, tfoot th{
   line-height:1.3;
 }
 
+p.has-drop-cap:not(:focus):first-letter{
+  font-size:6.3em;
+}
+p.has-background{
+  padding:2rem 3rem;
+}
+
 .no-margin{
   margin-bottom:0;
 }

@@ -3,7 +3,7 @@
 // ==================================================
 
 
-// Standard headings
+// Font sizes [gutenberg]
 // ------------------------------
 .has-small-font-size {
 	@include font-size-small;
@@ -20,6 +20,24 @@
 .has-huge-font-size {
 	@include font-size-xlarge;
 }
+
+
+// Paragraphs decoration [gutenberg]
+// ------------------------------
+p.has-drop-cap:not(:focus) {
+	&:first-letter {
+		font-size: 6.3em;
+	}
+	&:after {}
+}
+p.has-text-color {
+	a {}
+}
+// .has-[custom-color-name]-color.has-[custom-color-name]-color
+p.has-background {
+	padding: 2rem 3rem;
+}
+// .has-[custom-color-name]-background-color.has-[custom-color-name]-background-color
 
 
 // Spacing
