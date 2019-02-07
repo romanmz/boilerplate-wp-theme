@@ -5,40 +5,17 @@
 
 // Paragraph block [gutenberg]
 // ------------------------------
-
-// Custom font sizes
-.has-small-font-size {
-	@include font-size-small;
-}
-.has-normal-font-size {
-	@include font-size-normal;
-}
-.has-medium-font-size {
-	@include font-size-medium;
-}
-.has-large-font-size {
-	@include font-size-large;
-}
-.has-huge-font-size {
-	@include font-size-xxlarge;
-}
-// .has-[font-size]-font-size {}
-
 p {
 	// Drop caps
 	&.has-drop-cap:not(:focus):first-letter {
 		font-size: 6.3em;
 	}
 	
-	// Custom text colours
+	// Custom colours
 	&.has-text-color {}
-	// .has-[color-name]-color.has-[color-name]-color
-	
-	// Custom background colours
 	&.has-background {
 		padding: 2rem 3rem;
 	}
-	// .has-[color-name]-background-color.has-[color-name]-background-color
 }
 
 
