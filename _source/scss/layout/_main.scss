@@ -1,12 +1,11 @@
 // ==================================================
-// Containers
+// Main
 // ==================================================
 
 
-// Standard wrapper
+// Container
 // ------------------------------
-.wrapper {
-	max-width: 120rem;
-	padding: 0 3rem;
-	margin: 0 auto;
+.main-row {
+	overflow: hidden;
+	padding: ($space * 2) 0;
 }
