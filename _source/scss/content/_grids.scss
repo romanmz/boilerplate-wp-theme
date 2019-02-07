@@ -30,6 +30,17 @@
 	&.has-4-columns {}
 	&.has-5-columns {}
 	&.has-6-columns {}
+	
+	// Alignment variations
+	&.alignwide {
+		margin-left: calc( 50% - #{$space / 2} );
+		width: calc( 100% + 24rem + #{$space} );
+		max-width: calc( 100vw + #{$space} );
+	}
+	&.alignfull {
+		margin-left: calc( 50% - #{$space / 2} );
+		width: calc( 100vw + #{$space} );
+	}
 }
 .wp-block-column {
 	flex: 1 1 0;
