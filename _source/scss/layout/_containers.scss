@@ -7,6 +7,6 @@
 // ------------------------------
 .wrapper {
 	max-width: 120rem;
-	padding: 0 3rem;
+	@include wrapper-padding;
 	margin: 0 auto;
 }
