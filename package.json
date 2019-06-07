@@ -22,9 +22,9 @@
   "homepage": "https://github.com/romanmz/boilerplate-wp-theme#readme",
   "dependencies": {},
   "devDependencies": {
-    "browser-sync": "^2.26.3",
+    "browser-sync": "^2.26.7",
     "browser-sync-webpack-plugin": "^2.0.1",
-    "laravel-mix": "^4.0.14",
+    "laravel-mix": "^4.0.16",
     "sass": "^1.16.1",
     "sass-loader": "^7.1.0"
   }
