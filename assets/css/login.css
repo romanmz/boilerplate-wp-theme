@@ -18,29 +18,24 @@ input[type=week]:focus,
 textarea:focus,
 select:focus{
   border-color:#069;
-  -webkit-box-shadow:0 0 5px rgba(51, 187, 255, 0.5);
-          box-shadow:0 0 5px rgba(51, 187, 255, 0.5);
+  box-shadow:0 0 5px rgba(51, 187, 255, 0.5);
 }
 
 .wp-core-ui .button-primary{
   background:#069;
   border:none;
-  -webkit-box-shadow:none;
-          box-shadow:none;
+  box-shadow:none;
   text-shadow:none;
-  -webkit-transition:all 0.5s;
   transition:all 0.5s;
 }
 .wp-core-ui .button-primary:hover, .wp-core-ui .button-primary:focus{
   background:#33bbff;
-  -webkit-box-shadow:none;
-          box-shadow:none;
+  box-shadow:none;
 }
 
 .login #backtoblog a,
 .login #nav a{
   color:#069;
-  -webkit-transition:all 0.5s;
   transition:all 0.5s;
 }
 .login #backtoblog a:hover, .login #backtoblog a:focus,
