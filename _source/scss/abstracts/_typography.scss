@@ -53,3 +53,13 @@
 	font-weight: $font-semibold;
 	text-transform: uppercase;
 }
+
+
+// Effects
+// ------------------------------
+@mixin knockout-text {
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+	text-fill-color: transparent;
+	background-clip: text;
+}
