@@ -64,7 +64,14 @@ figcaption,
 // Gallery block [gutenberg]
 // ------------------------------
 .wp-block-gallery {
+	padding: 16px;
+	margin-bottom: $space;
+	
+	.blocks-gallery-grid {
+		margin-bottom: -16px;
+	}
 	.blocks-gallery-item {
+		overflow: hidden;
 		flex-grow: 0;
 		
 		figure {
@@ -74,6 +81,9 @@ figcaption,
 			@include font-size-small;
 			padding-bottom: 1rem;
 		}
+	}
+	.blocks-gallery-caption {
+		width: 100%;
 	}
 	
 	// Size variations
