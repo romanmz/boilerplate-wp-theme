@@ -87,12 +87,8 @@ q {
 	// blockquote.has-[color-name]-color
 	
 	// Alignment variations
-	&.alignleft {
-		@extend .alignleft;
-	}
-	&.alignright {
-		@extend .alignright;
-	}
+	&.alignleft {}
+	&.alignright {}
 	&.alignwide {}
 	&.alignfull {}
 }

@@ -1059,35 +1059,25 @@ thead td, tfoot td, thead th, tfoot th{
   hyphens:auto;
 }
 
-.float-left, .alignleft, .wp-block-pullquote.alignleft, .wp-block-image .alignleft, .wp-block-gallery.alignleft, .wp-block-embed.alignleft, .wp-block-categories.alignleft{
+.float-left, .alignleft.alignleft{
   float:left;
   margin:0 2rem 2rem 0;
 }
 
-.float-right, .alignright, .wp-block-pullquote.alignright, .wp-block-image .alignright, .wp-block-gallery.alignright, .wp-block-embed.alignright, .wp-block-categories.alignright{
+.float-right, .alignright.alignright{
   float:right;
   margin:0 0 2rem 2rem;
 }
 
-.float-left, .alignleft, .wp-block-pullquote.alignleft, .wp-block-image .alignleft, .wp-block-gallery.alignleft, .wp-block-embed.alignleft, .wp-block-categories.alignleft,
+.float-left, .alignleft.alignleft,
 .float-right,
-.alignright,
-.wp-block-pullquote.alignright,
-.wp-block-image .alignright,
-.wp-block-gallery.alignright,
-.wp-block-embed.alignright,
-.wp-block-categories.alignright{
+.alignright.alignright{
   max-width:calc( 50% - 2rem );
 }
 @media (max-width: 579px){
-  .float-left, .alignleft, .wp-block-pullquote.alignleft, .wp-block-image .alignleft, .wp-block-gallery.alignleft, .wp-block-embed.alignleft, .wp-block-categories.alignleft,
+  .float-left, .alignleft.alignleft,
 .float-right,
-.alignright,
-.wp-block-pullquote.alignright,
-.wp-block-image .alignright,
-.wp-block-gallery.alignright,
-.wp-block-embed.alignright,
-.wp-block-categories.alignright{
+.alignright.alignright{
     float:none;
     margin-left:auto;
     margin-right:auto;

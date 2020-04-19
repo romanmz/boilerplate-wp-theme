@@ -60,12 +60,8 @@ p {
 	
 	// Alignment variations
 	&.aligncenter {}
-	&.alignleft {
-		@extend .alignleft;
-	}
-	&.alignright {
-		@extend .alignright;
-	}
+	&.alignleft {}
+	&.alignright {}
 	&.alignwide {}
 	&.alignfull {}
 }

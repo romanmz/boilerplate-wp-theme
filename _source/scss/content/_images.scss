@@ -50,12 +50,8 @@ figcaption,
 	
 	// Alignment variations
 	.aligncenter {}
-	.alignleft {
-		@extend .alignleft;
-	}
-	.alignright {
-		@extend .alignright;
-	}
+	.alignleft {}
+	.alignright {}
 	&.alignwide {}
 	&.alignfull {}
 }
@@ -105,12 +101,8 @@ figcaption,
 			justify-content: center;
 		}
 	}
-	&.alignleft {
-		@extend .alignleft;
-	}
-	&.alignright {
-		@extend .alignright;
-	}
+	&.alignleft {}
+	&.alignright {}
 	&.alignwide {}
 	&.alignfull {}
 }

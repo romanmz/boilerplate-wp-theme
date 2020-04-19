@@ -36,10 +36,10 @@
 // Alignment [gutenberg]
 // ------------------------------
 .alignnone {}
-.alignleft {
+.alignleft.alignleft {
 	@extend .float-left;
 }
-.alignright {
+.alignright.alignright {
 	@extend .float-right;
 }
 .aligncenter {
