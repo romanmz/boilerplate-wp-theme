@@ -3,18 +3,9 @@
 // ==================================================
 
 
-// Standard buttons
+// Mixins
 // ------------------------------
-@include form-buttons {
-	// form buttons are left with their default styles, it's better to use custom class names instead
-	// this is to avoid having to constantly override styles in sites where there's multiple button styles
-}
-
-
-// Simple buttons
-// ------------------------------
-// If the site will use WooCommerce, beware of possible conflicts with WC's own .button class (you can just rename this class to something else)
-.button {
+@mixin default-button-style {
 	font-size: inherit;
 	display: inline-block;
 	width: auto;
@@ -30,60 +21,123 @@
 	
 	border-radius: 5px;
 	box-sizing: border-box;
-	transition: color .5s, background-color .5s, border .5s;
+	transition: color .5s, background-color .5s, border .5s, box-shadow .5s;
 	position: relative;
 	cursor: pointer;
+}
+
+
+// Standard buttons
+// ------------------------------
+@include form-buttons {
+	// form buttons are left with their default styles, it's better to use custom class names instead
+	// this is to avoid having to constantly override styles in sites where there's multiple button styles
+}
+
+
+// Simple buttons
+// ------------------------------
+// If the site will use WooCommerce, beware of possible conflicts with WC's own .button class (you can just rename this class to something else)
+.button {
+	@include default-button-style;
 	
 	&:hover,
 	&:focus {
 		color: white;
-		background: $blue-light;
+		background-color: $blue-light;
 	}
 }
 
 
-// Button block [gutenberg]
+// Buttons / Button block [gutenberg]
 // ------------------------------
-.wp-block-button {
-	margin: 0 0 2rem;
+.wp-block-buttons {
+	display: flex;
+	flex-wrap: wrap;
+	margin: -8px 0 2rem -8px;
 	
-	@include screen-below( small ) {
-		&.wp-block-button {
-			text-align: center;
+	.wp-block-button {
+		margin: 8px 0 0 8px;
+	}
+	
+	// Alignment variations
+	&.aligncenter {
+		display: flex;
+		justify-content: center;
+		
+		.wp-block-button {
+			margin: 8px 4px 0;
+		}
+	}
+	&.alignleft.alignleft {
+		margin: -8px 2rem 2rem -8px;
+	}
+	&.alignright.alignright {
+		margin: -8px -8px 2rem 2rem;
+		justify-content: flex-end;
+		
+		.wp-block-button {
+			margin: 8px 8px 0 0;
 		}
 	}
 }
-.wp-block-button__link {
-	@extend .button;
+.wp-block-button {
 	
-	// Style variation: Rounded (default)
-	.is-style-default & {}
+	// Link
+	@at-root .wp-block-button__link {
+		@include default-button-style;
+		
+		// Custom text colours
+		&.has-text-color {}
+		// &.has-[color-name]-color
+		
+		// Custom background colours and gradients
+		&.has-background {}
+		// &.has-[color-name]-background-color
+		// &.has-[gradient-name]-gradient-background
+		&[class*="-gradient-background"] {
+			
+			&:hover, &:focus {
+				box-shadow: 1px 3px 5px rgba(black, 0.4);
+			}
+		}
+	}
+	
+	// Style variation: Fill (default)
+	&.is-style-fill {}
+	&:not( .is-style-outline ) .wp-block-button__link {
+		&:not( [class*="-gradient-background"] ) {
+			&:hover, &:focus {
+				color: white;
+				background-color: $blue-light;
+			}
+		}
+	}
 	
 	// Style variation: Outline
-	.is-style-outline & {
+	&.is-style-outline .wp-block-button__link {
+		padding: calc( 0.5em - 2px ) 2em;
+		
 		&:not( .has-text-color ) {
 			color: $blue;
 		}
-		&:hover, &:focus {
-			color: white;
+		&:not( [class*="-gradient-background"] ) {
+			&:hover, &:focus {
+				color: $blue-light;
+				background-color: transparent;
+			}
 		}
 	}
 	
-	// Style variation: Squared
-	.is-style-squared & {}
 	
-	// Custom text colours
-	&.has-text-color
-	// &.has-[color-name]-color
-	
-	// Custom background colours
-	&.has-background {}
-	// &.has-[color-name]-background-color
+	// Legacy support for stand-alone block
+	// ----------
+	margin: 0 0 2rem;
 	
 	// Alignment variations
-	.aligncenter & {}
-	.alignleft & {}
-	.alignright & {}
+	&.aligncenter {}
+	&.alignleft {}
+	&.alignright {}
 }
 
 
