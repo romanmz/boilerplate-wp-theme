@@ -1136,22 +1136,24 @@ thead td, tfoot td, thead th, tfoot th{
   margin-right:auto;
 }
 
-.alignwide, .wp-block-table.alignwide{
+.alignwide, .wp-block-table.alignwide,
+.alignfull,
+.wp-block-table.alignfull{
   clear:both;
-  margin-left:50%;
-  transform:translateX(-50%);
+  position:relative;
+  left:calc( (100vw - 100%) * -0.5 );
   max-width:100vw;
-  width:calc( 100% + 24rem );
+  width:100vw;
   box-sizing:border-box;
 }
 
-.alignfull, .wp-block-table.alignfull{
-  clear:both;
-  margin-left:50%;
-  transform:translateX(-50%);
-  max-width:none;
-  width:100vw;
-  box-sizing:border-box;
+.alignwide, .wp-block-table.alignwide{
+  width:calc( 100% + 24rem );
+}
+@media (min-width: 1440px){
+  .alignwide, .wp-block-table.alignwide{
+    left:-12rem;
+  }
 }
 
 .wp-caption{
