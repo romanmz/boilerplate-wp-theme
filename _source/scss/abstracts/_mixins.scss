@@ -27,9 +27,9 @@
 // Wrapper's padding
 // ------------------------------
 @mixin wrapper-padding {
-	padding: 0 3rem;
-	padding-left: calc( env(safe-area-inset-left) + 3rem );
-	padding-right: calc( env(safe-area-inset-right) + 3rem );
+	padding: 0 $main_wrapper_padding;
+	padding-left: calc( env(safe-area-inset-left) + #{ $main_wrapper_padding } );
+	padding-right: calc( env(safe-area-inset-right) + #{ $main_wrapper_padding } );
 }
 
 

@@ -6,7 +6,7 @@
 // Standard wrapper
 // ------------------------------
 .wrapper {
-	max-width: 120rem;
+	max-width: $main_wrapper_width;
 	@include wrapper-padding;
 	margin: 0 auto;
 }

@@ -3,6 +3,22 @@
 // ==================================================
 
 
+// Layout
+// ------------------------------
+
+// px
+$main_wrapper_width_px: 1200px;
+$main_wrapper_padding_px: 30px;
+$wide_blocks_width_px: 1440px;
+$space_px: 20px;
+
+// rem
+$main_wrapper_width: px_to_rem( $main_wrapper_width_px );
+$main_wrapper_padding: px_to_rem( $main_wrapper_padding_px );
+$wide_blocks_width: px_to_rem( $wide_blocks_width_px );
+$space: px_to_rem( $space_px );
+
+
 // Breakpoints
 // ------------------------------
 // Reference [http://iosres.com]
@@ -26,6 +42,7 @@ $breakpoints: (
 	'medium': 768px,
 	'large':  1024px,
 	'xlarge': 1400px,
+	'wide_blocks': $wide_blocks_width_px,
 );
 
 
@@ -67,11 +84,6 @@ $success:      #090;
 // Branding
 $blue:         #069;
 $blue-light:   lighten( $blue, 30% );
-
-
-// Spacing
-// ------------------------------
-$space: 2rem;
 
 
 // Animations
