@@ -17,7 +17,7 @@ if( !function_exists( 'cleanup_shortcode_markup' ) ) {
 		// Undo 'wpautop'
 		$content = str_replace( ['<p>', '</p>', '<br />'], ["\r\n", "\r\n", ''], $content );
 		// Run nested shortcodes
-		$content = do_shortcode( $content );
+		$content = apply_shortcodes( $content );
 		// Trim space before closing divs
 		$content = preg_replace( '/\s*<\\/div>/i', '</div>', $content );
 		// Redo 'wpautop'

@@ -34,6 +34,7 @@
 	<?php wp_head() ?>
 </head>
 <body <?php body_class() ?>>
+<?php wp_body_open() ?>
 
 <!-- Skip to content button -->
 <a id="skip-to-content" href="#content" class="screen-reader-text focusable button">Skip to content</a>
