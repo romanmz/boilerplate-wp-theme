@@ -101,7 +101,9 @@ figcaption,
 	
 	// Alignment variations
 	&.aligncenter {
-		justify-content: center;
+		.blocks-gallery-grid {
+			justify-content: center;
+		}
 	}
 	&.alignleft {
 		@extend .alignleft;

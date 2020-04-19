@@ -508,7 +508,7 @@ figcaption,
 .wp-block-gallery .blocks-gallery-caption{
   width:100%;
 }
-.wp-block-gallery.aligncenter{
+.wp-block-gallery.aligncenter .blocks-gallery-grid{
   justify-content:center;
 }
 .wp-block-audio audio{
