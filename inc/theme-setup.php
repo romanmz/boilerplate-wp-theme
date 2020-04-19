@@ -77,10 +77,10 @@ function theme_setup_gutenberg() {
 	]);
 	
 	// Custom colours
-	// Disable the option for users to enter any hex values on blocks that allow colour variations, but they can still select from the predefined options
+	// Disable the option for users to enter any hex values (but they can still select from the predefined list)
 	add_theme_support( 'disable-custom-colors' );
-	// Customize the list of colours available
-	// for any new or updated colours you'll need to manually edit the frontend stylesheets to match those new settings (the editor should work automatically)
+	// Customize the list of predefined colours
+	// (for custom settings you need to manually add the css classes on the frontend stylesheets, the editor should work automatically)
 	add_theme_support( 'editor-color-palette', [
 		['name' => 'Pale pink',             'slug' => 'pale-pink',             'color' => '#f78da7'],
 		['name' => 'Vivid red',             'slug' => 'vivid-red',             'color' => '#cf2e2e'],
@@ -93,6 +93,74 @@ function theme_setup_gutenberg() {
 		['name' => 'Very light grey',       'slug' => 'very-light-gray',       'color' => '#eeeeee'],
 		['name' => 'Cyan bluish grey',      'slug' => 'cyan-bluish-gray',      'color' => '#abb8c3'],
 		['name' => 'Very dark gray',        'slug' => 'very-dark-gray',        'color' => '#313131'],
+	]);
+	
+	// Custom gradients
+	// Disable the option for users to enter any hex values (but they can still select from the predefined list)
+	add_theme_support( 'disable-custom-gradients' );
+	// Customize the list of predefined gradients
+	// (for custom settings you need to manually add the css classes on the frontend stylesheets, the editor should work automatically)
+	add_theme_support( 'editor-gradient-presets', [
+		[
+			'name'     => 'Vivid cyan blue to vivid purple',
+			'slug'     => 'vivid-cyan-blue-to-vivid-purple',
+			'gradient' => 'linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%)',
+		],
+		[
+			'name'     => 'Light green cyan to vivid green cyan',
+			'slug'     => 'light-green-cyan-to-vivid-green-cyan',
+			'gradient' => 'linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%)',
+		],
+		[
+			'name'     => 'Luminous vivid amber to luminous vivid orange',
+			'slug'     => 'luminous-vivid-amber-to-luminous-vivid-orange',
+			'gradient' => 'linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%)',
+		],
+		[
+			'name'     => 'Luminous vivid orange to vivid red',
+			'slug'     => 'luminous-vivid-orange-to-vivid-red',
+			'gradient' => 'linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%)',
+		],
+		[
+			'name'     => 'Very light gray to cyan bluish gray',
+			'slug'     => 'very-light-gray-to-cyan-bluish-gray',
+			'gradient' => 'linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%)',
+		],
+		[
+			'name'     => 'Cool to warm spectrum',
+			'slug'     => 'cool-to-warm-spectrum',
+			'gradient' => 'linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%)',
+		],
+		[
+			'name'     => 'Blush light purple',
+			'slug'     => 'blush-light-purple',
+			'gradient' => 'linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%)',
+		],
+		[
+			'name'     => 'Blush bordeaux',
+			'slug'     => 'blush-bordeaux',
+			'gradient' => 'linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%)',
+		],
+		[
+			'name'     => 'Luminous dusk',
+			'slug'     => 'luminous-dusk',
+			'gradient' => 'linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%)',
+		],
+		[
+			'name'     => 'Pale ocean',
+			'slug'     => 'pale-ocean',
+			'gradient' => 'linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%)',
+		],
+		[
+			'name'     => 'Electric grass',
+			'slug'     => 'electric-grass',
+			'gradient' => 'linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%)',
+		],
+		[
+			'name'     => 'Midnight',
+			'slug'     => 'midnight',
+			'gradient' => 'linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%)',
+		],
 	]);
 }
 
