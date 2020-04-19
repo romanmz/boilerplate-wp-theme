@@ -39,6 +39,9 @@ figcaption,
 		@extend .figcaption;
 	}
 	
+	// Style variation: Rounded
+	&.is-style-rounded {}
+	
 	// Size variations
 	&.is-resized {
 		margin-left: auto;
