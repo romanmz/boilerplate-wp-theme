@@ -22,35 +22,50 @@ p {
 // Cover block [gutenberg]
 // ------------------------------
 .wp-block-cover {
-	:before {}
-	.wp-block-cover__video-background {}
-	.wp-block-cover-text {}
+	margin-bottom: $space;
 	
-	// Custom background colours
-	// .has-[color-name]-background-color
+	// Background
+	&::before {}
+	.wp-block-cover__gradient-background {}
+	.wp-block-cover__video-background {}
+	
+	// Contents
+	.wp-block-cover__inner-container {
+		> :last-child {
+			margin-bottom: 0;
+		}
+	}
+	
+	// Custom background colours and gradients
+	// &.has-[color-name]-background-color
+	&.has-background-gradient {}
+	// &.has-[gradient-name]-gradient-background {}
 	
 	// Background settings
 	&.has-parallax {}
-	&.has-background-dim::before {}
-	&.has-background-dim-10::before {}
-	&.has-background-dim-20::before {}
-	&.has-background-dim-30::before {}
-	&.has-background-dim-40::before {}
-	&.has-background-dim-50::before {}
-	&.has-background-dim-60::before {}
-	&.has-background-dim-70::before {}
-	&.has-background-dim-80::before {}
-	&.has-background-dim-90::before {}
-	&.has-background-dim-100::before {}
-	
-	// Content variations
-	&.has-left-content {}
-	&.has-right-content {}
+	&.has-background-dim {
+		&::before {}
+		.wp-block-cover__gradient-background {}
+	}
+	&.has-background-dim-10 {}
+	&.has-background-dim-20 {}
+	&.has-background-dim-30 {}
+	&.has-background-dim-40 {}
+	&.has-background-dim-50 {}
+	&.has-background-dim-60 {}
+	&.has-background-dim-70 {}
+	&.has-background-dim-80 {}
+	&.has-background-dim-90 {}
+	&.has-background-dim-100 {}
 	
 	// Alignment variations
 	&.aligncenter {}
-	&.alignleft {}
-	&.alignright {}
+	&.alignleft {
+		@extend .alignleft;
+	}
+	&.alignright {
+		@extend .alignright;
+	}
 	&.alignwide {}
 	&.alignfull {}
 }

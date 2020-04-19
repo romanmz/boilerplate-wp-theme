@@ -231,6 +231,12 @@ p.has-background{
   padding:2rem 3rem;
 }
 
+.wp-block-cover{
+  margin-bottom:2rem;
+}
+.wp-block-cover .wp-block-cover__inner-container > :last-child{
+  margin-bottom:0;
+}
 hr{
   display:block;
   clear:both;
