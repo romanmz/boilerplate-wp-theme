@@ -9,10 +9,11 @@ hr {
 	display: block;
 	clear: both;
 	border: none;
-	border-top: 1px solid $grey-light;
 	padding: 0;
 	height: 1px;
 	margin: $space auto;
+	background-color: currentColor;
+	color: $grey-light;
 }
 
 
@@ -38,7 +39,7 @@ hr {
 			font-weight: $font-bold;
 			letter-spacing: 1.2em;
 			padding-left: 1em;
-			color: $grey-medium;
+			color: currentColor;
 		}
 	}
 }
