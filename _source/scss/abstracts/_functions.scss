@@ -15,3 +15,10 @@
 	$base: $min - ( $screenmin / 100 * $vw );
 	@return calc( #{ $base }px + #{ $vw }vw );
 }
+
+
+// Unit conversions
+// ------------------------------
+@function px_to_rem( $pixels ) {
+	@return $pixels / 10px * 1rem;
+}
