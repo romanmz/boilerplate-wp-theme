@@ -3,6 +3,19 @@
 // ==================================================
 
 
+// Mixins
+// ------------------------------
+@mixin table-subtle-background {
+	background-color: $grey-lighter;
+	mix-blend-mode: multiply;
+}
+@mixin table-darker-background {
+	color: $grey-lighter;
+	background: $grey-dark;
+	mix-blend-mode: normal;
+}
+
+
 // Standard tables
 // ------------------------------
 table {
@@ -14,16 +27,20 @@ caption {
 	@include caption-text;
 	margin-bottom: 1rem;
 }
+tr {
+	thead &,
+	tfoot & {
+		@include table-subtle-background;
+	}
+	tbody & {}
+}
 td, th {
 	padding: .5em 1em;
 	border-bottom: 1px solid $grey-lighter;
 	text-align: left;
 	vertical-align: top;
-	
-	thead &,
-	tfoot & {
-		background-color: $grey-lighter;
-	}
+	color: inherit;
+	background-color: transparent;
 }
 
 
@@ -31,16 +48,17 @@ td, th {
 // ------------------------------
 .responsive-table {
 	@include screen-below( small ) {
-		border: none;
-		&, thead, tfoot, tbody, tr, th, td, caption {
+		&, table {
+			border: none;
+		}
+		&, table, thead, tfoot, tbody, tr, th, td, caption {
 			display: block;
 		}
-		thead tr,
-		tfoot tr {
+		thead, tfoot {
 			@include visually-hidden;
 		}
 		th {
-			background: $grey-lighter;
+			@include table-subtle-background;
 		}
 		td[data-column-name],
 		th[data-column-name] {
@@ -62,48 +80,64 @@ td, th {
 // Table block [gutenberg]
 // ------------------------------
 .wp-block-table {
+	padding: 0;
+	background: none;
+	
+	table {
+		margin-bottom: 0;
+	}
+	figcaption {
+		margin: 1rem 0;
+	}
 	
 	// Table settings
 	&.has-fixed-layout {}
 	
 	// Style variation: Stripes
 	&.is-style-stripes {
-		border-collapse: collapse;
 		
-		tr:nth-child(odd) {
-			background-color: $grey-lighter;
-		}
+		table {}
 		td, th {
 			border: none;
 		}
-		thead,
-		tfoot {
+		thead, tfoot {
 			tr {
-				background: none !important;
+				@include table-darker-background;
 			}
-			td, th {
-				color: $grey-lighter;
-				background-color: $grey-dark;
+		}
+		tbody {
+			tr:nth-child(odd) {
+				@include table-subtle-background;
 			}
 		}
 		
+		// Responsive styles
 		&.responsive-table {
 			@include screen-below( small ) {
 				tr:nth-child(odd) {
 					background-color: transparent;
+					mix-blend-mode: normal;
 				}
 				th {
-					color: $grey-lighter;
-					background: $grey-dark;
+					@include table-darker-background;
 				}
 				td:nth-child(even) {
-					background-color: $grey-lighter;
+					@include table-subtle-background;
 				}
 			}
 		}
 	}
 	
 	// Alignment variations
+	&.alignleft.alignleft,
+	&.alignright.alignright {
+		@include screen-below( medium ) {
+			float: none;
+			max-width: 100%;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
 	&.aligncenter,
 	&.alignleft,
 	&.alignright {
@@ -111,10 +145,6 @@ td, th {
 			width: 100%;
 		}
 	}
-	&.alignwide {
-		@extend .alignwide;
-	}
-	&.alignfull {
-		@extend .alignfull;
-	}
+	&.alignwide {}
+	&.alignfull {}
 }

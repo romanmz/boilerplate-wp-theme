@@ -687,25 +687,27 @@ caption{
   margin-bottom:1rem;
 }
 
+thead tr, tfoot tr{
+  background-color:#EEE;
+  mix-blend-mode:multiply;
+}
 td, th{
   padding:0.5em 1em;
   border-bottom:1px solid #EEE;
   text-align:left;
   vertical-align:top;
-}
-thead td, tfoot td, thead th, tfoot th{
-  background-color:#EEE;
+  color:inherit;
+  background-color:transparent;
 }
 
 @media (max-width: 579px){
-  .responsive-table{
+  .responsive-table, .responsive-table table{
     border:none;
   }
-  .responsive-table, .responsive-table thead, .responsive-table tfoot, .responsive-table tbody, .responsive-table tr, .responsive-table th, .responsive-table td, .responsive-table caption{
+  .responsive-table, .responsive-table table, .responsive-table thead, .responsive-table tfoot, .responsive-table tbody, .responsive-table tr, .responsive-table th, .responsive-table td, .responsive-table caption{
     display:block;
   }
-  .responsive-table thead tr,
-.responsive-table tfoot tr{
+  .responsive-table thead, .responsive-table tfoot{
     position:absolute !important;
     height:1px;
     width:1px;
@@ -713,16 +715,15 @@ thead td, tfoot td, thead th, tfoot th{
     clip:rect(1px, 1px, 1px, 1px);
     word-wrap:normal !important;
   }
-  .responsive-table thead tr.focusable:active, .responsive-table thead tr.focusable:focus,
-.responsive-table tfoot tr.focusable:active,
-.responsive-table tfoot tr.focusable:focus{
+  .responsive-table thead.focusable:active, .responsive-table thead.focusable:focus, .responsive-table tfoot.focusable:active, .responsive-table tfoot.focusable:focus{
     height:auto;
     width:auto;
     overflow:visible;
     clip:rect(auto, auto, auto, auto);
   }
   .responsive-table th{
-    background:#EEE;
+    background-color:#EEE;
+    mix-blend-mode:multiply;
   }
   .responsive-table td[data-column-name],
 .responsive-table th[data-column-name]{
@@ -739,35 +740,49 @@ thead td, tfoot td, thead th, tfoot th{
   }
 }
 
-.wp-block-table.is-style-stripes{
-  border-collapse:collapse;
+.wp-block-table{
+  padding:0;
+  background:none;
 }
-.wp-block-table.is-style-stripes tr:nth-child(odd){
-  background-color:#EEE;
+.wp-block-table table{
+  margin-bottom:0;
+}
+.wp-block-table figcaption{
+  margin:1rem 0;
 }
 .wp-block-table.is-style-stripes td, .wp-block-table.is-style-stripes th{
   border:none;
 }
-.wp-block-table.is-style-stripes thead tr,
-.wp-block-table.is-style-stripes tfoot tr{
-  background:none !important;
-}
-.wp-block-table.is-style-stripes thead td, .wp-block-table.is-style-stripes thead th,
-.wp-block-table.is-style-stripes tfoot td,
-.wp-block-table.is-style-stripes tfoot th{
+.wp-block-table.is-style-stripes thead tr, .wp-block-table.is-style-stripes tfoot tr{
   color:#EEE;
-  background-color:#333;
+  background:#333;
+  mix-blend-mode:normal;
+}
+.wp-block-table.is-style-stripes tbody tr:nth-child(odd){
+  background-color:#EEE;
+  mix-blend-mode:multiply;
 }
 @media (max-width: 579px){
   .wp-block-table.is-style-stripes.responsive-table tr:nth-child(odd){
     background-color:transparent;
+    mix-blend-mode:normal;
   }
   .wp-block-table.is-style-stripes.responsive-table th{
     color:#EEE;
     background:#333;
+    mix-blend-mode:normal;
   }
   .wp-block-table.is-style-stripes.responsive-table td:nth-child(even){
     background-color:#EEE;
+    mix-blend-mode:multiply;
+  }
+}
+@media (max-width: 767px){
+  .wp-block-table.alignleft.alignleft, .wp-block-table.alignright.alignright{
+    float:none;
+    max-width:100%;
+    margin-left:auto;
+    margin-right:auto;
   }
 }
 @media (max-width: 579px){
@@ -1136,9 +1151,8 @@ thead td, tfoot td, thead th, tfoot th{
   margin-right:auto;
 }
 
-.alignwide, .wp-block-table.alignwide,
-.alignfull,
-.wp-block-table.alignfull{
+.alignwide,
+.alignfull{
   clear:both;
   position:relative;
   left:calc( (100vw - 100%) * -0.5 );
@@ -1147,11 +1161,11 @@ thead td, tfoot td, thead th, tfoot th{
   box-sizing:border-box;
 }
 
-.alignwide, .wp-block-table.alignwide{
+.alignwide{
   width:calc( 100% + 24rem );
 }
 @media (min-width: 1440px){
-  .alignwide, .wp-block-table.alignwide{
+  .alignwide{
     left:-12rem;
   }
 }
