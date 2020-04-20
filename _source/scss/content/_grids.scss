@@ -19,6 +19,24 @@
 }
 
 
+// Group block [gutenberg]
+// ------------------------------
+.wp-block-group {
+	margin: 0 0 $space;
+	
+	.wp-block-group__inner-container {
+		> :last-child {
+			margin-bottom: 0;
+		}
+	}
+	&.has-background {
+		.wp-block-group__inner-container {
+			padding: $space;
+		}
+	}
+}
+
+
 // Columns block [gutenberg]
 // ------------------------------
 $columns_block_margin: $space;

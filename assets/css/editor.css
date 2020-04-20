@@ -904,6 +904,16 @@ td, th{
   min-width:20rem;
 }
 
+.wp-block-group{
+  margin:0 0 2rem;
+}
+.wp-block-group .wp-block-group__inner-container > :last-child{
+  margin-bottom:0;
+}
+.wp-block-group.has-background .wp-block-group__inner-container{
+  padding:2rem;
+}
+
 .wp-block-columns{
   margin:0 0 2rem;
 }
