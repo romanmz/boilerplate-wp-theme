@@ -905,28 +905,39 @@ td, th{
 }
 
 .wp-block-columns{
-  margin-left:-2rem;
-  flex-wrap:wrap !important;
+  margin:0 0 2rem;
 }
-.wp-block-columns.alignwide{
-  margin-left:calc( 50% - 1rem );
-  width:calc( 100% + 24rem + 2rem );
-  max-width:calc( 100vw + 2rem );
+.wp-block-columns.has-background{
+  padding:2rem;
 }
-.wp-block-columns.alignfull{
-  margin-left:calc( 50% - 1rem );
-  width:calc( 100vw + 2rem );
-}
-
 .wp-block-column{
-  flex:1 1 0;
-  margin:0 0 2rem 2rem !important;
-  min-width:20rem;
+  padding:0rem;
+  box-sizing:border-box;
 }
 .wp-block-column > :last-child{
   margin-bottom:0;
 }
-
+@media (max-width: 599px){
+  .wp-block-column:not(:first-child){
+    margin-top:2rem;
+  }
+}
+@media (max-width: 781px) and (min-width: 600px){
+  .wp-block-column{
+    flex-basis:calc( 50% - 1rem ) !important;
+  }
+  .wp-block-column:nth-child(n+3){
+    margin-top:2rem;
+  }
+  .wp-block-column:nth-child(2n){
+    margin-left:2rem;
+  }
+}
+@media (min-width: 782px){
+  .wp-block-column:not(:first-child){
+    margin-left:2rem;
+  }
+}
 .wp-block-media-text{
   margin:0 0 2rem;
   background:#EEE;

@@ -21,35 +21,65 @@
 
 // Columns block [gutenberg]
 // ------------------------------
+$columns_block_margin: $space;
+$columns_block_padding: $space;
+$columns_margin: $space;
+$columns_gutter: $space;
+$columns_padding: 0rem;
+
 .wp-block-columns {
-	margin-left: -$space;
-	flex-wrap: wrap !important;
+	margin: 0 0 $columns_block_margin;
 	
-	&.has-2-columns {}
-	&.has-3-columns {}
-	&.has-4-columns {}
-	&.has-5-columns {}
-	&.has-6-columns {}
+	// Colour variations
+	&.has-background {
+		padding: $columns_block_padding;
+	}
+	&.has-text-color {}
+	// &.has-[color-name]-background-color
+	// &.has-[color-name]-color
+	
+	// Vertical alignment variations
+	&.are-vertically-aligned-top {}
+	&.are-vertically-aligned-center {}
+	&.are-vertically-aligned-bottom {}
 	
 	// Alignment variations
-	&.alignwide {
-		margin-left: calc( 50% - #{$space / 2} );
-		width: calc( 100% + 24rem + #{$space} );
-		max-width: calc( 100vw + #{$space} );
-	}
-	&.alignfull {
-		margin-left: calc( 50% - #{$space / 2} );
-		width: calc( 100vw + #{$space} );
-	}
+	&.alignwide {}
+	&.alignfull {}
 }
 .wp-block-column {
-	flex: 1 1 0;
-	margin: 0 0 $space $space !important;
-	min-width: 20rem;
+	padding: $columns_padding;
+	box-sizing: border-box;
 	
 	> :last-child {
 		margin-bottom: 0;
 	}
+	
+	// Responsive
+	@media (max-width: 599px) {
+		&:not(:first-child) {
+			margin-top: $columns_margin;
+		}
+	}
+	@media (max-width: 781px) and (min-width: 600px) {
+		&:nth-child(n+3) {
+			margin-top: $columns_margin;
+		}
+		flex-basis: calc( 50% - #{ $columns_gutter * 0.5 } ) !important;
+		&:nth-child(2n) {
+			margin-left: $columns_gutter;
+		}
+	}
+	@media (min-width: 782px) {
+		&:not(:first-child) {
+			margin-left: $columns_gutter;
+		}
+	}
+	
+	// Vertical alignment variations
+	&.is-vertically-aligned-top {}
+	&.is-vertically-aligned-center {}
+	&.is-vertically-aligned-bottom {}
 }
 
 
