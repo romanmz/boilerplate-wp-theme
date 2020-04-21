@@ -105,33 +105,104 @@ $columns_padding: 0rem;
 // ------------------------------
 .wp-block-media-text {
 	margin: 0 0 $space;
-	background: $grey-lighter;
 	
-	figure.wp-block-media-text__media {
+	.wp-block-media-text__media {
 		padding: 0;
 		
-		img {}
+		a {}
+		img {
+			width: 100%;
+		}
 		video {}
 	}
 	.wp-block-media-text__content {
-		padding-top: $space;
-		padding-bottom: $space;
+		padding: 0;
 		
 		> :last-child {
 			margin-bottom: 0;
 		}
 	}
 	
-	// Block settings
-	&.is-stacked-on-mobile {}
+	// Layout: media on left
+	&:not( .has-media-on-the-right ) {
+		.wp-block-media-text__content {
+			padding-left: 4rem;
+			
+			@media (max-width: 600px) {
+				padding-left: $space;
+			}
+		}
+	}
 	
-	// Layout variations
-	&.has-media-on-the-right {}
-	
-	// Custom background colours
-	// &.has-[colorname]-background-color {}
+	// Layout: media on right
+	&.has-media-on-the-right {
+		.wp-block-media-text__content {
+			padding-right: 4rem;
+			
+			@media (max-width: 600px) {
+				padding-right: $space;
+			}
+		}
+	}
 	
 	// Alignment variations
-	&.alignwide {}
-	&.alignfull {}
+	&.alignwide,
+	&.alignfull {
+		.wp-block-media-text__content {
+			padding: 0 4rem;
+			
+			@media (max-width: 600px) {
+				padding: 0 $space;
+			}
+		}
+	}
+	
+	// Custom background colours
+	&.has-background {
+		.wp-block-media-text__content {
+			padding: $space 4rem;
+			
+			@media (max-width: 600px) {
+				padding: $space;
+			}
+		}
+	}
+	// &.has-[color-name]-background-color {}
+	
+	// Setting: Stacked on mobile
+	&.is-stacked-on-mobile {
+		@media (max-width: 600px) {
+			&:not( .has-background ) {
+				&:not( .alignwide ):not( .alignfull ) .wp-block-media-text__content {
+					padding-left: 0;
+					padding-right: 0;
+				}
+				&:not( .has-media-on-the-right ) .wp-block-media-text__content {
+					margin-top: $space;
+				}
+				&.has-media-on-the-right .wp-block-media-text__content {
+					margin-bottom: $space;
+				}
+			}
+		}
+	}
+	
+	// Setting: Fill media column
+	&.is-image-fill {
+		.wp-block-media-text__media {
+			a {
+				display: block;
+				height: 100%;
+				background-color: transparent;
+			}
+			img {
+				@include visually-hidden;
+			}
+		}
+	}
+	
+	// Vertical alignment variations
+	&.is-vertically-aligned-top {}
+	&.is-vertically-aligned-center {}
+	&.is-vertically-aligned-bottom {}
 }
