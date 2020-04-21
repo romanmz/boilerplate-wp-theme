@@ -61,30 +61,35 @@ q {
 		font-style: normal;
 	}
 	
+	// Style variation: Default
+	&:not( .is-style-solid-color ) {}
+	
 	// Style variation: Solid color
 	&.is-style-solid-color {
 		padding: 4rem 3rem;
 		
 		blockquote {
 			max-width: 100rem;
-			
 			&:not( .has-text-color ) {
 				color: $grey-dark;
 			}
+			
 			p {
-				font: inherit;
 				margin: 0 0 2rem;
 			}
 		}
 	}
 	
-	// Custom background colours
+	// Custom background colours (default style)
 	// inline 'border-color'
-	// &.has-[color-name]-background-color
+	
+	// Custom background colours (solid color style)
+	&.has-background {}
+	// &.has-[color-name]-background-color {}
 	
 	// Custom text colours
 	// blockquote.has-text-color {}
-	// blockquote.has-[color-name]-color
+	// blockquote.has-[color-name]-color {}
 	
 	// Alignment variations
 	&.alignleft {}

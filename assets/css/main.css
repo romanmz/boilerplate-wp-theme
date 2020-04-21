@@ -464,7 +464,6 @@ q{
   color:#333;
 }
 .wp-block-pullquote.is-style-solid-color blockquote p{
-  font:inherit;
   margin:0 0 2rem;
 }
 pre, code{
