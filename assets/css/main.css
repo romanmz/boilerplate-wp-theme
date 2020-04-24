@@ -1214,6 +1214,9 @@ td, th{
 .wp-block-search.aligncenter{
   display:flex;
 }
+.wp-block-social-links .wp-social-link a:hover, .wp-block-social-links .wp-social-link a:focus{
+  background-color:transparent;
+}
 .no-margin{
   margin-bottom:0;
 }

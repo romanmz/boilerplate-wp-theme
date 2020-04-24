@@ -319,3 +319,28 @@
 	&.alignwide {}
 	&.alignfull {}
 }
+
+
+// Social Icons block [gutenberg]
+// ------------------------------
+.wp-block-social-links {
+	
+	.wp-social-link {
+		a {}
+		a:hover, a:focus {
+			background-color: transparent;
+		}
+		svg {}
+	}
+	
+	// Style: Logos only
+	&.is-style-logos-only {}
+	
+	// Style: Pill shape
+	&.is-style-pill-shape {}
+	
+	// Alignment variations
+	&.aligncenter {}
+	&.alignleft {}
+	&.alignright {}
+}
