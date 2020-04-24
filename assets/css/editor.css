@@ -1082,9 +1082,6 @@ td, th{
 .wp-block-latest-posts .wp-block-latest-posts__post-full-content > :last-child{
   margin-bottom:0;
 }
-.wp-block-latest-posts.is-grid{
-  outline:1px solid red;
-}
 .wp-block-latest-posts.is-grid li{
   flex:0 0 100%;
   margin:0;
