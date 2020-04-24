@@ -206,3 +206,35 @@
 	&.alignwide {}
 	&.alignfull {}
 }
+
+
+// Calendar block [gutenberg]
+// ------------------------------
+.wp-block-calendar {
+	margin: 0 0 $space;
+	
+	// Table
+	.wp-calendar-table {
+		caption {}
+		thead {
+			tr {}
+			th {}
+		}
+		tbody {
+			tr {}
+			td {}
+			td.pad {}
+		}
+	}
+	
+	// Nav
+	.wp-calendar-nav {
+		.pad {}
+	}
+	.wp-calendar-nav-prev {
+		a {}
+	}
+	.wp-calendar-nav-next {
+		a {}
+	}
+}

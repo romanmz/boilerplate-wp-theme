@@ -1157,6 +1157,9 @@ td, th{
     margin-top:0;
   }
 }
+.wp-block-calendar{
+  margin:0 0 2rem;
+}
 .no-margin{
   margin-bottom:0;
 }
