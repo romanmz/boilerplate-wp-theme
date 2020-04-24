@@ -344,3 +344,22 @@
 	&.alignleft {}
 	&.alignright {}
 }
+
+
+// Tag Cloud block [gutenberg]
+// ------------------------------
+.wp-block-tag-cloud {
+	.tag-cloud-link {
+		.tag-link-count {}
+		
+		// &.tag-link-# {}
+		// &.tag-link-position-# {}
+	}
+	
+	// Alignment variations
+	&.aligncenter {}
+	&.alignleft {}
+	&.alignright {}
+	&.alignwide {}
+	&.alignfull {}
+}
