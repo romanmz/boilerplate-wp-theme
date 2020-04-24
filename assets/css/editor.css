@@ -1208,6 +1208,12 @@ td, th{
     -ms-grid-columns:1fr 1fr 1fr 1fr 1fr 1fr;
   }
 }
+.wp-block-search{
+  margin:0 0 2rem;
+}
+.wp-block-search.aligncenter{
+  display:flex;
+}
 .no-margin{
   margin-bottom:0;
 }

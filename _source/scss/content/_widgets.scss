@@ -299,3 +299,23 @@
 	&.alignwide {}
 	&.alignfull {}
 }
+
+
+// Search block [gutenberg]
+// ------------------------------
+.wp-block-search {
+	margin: 0 0 $space;
+	
+	.wp-block-search__label {}
+	.wp-block-search__input {}
+	.wp-block-search__button {}
+	
+	// Alignment variations
+	&.aligncenter {
+		display: flex;
+	}
+	&.alignleft {}
+	&.alignright {}
+	&.alignwide {}
+	&.alignfull {}
+}
