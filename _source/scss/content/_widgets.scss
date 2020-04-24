@@ -237,4 +237,79 @@
 	.wp-calendar-nav-next {
 		a {}
 	}
+	
+	// Alignment variations
+	&.aligncenter {}
+	&.alignleft {}
+	&.alignright {}
+	&.alignwide {}
+	&.alignfull {}
+}
+
+
+// RSS block [gutenberg]
+// ------------------------------
+.wp-block-rss {
+	padding: 0;
+	list-style: none;
+	
+	.wp-block-rss__item {
+		margin: 1rem 0;
+	}
+	.wp-block-rss__item-title {
+		a {}
+	}
+	.wp-block-rss__item-publish-date,
+	.wp-block-rss__item-author {
+		@include font-size-small;
+		color: $grey-medium;
+	}
+	.wp-block-rss__item-excerpt {}
+	
+	
+	// Style variation: Grid
+	&.is-grid {
+		li {
+			width: auto;
+			margin: 0;
+		}
+		@media (max-width: 599px) {
+			li:not( :last-child ) {
+				margin-bottom: $space;
+			}
+		}
+		@media (min-width: 600px) {
+			@include display-grid;
+			grid-gap: $space;
+			@include grid-template-columns( 1fr 1fr 1fr );
+			
+			li {
+				min-width: 0;
+			}
+			&.columns-2 {
+				@include grid-template-columns( 1fr 1fr );
+			}
+			&.columns-3 {
+				@include grid-template-columns( 1fr 1fr 1fr );
+			}
+		}
+		@include screen-above( medium ) {
+			&.columns-4 {
+				@include grid-template-columns( 1fr 1fr 1fr 1fr );
+			}
+			&.columns-5 {
+				@include grid-template-columns( 1fr 1fr 1fr 1fr 1fr );
+			}
+			&.columns-6 {
+				@include grid-template-columns( 1fr 1fr 1fr 1fr 1fr 1fr );
+			}
+		}
+	}
+	
+	// Alignment variations
+	&.aligncenter {}
+	&.alignleft {}
+	&.alignright {}
+	&.alignwide {}
+	&.alignfull {}
 }
