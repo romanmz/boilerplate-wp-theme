@@ -26,16 +26,20 @@
 <h3 id="pellentesque-pretium">Heading 3. Pellentesque pretium lacinia est vel tincidunt.</h3>
 <!-- /wp:heading -->
 
-<!-- wp:heading {"level":4,"align":"left"} -->
-<h4 style="text-align:left" id="integer-magna-turpis">Heading 4. Integer magna turpis, commodo eget blandit ut, porta ut libero.</h4>
+<!-- wp:heading {"align":"left","level":4} -->
+<h4 class="has-text-align-left" id="integer-magna-turpis">Heading 4. Integer magna turpis, commodo eget blandit ut, porta ut libero.</h4>
 <!-- /wp:heading -->
 
-<!-- wp:heading {"level":5,"align":"center"} -->
-<h5 style="text-align:center" id="nulla-placerat">Heading 5. Nulla placerat eros nec quam porta interdum. Quisque eu dapibus velit.</h5>
+<!-- wp:heading {"align":"center","level":5} -->
+<h5 class="has-text-align-center" id="nulla-placerat">Heading 5. Nulla placerat eros nec quam porta interdum. Quisque eu dapibus velit.</h5>
 <!-- /wp:heading -->
 
-<!-- wp:heading {"level":6,"align":"right"} -->
-<h6 style="text-align:right" id="sed-facilis">Heading 6. Sed facilisis auctor condimentum. Aenean at odio vitae velit pharetra gravida ut tincidunt est.</h6>
+<!-- wp:heading {"align":"right","level":6,"textColor":"vivid-red"} -->
+<h6 class="has-vivid-red-color has-text-color has-text-align-right" id="sed-facilis">Heading 6. Sed facilisis auctor condimentum. Aenean at odio vitae velit pharetra gravida ut tincidunt est.</h6>
+<!-- /wp:heading -->
+
+<!-- wp:heading {"level":4} -->
+<h4>Inline Styles. <strong>strong text</strong>, <em>emphasised text</em>, <a href="https://google.com">hyperlinks</a>, <code>inline code</code>, <s>strikethrough text</s>, <span class="has-inline-color has-vivid-red-color">custom colours</span>.</h4>
 <!-- /wp:heading -->
 
 <!-- wp:spacer {"height":50} -->
@@ -51,31 +55,35 @@
 <!-- /wp:separator -->
 
 <!-- wp:paragraph {"dropCap":true} -->
-<p class="has-drop-cap">Paragraph. <a href="#">hyperlinks</a>, <em>emphasized text</em>, <strong>strong text</strong>, <mark>marked content</mark>, <abbr title="Abbreviations">Abbrs</abbr>, <small>small print</small>, <sub>subscript text</sub>, <sup>superscript text</sup>, <del>deleted text</del>, <ins>inserted text</ins>. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed iaculis justo sed libero lacinia cursus. Suspendisse potenti. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+<p class="has-drop-cap">Paragraph with supported inline elements: <strong>strong text</strong>, <em>emphasised text</em>, <a href="https://google.com">hyperlinks</a>, <code>inline code</code>, <s>strikethrough text</s>, <span class="has-inline-color has-vivid-red-color">custom colours</span>. Other manually coded inline elements: <mark>marked content</mark>, <abbr title="Abbreviations">Abbrs</abbr>, <small>small print</small>, <sub>subscript text</sub>, <sup>superscript text</sup>, <del>deleted text</del>, <ins>inserted text</ins>. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed iaculis justo sed libero lacinia cursus. Suspendisse potenti. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"textColor":"very-light-gray","backgroundColor":"vivid-red"} -->
-<p class="has-text-color has-background has-very-light-gray-color has-vivid-red-background-color">Paragraph. <a href="#">hyperlinks</a>, <em>emphasized text</em>, <strong>strong text</strong>, <mark>marked content</mark>, <abbr title="Abbreviations">Abbrs</abbr>, <small>small print</small>, <sub>subscript text</sub>, <sup>superscript text</sup>, <del>deleted text</del>, <ins>inserted text</ins>. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed iaculis justo sed libero lacinia cursus. Suspendisse potenti. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+<p class="has-text-color has-background has-very-light-gray-color has-vivid-red-background-color">Paragraph with supported inline elements: <strong>strong text</strong>, <em>emphasised text</em>, <a href="#">hyperlinks</a>, <code>inline code</code>, <s>strike-through text</s>, custom colours. Other manually coded inline elements: <mark>marked content</mark>, <abbr title="Abbreviations">Abbrs</abbr>, <small>small print</small>, <sub>subscript text</sub>, <sup>superscript text</sup>, <del>deleted text</del>, <ins>inserted text</ins>. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed iaculis justo sed libero lacinia cursus. Suspendisse potenti. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"fontSize":"small"} -->
-<p class="has-small-font-size">Paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed iaculis justo sed libero lacinia cursus. Suspendisse potenti. Lorem ipsum dolor   sit amet, consectetur adipiscing elit.</p>
+<p class="has-small-font-size">Small font size. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed iaculis justo sed libero lacinia cursus. Suspendisse potenti. Lorem ipsum dolor   sit amet, consectetur adipiscing elit.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed iaculis justo sed libero lacinia cursus. Suspendisse potenti. Lorem ipsum dolor   sit amet, consectetur adipiscing elit.</p>
+<p>Default font size. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed iaculis justo sed libero lacinia cursus. Suspendisse potenti. Lorem ipsum dolor   sit amet, consectetur adipiscing elit.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"align":"left","fontSize":"normal"} -->
+<p class="has-text-align-left has-normal-font-size">Normal font size. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed iaculis justo sed libero lacinia cursus. Suspendisse potenti. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"align":"left","fontSize":"medium"} -->
-<p style="text-align:left" class="has-medium-font-size">Paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed iaculis justo sed libero lacinia cursus. Suspendisse potenti. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+<p class="has-text-align-left has-medium-font-size">Medium font size. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed iaculis justo sed libero lacinia cursus. Suspendisse potenti. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"align":"center","fontSize":"large"} -->
-<p style="text-align:center" class="has-large-font-size">Paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed iaculis justo sed libero lacinia cursus. Suspendisse potenti. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+<p class="has-text-align-center has-large-font-size">Large font size. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed iaculis justo sed libero lacinia cursus. Suspendisse potenti. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"align":"right","fontSize":"huge"} -->
-<p style="text-align:right" class="has-huge-font-size">Paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed iaculis justo sed libero lacinia cursus. Suspendisse potenti. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+<p class="has-text-align-right has-huge-font-size">Huge font size. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed iaculis justo sed libero lacinia cursus. Suspendisse potenti. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:spacer {"height":50} -->
@@ -118,6 +126,10 @@
 <ol><li>Ordered list <ol><li>Nested ordered list</li><li>Fermentum sed odio</li><li>Donec   mattis sollicitudin </li></ol></li><li>Praesent sem nisl</li><li>Adipiscing vel   placerat</li></ol>
 <!-- /wp:list -->
 
+<!-- wp:list {"ordered":true,"start":10,"reversed":true} -->
+<ol reversed start="10"><li>Ordered list with custom settings<ol><li>Nested ordered list</li><li>Fermentum sed odio</li><li>Donec   mattis sollicitudin </li></ol></li><li>Praesent sem nisl</li><li>Adipiscing vel   placerat</li></ol>
+<!-- /wp:list -->
+
 <dl>
 <dt>Definition Term</dt>
 <dd>Definition Description. Morbi placerat vulputate felis at feugiat. Donec eget tellus sed magna euismod rhoncus eget sit amet tellus. Curabitur magna nisl, placerat quis blandit in, lobortis et diam.</dd>
@@ -136,15 +148,15 @@
 <!-- /wp:separator -->
 
 <!-- wp:quote {"align":"left"} -->
-<blockquote style="text-align:left" class="wp-block-quote"><p>Integer volutpat faucibus lorem nec consectetur. <strong>Vestibulum</strong> <em>placerat</em>, <a href="#">diam</a> <del>vitae</del> vulputate feugiat, nisl nibh egestas ante, eu congue leo   neque vel sem. Morbi vel justo massa, a imperdiet magna. Nam vulputate posuere blandit. Donec tincidunt sollicitudin viverra.</p><cite>Citation inside block quote</cite></blockquote>
+<blockquote class="wp-block-quote has-text-align-left"><p>Integer volutpat faucibus lorem nec consectetur. <strong>strong text</strong> <em>emphasised text</em>, <a href="https://google.com"><a href="https://google.com/">hyperlinks</a>,</a> <code>inline code</code>, <del>strikethrough text</del>, <span class="has-inline-color has-vivid-red-color">custom colours</span>, vulputate feugiat, nisl nibh egestas ante, eu congue leo   neque vel sem. Morbi vel justo massa, a imperdiet magna. Nam vulputate posuere blandit. Donec tincidunt sollicitudin viverra.</p><cite>Citation inside block quote</cite></blockquote>
 <!-- /wp:quote -->
 
 <!-- wp:quote {"align":"center","className":"is-style-large"} -->
-<blockquote style="text-align:center" class="wp-block-quote is-style-large"><p>Integer volutpat faucibus lorem nec consectetur. <strong>Vestibulum</strong> <em>placerat</em>, <a href="#">diam</a> <del>vitae</del> vulputate feugiat, nisl nibh egestas ante, eu congue leo   neque vel sem. Morbi vel justo massa, a imperdiet magna. Nam vulputate posuere blandit. Donec tincidunt sollicitudin viverra.</p><cite>Citation inside block quote</cite></blockquote>
+<blockquote class="wp-block-quote has-text-align-center is-style-large"><p>Integer volutpat faucibus lorem nec consectetur. <strong>strong text</strong> <em>emphasised text</em>, <a href="https://google.com"><a href="https://google.com/">hyperlinks</a>,</a>  <code>inline code</code>, <del><s>strikethrough text</s></del>, <span class="has-inline-color has-vivid-red-color">custom colours</span>, vulputate feugiat, nisl nibh egestas ante, eu congue leo   neque vel sem. Morbi vel justo massa, a imperdiet magna. Nam vulputate posuere blandit. Donec tincidunt sollicitudin viverra.</p><cite>Citation inside block quote</cite></blockquote>
 <!-- /wp:quote -->
 
 <!-- wp:quote {"align":"right"} -->
-<blockquote style="text-align:right" class="wp-block-quote"><p>Integer volutpat faucibus lorem nec consectetur. <strong>Vestibulum</strong> <em>placerat</em>, <a href="#">diam</a> <del>vitae</del> vulputate feugiat, nisl nibh egestas ante, eu congue leo   neque vel sem. Morbi vel justo massa, a imperdiet magna. Nam vulputate posuere blandit. Donec tincidunt sollicitudin viverra.</p><cite>Citation inside block quote</cite></blockquote>
+<blockquote class="wp-block-quote has-text-align-right"><p>Integer volutpat faucibus lorem nec consectetur, vulputate feugiat, nisl nibh egestas ante, eu congue leo   neque vel sem. Morbi vel justo massa, a imperdiet magna. Nam vulputate posuere blandit. Donec tincidunt sollicitudin viverra.</p><cite>Citation inside block quote</cite></blockquote>
 <!-- /wp:quote -->
 
 <!-- wp:spacer {"height":50} -->
@@ -160,34 +172,38 @@
 <!-- /wp:separator -->
 
 <!-- wp:image {"id":556,"linkDestination":"media"} -->
-<figure class="wp-block-image"><a class="link-class" href="https://picsum.photos/seed/photo1/800/400" target="_blank" rel="noreferrer noopener"><img src="https://picsum.photos/seed/photo1/800/400" alt="this is my alt text" class="wp-image-556"/></a><figcaption><strong>Duis</strong> <em>sagittis</em> <a href="#">bibendum</a> <del>magna</del></figcaption></figure>
+<figure class="wp-block-image"><a class="link-class" href="https://picsum.photos/seed/photo1/800/400" target="_blank" rel="noreferrer noopener"><img src="https://picsum.photos/seed/photo1/800/400" alt="this is my alt text" class="wp-image-556"/></a><figcaption><strong>strong</strong> <em>emphasis</em> <a href="#">hyperlink</a> <code>code</code> <del>strike</del> <span class="has-inline-color has-vivid-red-color">colour</span></figcaption></figure>
 <!-- /wp:image -->
 
-<!-- wp:image {"id":556,"width":275,"height":276} -->
-<figure class="wp-block-image is-resized"><img src="https://picsum.photos/seed/photo1/800/400" alt="" class="wp-image-556" width="275" height="276"/><figcaption>Duis sagittis bibendum magna</figcaption></figure>
+<!-- wp:image {"id":556,"linkDestination":"media","className":"is-style-rounded"} -->
+<figure class="wp-block-image is-style-rounded"><a class="link-class" href="https://picsum.photos/seed/photo1/800/400" target="_blank" rel="noreferrer noopener"><img src="https://picsum.photos/seed/photo1/800/400" alt="this is my alt text" class="wp-image-556"/></a><figcaption>Duis sagittis bibendum magna</figcaption></figure>
 <!-- /wp:image -->
 
-<!-- wp:image {"id":556,"align":"left","width":275,"height":276} -->
-<div class="wp-block-image"><figure class="alignleft is-resized"><img src="https://picsum.photos/seed/photo1/800/400" alt="" class="wp-image-556" width="275" height="276"/><figcaption>Duis sagittis bibendum magna</figcaption></figure></div>
+<!-- wp:image {"id":556,"width":280,"height":140} -->
+<figure class="wp-block-image is-resized"><img src="https://picsum.photos/seed/photo1/800/400" alt="" class="wp-image-556" width="280" height="140"/><figcaption>Duis sagittis bibendum magna</figcaption></figure>
 <!-- /wp:image -->
 
-<!-- wp:image {"id":556,"align":"right","width":275,"height":276} -->
-<div class="wp-block-image"><figure class="alignright is-resized"><img src="https://picsum.photos/seed/photo1/800/400" alt="" class="wp-image-556" width="275" height="276"/><figcaption>Duis sagittis bibendum magna</figcaption></figure></div>
+<!-- wp:image {"align":"left","id":556,"width":280,"height":140} -->
+<div class="wp-block-image"><figure class="alignleft is-resized"><img src="https://picsum.photos/seed/photo1/800/400" alt="" class="wp-image-556" width="280" height="140"/><figcaption>Duis sagittis bibendum magna</figcaption></figure></div>
+<!-- /wp:image -->
+
+<!-- wp:image {"align":"right","id":556,"width":280,"height":140} -->
+<div class="wp-block-image"><figure class="alignright is-resized"><img src="https://picsum.photos/seed/photo1/800/400" alt="" class="wp-image-556" width="280" height="140"/><figcaption>Duis sagittis bibendum magna</figcaption></figure></div>
 <!-- /wp:image -->
 
 <!-- wp:paragraph -->
 <p>Paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed iaculis justo sed libero lacinia cursus. Suspendisse potenti. Lorem ipsum dolor   sit amet, consectetur adipiscing elit.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:image {"id":556,"align":"center","width":275,"height":276} -->
-<div class="wp-block-image"><figure class="aligncenter is-resized"><img src="https://picsum.photos/seed/photo1/800/400" alt="" class="wp-image-556" width="275" height="276"/><figcaption>Duis sagittis bibendum magna</figcaption></figure></div>
+<!-- wp:image {"align":"center","id":556,"width":280,"height":140} -->
+<div class="wp-block-image"><figure class="aligncenter is-resized"><img src="https://picsum.photos/seed/photo1/800/400" alt="" class="wp-image-556" width="280" height="140"/><figcaption>Duis sagittis bibendum magna</figcaption></figure></div>
 <!-- /wp:image -->
 
-<!-- wp:image {"id":556,"align":"wide"} -->
+<!-- wp:image {"align":"wide","id":556} -->
 <figure class="wp-block-image alignwide"><img src="https://picsum.photos/seed/photo1/800/400" alt="" class="wp-image-556"/><figcaption>Duis sagittis bibendum magna</figcaption></figure>
 <!-- /wp:image -->
 
-<!-- wp:image {"id":556,"align":"full"} -->
+<!-- wp:image {"align":"full","id":556} -->
 <figure class="wp-block-image alignfull"><img src="https://picsum.photos/seed/photo1/800/400" alt="" class="wp-image-556"/><figcaption>Duis sagittis bibendum magna</figcaption></figure>
 <!-- /wp:image -->
 
@@ -204,35 +220,35 @@
 <!-- /wp:separator -->
 
 <!-- wp:gallery {"ids":[560,559,558,557,556],"columns":4} -->
-<ul class="wp-block-gallery columns-4 is-cropped"><li class="blocks-gallery-item"><figure><img src="https://picsum.photos/seed/photo5/800/400" alt="" data-id="560" class="wp-image-560"/><figcaption><strong>Nullam</strong> <em>mattis</em> <a href="#">lectus</a> vel <del>aliquet</del> </figcaption></figure></li><li class="blocks-gallery-item"><figure><img src="https://picsum.photos/seed/photo4/800/400" alt="" data-id="559" class="wp-image-559"/><figcaption>Maecenas vitae metus et eros</figcaption></figure></li><li class="blocks-gallery-item"><figure><img src="https://picsum.photos/seed/photo3/800/400" alt="" data-id="558" class="wp-image-558"/><figcaption>Etiam nec velit id justo</figcaption></figure></li><li class="blocks-gallery-item"><figure><img src="https://picsum.photos/seed/photo2/800/400" alt="" data-id="557" class="wp-image-557"/><figcaption>Interdum et malesuada fames</figcaption></figure></li><li class="blocks-gallery-item"><figure><img src="https://picsum.photos/seed/photo1/800/400" alt="" data-id="556" class="wp-image-556"/><figcaption>Duis sagittis bibendum magna</figcaption></figure></li></ul>
+<figure class="wp-block-gallery columns-4 is-cropped"><ul class="blocks-gallery-grid"><li class="blocks-gallery-item"><figure><img src="https://picsum.photos/seed/photo5/800/400" alt="" data-id="560" class="wp-image-560"/><figcaption class="blocks-gallery-item__caption"><strong><strong>strong</strong> </strong><em>emphasis</em> <a href="http://wp.local/wp-admin/post.php?post=11166&amp;action=edit#">hyperlink</a> <code>code</code> <del><s>strike</s></del> <span class="has-inline-color has-vivid-red-color">colour</span></figcaption></figure></li><li class="blocks-gallery-item"><figure><img src="https://picsum.photos/seed/photo4/800/400" alt="" data-id="559" class="wp-image-559"/><figcaption class="blocks-gallery-item__caption">Maecenas vitae metus et eros</figcaption></figure></li><li class="blocks-gallery-item"><figure><img src="https://picsum.photos/seed/photo3/800/400" alt="" data-id="558" class="wp-image-558"/><figcaption class="blocks-gallery-item__caption">Etiam nec velit id justo</figcaption></figure></li><li class="blocks-gallery-item"><figure><img src="https://picsum.photos/seed/photo2/800/400" alt="" data-id="557" class="wp-image-557"/><figcaption class="blocks-gallery-item__caption">Interdum et malesuada fames</figcaption></figure></li><li class="blocks-gallery-item"><figure><img src="https://picsum.photos/seed/photo1/800/400" alt="" data-id="556" class="wp-image-556"/><figcaption class="blocks-gallery-item__caption">Duis sagittis bibendum magna</figcaption></figure></li></ul><figcaption class="blocks-gallery-caption"><strong>strong</strong> <em>emphasis</em> <a href="http://wp.local/wp-admin/post.php?post=11166&amp;action=edit#">hyperlink</a> <code>code</code> <del>strike</del> <span class="has-inline-color has-vivid-red-color">colour</span></figcaption></figure>
 <!-- /wp:gallery -->
 
 <!-- wp:gallery {"ids":[560,559,558,557,556],"columns":8,"imageCrop":false,"linkTo":"media"} -->
-<ul class="wp-block-gallery columns-8"><li class="blocks-gallery-item"><figure><a href="https://picsum.photos/seed/photo5/800/400"><img src="https://picsum.photos/seed/photo5/800/400" alt="" data-id="560" class="wp-image-560"/></a><figcaption><strong>Nullam</strong> <em>mattis</em> <a href="#">lectus</a> vel <del>aliquet</del> </figcaption></figure></li><li class="blocks-gallery-item"><figure><a href="https://picsum.photos/seed/photo4/800/400"><img src="https://picsum.photos/seed/photo4/800/400" alt="" data-id="559" class="wp-image-559"/></a><figcaption>Maecenas vitae metus et eros</figcaption></figure></li><li class="blocks-gallery-item"><figure><a href="https://picsum.photos/seed/photo3/800/400"><img src="https://picsum.photos/seed/photo3/800/400" alt="" data-id="558" class="wp-image-558"/></a><figcaption>Etiam nec velit id justo</figcaption></figure></li><li class="blocks-gallery-item"><figure><a href="https://picsum.photos/seed/photo2/800/400"><img src="https://picsum.photos/seed/photo2/800/400" alt="" data-id="557" class="wp-image-557"/></a><figcaption>Interdum et malesuada fames</figcaption></figure></li><li class="blocks-gallery-item"><figure><a href="https://picsum.photos/seed/photo1/800/400"><img src="https://picsum.photos/seed/photo1/800/400" alt="" data-id="556" class="wp-image-556"/></a><figcaption>Duis sagittis bibendum magna</figcaption></figure></li></ul>
+<figure class="wp-block-gallery columns-8"><ul class="blocks-gallery-grid"><li class="blocks-gallery-item"><figure><a href="https://picsum.photos/seed/photo5/800/400"><img src="https://picsum.photos/seed/photo5/800/400" alt="" data-id="560" class="wp-image-560"/></a><figcaption class="blocks-gallery-item__caption"><strong>Nullam</strong> <em>mattis</em> <a href="#">lectus</a> vel <del>aliquet</del> </figcaption></figure></li><li class="blocks-gallery-item"><figure><a href="https://picsum.photos/seed/photo4/800/400"><img src="https://picsum.photos/seed/photo4/800/400" alt="" data-id="559" class="wp-image-559"/></a><figcaption class="blocks-gallery-item__caption">Maecenas vitae metus et eros</figcaption></figure></li><li class="blocks-gallery-item"><figure><a href="https://picsum.photos/seed/photo3/800/400"><img src="https://picsum.photos/seed/photo3/800/400" alt="" data-id="558" class="wp-image-558"/></a><figcaption class="blocks-gallery-item__caption">Etiam nec velit id justo</figcaption></figure></li><li class="blocks-gallery-item"><figure><a href="https://picsum.photos/seed/photo2/800/400"><img src="https://picsum.photos/seed/photo2/800/400" alt="" data-id="557" class="wp-image-557"/></a><figcaption class="blocks-gallery-item__caption">Interdum et malesuada fames</figcaption></figure></li><li class="blocks-gallery-item"><figure><a href="https://picsum.photos/seed/photo1/800/400"><img src="https://picsum.photos/seed/photo1/800/400" alt="" data-id="556" class="wp-image-556"/></a><figcaption class="blocks-gallery-item__caption">Duis sagittis bibendum magna</figcaption></figure></li></ul></figure>
 <!-- /wp:gallery -->
 
-<!-- wp:gallery {"ids":[560,559,558,556],"columns":4,"imageCrop":false,"linkTo":"media","align":"left","className":"alignleft"} -->
-<ul class="wp-block-gallery alignleft columns-4"><li class="blocks-gallery-item"><figure><a href="https://picsum.photos/seed/photo5/800/400"><img src="https://picsum.photos/seed/photo5/800/400" alt="" data-id="560" class="wp-image-560"/></a><figcaption><strong>Nullam</strong> <em>mattis</em> <a href="#">lectus</a> vel <del>aliquet</del> </figcaption></figure></li><li class="blocks-gallery-item"><figure><a href="https://picsum.photos/seed/photo4/800/400"><img src="https://picsum.photos/seed/photo4/800/400" alt="" data-id="559" class="wp-image-559"/></a><figcaption>Maecenas vitae metus et eros</figcaption></figure></li><li class="blocks-gallery-item"><figure><a href="https://picsum.photos/seed/photo3/800/400"><img src="https://picsum.photos/seed/photo3/800/400" alt="" data-id="558" class="wp-image-558"/></a><figcaption>Etiam nec velit id justo</figcaption></figure></li><li class="blocks-gallery-item"><figure><a href="https://picsum.photos/seed/photo1/800/400"><img src="https://picsum.photos/seed/photo1/800/400" alt="" data-id="556" class="wp-image-556"/></a><figcaption>Duis sagittis bibendum magna</figcaption></figure></li></ul>
+<!-- wp:gallery {"ids":[560,559,558,556],"columns":4,"imageCrop":false,"linkTo":"media","className":"alignleft"} -->
+<figure class="wp-block-gallery columns-4  alignleft"><ul class="blocks-gallery-grid"><li class="blocks-gallery-item"><figure><a href="https://picsum.photos/seed/photo5/800/400"><img src="https://picsum.photos/seed/photo5/800/400" alt="" data-id="560" class="wp-image-560"/></a><figcaption class="blocks-gallery-item__caption"><strong>Nullam</strong> <em>mattis</em> <a href="#">lectus</a> vel <del>aliquet</del> </figcaption></figure></li><li class="blocks-gallery-item"><figure><a href="https://picsum.photos/seed/photo4/800/400"><img src="https://picsum.photos/seed/photo4/800/400" alt="" data-id="559" class="wp-image-559"/></a><figcaption class="blocks-gallery-item__caption">Maecenas vitae metus et eros</figcaption></figure></li><li class="blocks-gallery-item"><figure><a href="https://picsum.photos/seed/photo3/800/400"><img src="https://picsum.photos/seed/photo3/800/400" alt="" data-id="558" class="wp-image-558"/></a><figcaption class="blocks-gallery-item__caption">Etiam nec velit id justo</figcaption></figure></li><li class="blocks-gallery-item"><figure><a href="https://picsum.photos/seed/photo1/800/400"><img src="https://picsum.photos/seed/photo1/800/400" alt="" data-id="556" class="wp-image-556"/></a><figcaption class="blocks-gallery-item__caption">Duis sagittis bibendum magna</figcaption></figure></li></ul></figure>
 <!-- /wp:gallery -->
 
-<!-- wp:gallery {"ids":[560,559,557,556],"columns":4,"imageCrop":false,"linkTo":"media","align":"right","className":"alignright"} -->
-<ul class="wp-block-gallery alignright columns-4"><li class="blocks-gallery-item"><figure><a href="https://picsum.photos/seed/photo5/800/400"><img src="https://picsum.photos/seed/photo5/800/400" alt="" data-id="560" class="wp-image-560"/></a><figcaption><strong>Nullam</strong> <em>mattis</em> <a href="#">lectus</a> vel <del>aliquet</del> </figcaption></figure></li><li class="blocks-gallery-item"><figure><a href="https://picsum.photos/seed/photo4/800/400"><img src="https://picsum.photos/seed/photo4/800/400" alt="" data-id="559" class="wp-image-559"/></a><figcaption>Maecenas vitae metus et eros</figcaption></figure></li><li class="blocks-gallery-item"><figure><a href="https://picsum.photos/seed/photo2/800/400"><img src="https://picsum.photos/seed/photo2/800/400" alt="" data-id="557" class="wp-image-557"/></a><figcaption>Interdum et malesuada fames</figcaption></figure></li><li class="blocks-gallery-item"><figure><a href="https://picsum.photos/seed/photo1/800/400"><img src="https://picsum.photos/seed/photo1/800/400" alt="" data-id="556" class="wp-image-556"/></a><figcaption>Duis sagittis bibendum magna</figcaption></figure></li></ul>
+<!-- wp:gallery {"ids":[560,559,557,556],"columns":4,"imageCrop":false,"linkTo":"media","className":"alignright"} -->
+<figure class="wp-block-gallery columns-4  alignright"><ul class="blocks-gallery-grid"><li class="blocks-gallery-item"><figure><a href="https://picsum.photos/seed/photo5/800/400"><img src="https://picsum.photos/seed/photo5/800/400" alt="" data-id="560" class="wp-image-560"/></a><figcaption class="blocks-gallery-item__caption"><strong>Nullam</strong> <em>mattis</em> <a href="#">lectus</a> vel <del>aliquet</del> </figcaption></figure></li><li class="blocks-gallery-item"><figure><a href="https://picsum.photos/seed/photo4/800/400"><img src="https://picsum.photos/seed/photo4/800/400" alt="" data-id="559" class="wp-image-559"/></a><figcaption class="blocks-gallery-item__caption">Maecenas vitae metus et eros</figcaption></figure></li><li class="blocks-gallery-item"><figure><a href="https://picsum.photos/seed/photo2/800/400"><img src="https://picsum.photos/seed/photo2/800/400" alt="" data-id="557" class="wp-image-557"/></a><figcaption class="blocks-gallery-item__caption">Interdum et malesuada fames</figcaption></figure></li><li class="blocks-gallery-item"><figure><a href="https://picsum.photos/seed/photo1/800/400"><img src="https://picsum.photos/seed/photo1/800/400" alt="" data-id="556" class="wp-image-556"/></a><figcaption class="blocks-gallery-item__caption">Duis sagittis bibendum magna</figcaption></figure></li></ul></figure>
 <!-- /wp:gallery -->
 
 <!-- wp:paragraph -->
 <p>Paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed iaculis justo sed libero lacinia cursus. Suspendisse potenti. Lorem ipsum dolor   sit amet, consectetur adipiscing elit.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:gallery {"ids":[560,559,558,557,556],"columns":8,"imageCrop":false,"linkTo":"media","align":"center","className":"aligncenter"} -->
-<ul class="wp-block-gallery aligncenter columns-8"><li class="blocks-gallery-item"><figure><a href="https://picsum.photos/seed/photo5/800/400"><img src="https://picsum.photos/seed/photo5/800/400" alt="" data-id="560" class="wp-image-560"/></a><figcaption><strong>Nullam</strong> <em>mattis</em> <a href="#">lectus</a> vel <del>aliquet</del> </figcaption></figure></li><li class="blocks-gallery-item"><figure><a href="https://picsum.photos/seed/photo4/800/400"><img src="https://picsum.photos/seed/photo4/800/400" alt="" data-id="559" class="wp-image-559"/></a><figcaption>Maecenas vitae metus et eros</figcaption></figure></li><li class="blocks-gallery-item"><figure><a href="https://picsum.photos/seed/photo3/800/400"><img src="https://picsum.photos/seed/photo3/800/400" alt="" data-id="558" class="wp-image-558"/></a><figcaption>Etiam nec velit id justo</figcaption></figure></li><li class="blocks-gallery-item"><figure><a href="https://picsum.photos/seed/photo2/800/400"><img src="https://picsum.photos/seed/photo2/800/400" alt="" data-id="557" class="wp-image-557"/></a><figcaption>Interdum et malesuada fames</figcaption></figure></li><li class="blocks-gallery-item"><figure><a href="https://picsum.photos/seed/photo1/800/400"><img src="https://picsum.photos/seed/photo1/800/400" alt="" data-id="556" class="wp-image-556"/></a><figcaption>Duis sagittis bibendum magna</figcaption></figure></li></ul>
+<!-- wp:gallery {"ids":[560,559,558,557,556],"columns":5,"imageCrop":false,"linkTo":"media","className":"aligncenter"} -->
+<figure class="wp-block-gallery columns-5  aligncenter"><ul class="blocks-gallery-grid"><li class="blocks-gallery-item"><figure><a href="https://picsum.photos/seed/photo5/800/400"><img src="https://picsum.photos/seed/photo5/800/400" alt="" data-id="560" class="wp-image-560"/></a><figcaption class="blocks-gallery-item__caption"><strong>Nullam</strong> <em>mattis</em> <a href="#">lectus</a> vel <del>aliquet</del> </figcaption></figure></li><li class="blocks-gallery-item"><figure><a href="https://picsum.photos/seed/photo4/800/400"><img src="https://picsum.photos/seed/photo4/800/400" alt="" data-id="559" class="wp-image-559"/></a><figcaption class="blocks-gallery-item__caption">Maecenas vitae metus et eros</figcaption></figure></li><li class="blocks-gallery-item"><figure><a href="https://picsum.photos/seed/photo3/800/400"><img src="https://picsum.photos/seed/photo3/800/400" alt="" data-id="558" class="wp-image-558"/></a><figcaption class="blocks-gallery-item__caption">Etiam nec velit id justo</figcaption></figure></li><li class="blocks-gallery-item"><figure><a href="https://picsum.photos/seed/photo2/800/400"><img src="https://picsum.photos/seed/photo2/800/400" alt="" data-id="557" class="wp-image-557"/></a><figcaption class="blocks-gallery-item__caption">Interdum et malesuada fames</figcaption></figure></li><li class="blocks-gallery-item"><figure><a href="https://picsum.photos/seed/photo1/800/400"><img src="https://picsum.photos/seed/photo1/800/400" alt="" data-id="556" class="wp-image-556"/></a><figcaption class="blocks-gallery-item__caption">Duis sagittis bibendum magna</figcaption></figure></li></ul></figure>
 <!-- /wp:gallery -->
 
-<!-- wp:gallery {"ids":[560,559,558,557,556],"columns":5,"imageCrop":false,"linkTo":"media","align":"wide","className":"alignwide"} -->
-<ul class="wp-block-gallery alignwide columns-5"><li class="blocks-gallery-item"><figure><a href="https://picsum.photos/seed/photo5/800/400"><img src="https://picsum.photos/seed/photo5/800/400" alt="" data-id="560" class="wp-image-560"/></a><figcaption><strong>Nullam</strong> <em>mattis</em> <a href="#">lectus</a> vel <del>aliquet</del> </figcaption></figure></li><li class="blocks-gallery-item"><figure><a href="https://picsum.photos/seed/photo4/800/400"><img src="https://picsum.photos/seed/photo4/800/400" alt="" data-id="559" class="wp-image-559"/></a><figcaption>Maecenas vitae metus et eros</figcaption></figure></li><li class="blocks-gallery-item"><figure><a href="https://picsum.photos/seed/photo3/800/400"><img src="https://picsum.photos/seed/photo3/800/400" alt="" data-id="558" class="wp-image-558"/></a><figcaption>Etiam nec velit id justo</figcaption></figure></li><li class="blocks-gallery-item"><figure><a href="https://picsum.photos/seed/photo2/800/400"><img src="https://picsum.photos/seed/photo2/800/400" alt="" data-id="557" class="wp-image-557"/></a><figcaption>Interdum et malesuada fames</figcaption></figure></li><li class="blocks-gallery-item"><figure><a href="https://picsum.photos/seed/photo1/800/400"><img src="https://picsum.photos/seed/photo1/800/400" alt="" data-id="556" class="wp-image-556"/></a><figcaption>Duis sagittis bibendum magna</figcaption></figure></li></ul>
+<!-- wp:gallery {"ids":[560,559,558,557,556],"columns":5,"imageCrop":false,"linkTo":"media","className":"alignwide"} -->
+<figure class="wp-block-gallery columns-5  alignwide"><ul class="blocks-gallery-grid"><li class="blocks-gallery-item"><figure><a href="https://picsum.photos/seed/photo5/800/400"><img src="https://picsum.photos/seed/photo5/800/400" alt="" data-id="560" class="wp-image-560"/></a><figcaption class="blocks-gallery-item__caption"><strong>Nullam</strong> <em>mattis</em> <a href="#">lectus</a> vel <del>aliquet</del> </figcaption></figure></li><li class="blocks-gallery-item"><figure><a href="https://picsum.photos/seed/photo4/800/400"><img src="https://picsum.photos/seed/photo4/800/400" alt="" data-id="559" class="wp-image-559"/></a><figcaption class="blocks-gallery-item__caption">Maecenas vitae metus et eros</figcaption></figure></li><li class="blocks-gallery-item"><figure><a href="https://picsum.photos/seed/photo3/800/400"><img src="https://picsum.photos/seed/photo3/800/400" alt="" data-id="558" class="wp-image-558"/></a><figcaption class="blocks-gallery-item__caption">Etiam nec velit id justo</figcaption></figure></li><li class="blocks-gallery-item"><figure><a href="https://picsum.photos/seed/photo2/800/400"><img src="https://picsum.photos/seed/photo2/800/400" alt="" data-id="557" class="wp-image-557"/></a><figcaption class="blocks-gallery-item__caption">Interdum et malesuada fames</figcaption></figure></li><li class="blocks-gallery-item"><figure><a href="https://picsum.photos/seed/photo1/800/400"><img src="https://picsum.photos/seed/photo1/800/400" alt="" data-id="556" class="wp-image-556"/></a><figcaption class="blocks-gallery-item__caption">Duis sagittis bibendum magna</figcaption></figure></li></ul></figure>
 <!-- /wp:gallery -->
 
-<!-- wp:gallery {"ids":[560,559,558,557,556],"columns":5,"imageCrop":false,"linkTo":"media","align":"full","className":"alignfull"} -->
-<ul class="wp-block-gallery alignfull columns-5"><li class="blocks-gallery-item"><figure><a href="https://picsum.photos/seed/photo5/800/400"><img src="https://picsum.photos/seed/photo5/800/400" alt="" data-id="560" class="wp-image-560"/></a><figcaption><strong>Nullam</strong> <em>mattis</em> <a href="#">lectus</a> vel <del>aliquet</del> </figcaption></figure></li><li class="blocks-gallery-item"><figure><a href="https://picsum.photos/seed/photo4/800/400"><img src="https://picsum.photos/seed/photo4/800/400" alt="" data-id="559" class="wp-image-559"/></a><figcaption>Maecenas vitae metus et eros</figcaption></figure></li><li class="blocks-gallery-item"><figure><a href="https://picsum.photos/seed/photo3/800/400"><img src="https://picsum.photos/seed/photo3/800/400" alt="" data-id="558" class="wp-image-558"/></a><figcaption>Etiam nec velit id justo</figcaption></figure></li><li class="blocks-gallery-item"><figure><a href="https://picsum.photos/seed/photo2/800/400"><img src="https://picsum.photos/seed/photo2/800/400" alt="" data-id="557" class="wp-image-557"/></a><figcaption>Interdum et malesuada fames</figcaption></figure></li><li class="blocks-gallery-item"><figure><a href="https://picsum.photos/seed/photo1/800/400"><img src="https://picsum.photos/seed/photo1/800/400" alt="" data-id="556" class="wp-image-556"/></a><figcaption>Duis sagittis bibendum magna</figcaption></figure></li></ul>
+<!-- wp:gallery {"ids":[560,559,558,557,556],"columns":5,"imageCrop":false,"linkTo":"media","className":"alignfull"} -->
+<figure class="wp-block-gallery columns-5  alignfull"><ul class="blocks-gallery-grid"><li class="blocks-gallery-item"><figure><a href="https://picsum.photos/seed/photo5/800/400"><img src="https://picsum.photos/seed/photo5/800/400" alt="" data-id="560" class="wp-image-560"/></a><figcaption class="blocks-gallery-item__caption"><strong>Nullam</strong> <em>mattis</em> <a href="#">lectus</a> vel <del>aliquet</del> </figcaption></figure></li><li class="blocks-gallery-item"><figure><a href="https://picsum.photos/seed/photo4/800/400"><img src="https://picsum.photos/seed/photo4/800/400" alt="" data-id="559" class="wp-image-559"/></a><figcaption class="blocks-gallery-item__caption">Maecenas vitae metus et eros</figcaption></figure></li><li class="blocks-gallery-item"><figure><a href="https://picsum.photos/seed/photo3/800/400"><img src="https://picsum.photos/seed/photo3/800/400" alt="" data-id="558" class="wp-image-558"/></a><figcaption class="blocks-gallery-item__caption">Etiam nec velit id justo</figcaption></figure></li><li class="blocks-gallery-item"><figure><a href="https://picsum.photos/seed/photo2/800/400"><img src="https://picsum.photos/seed/photo2/800/400" alt="" data-id="557" class="wp-image-557"/></a><figcaption class="blocks-gallery-item__caption">Interdum et malesuada fames</figcaption></figure></li><li class="blocks-gallery-item"><figure><a href="https://picsum.photos/seed/photo1/800/400"><img src="https://picsum.photos/seed/photo1/800/400" alt="" data-id="556" class="wp-image-556"/></a><figcaption class="blocks-gallery-item__caption">Duis sagittis bibendum magna</figcaption></figure></li></ul></figure>
 <!-- /wp:gallery -->
 
 <!-- wp:spacer {"height":50} -->
@@ -247,36 +263,144 @@
 <hr class="wp-block-separator is-style-wide"/>
 <!-- /wp:separator -->
 
+<!-- wp:cover {"overlayColor":"vivid-green-cyan","minHeight":100,"className":"has-undefined-content"} -->
+<div class="wp-block-cover has-vivid-green-cyan-background-color has-background-dim has-undefined-content" style="min-height:100px"><div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","placeholder":"Write title…","fontSize":"large"} -->
+<p class="has-text-align-center has-large-font-size"><strong>strong</strong>, <em>emphasis</em>, <a href="#">hyperlink</a>, <code>code</code>, <s>strikethrough</s>, <span class="has-inline-color has-vivid-red-color">colour</span></p>
+<!-- /wp:paragraph --></div></div>
+<!-- /wp:cover -->
+
+<!-- wp:cover {"minHeight":100,"gradient":"blush-bordeaux","className":"has-undefined-content"} -->
+<div class="wp-block-cover has-background-dim has-background-gradient has-blush-bordeaux-gradient-background has-undefined-content" style="min-height:100px"><div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","placeholder":"Write title…","fontSize":"large"} -->
+<p class="has-text-align-center has-large-font-size"><strong>strong</strong>, <em>emphasis</em>, <a href="#">hyperlink</a>, <code>code</code>, <s>strikethrough</s>, <span class="has-inline-color has-vivid-red-color">colour</span></p>
+<!-- /wp:paragraph --></div></div>
+<!-- /wp:cover -->
+
 <!-- wp:cover {"url":"http://techslides.com/demos/sample-videos/small.mp4","id":968,"backgroundType":"video","className":"has-undefined-content"} -->
-<div class="wp-block-cover has-background-dim has-undefined-content"><video class="wp-block-cover__video-background" autoplay muted loop src="http://techslides.com/demos/sample-videos/small.mp4"></video><p class="wp-block-cover-text"><strong>This</strong> is an <em>example</em> of a <a href="#">cover</a> <del>block</del></p></div>
+<div class="wp-block-cover has-background-dim has-undefined-content"><video class="wp-block-cover__video-background" autoplay muted loop src="http://techslides.com/demos/sample-videos/small.mp4"></video><div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","placeholder":"Write title…","fontSize":"large"} -->
+<p class="has-text-align-center has-large-font-size"><strong>strong</strong>, <em>emphasis</em>, <a href="#">hyperlink</a>, <code>code</code>, <s>strikethrough</s>, <span class="has-inline-color has-vivid-red-color">colour</span></p>
+<!-- /wp:paragraph --></div></div>
 <!-- /wp:cover -->
 
-<!-- wp:cover {"url":"https://picsum.photos/seed/photo5/800/400","id":560,"dimRatio":0,"className":"has-undefined-content"} -->
-<div class="wp-block-cover has-undefined-content" style="background-image:url(https://picsum.photos/seed/photo5/800/400)"><p class="wp-block-cover-text"><strong>This</strong> is an <em>example</em> of a <a href="#">cover</a> <del>block</del></p></div>
+<!-- wp:cover {"url":"http://techslides.com/demos/sample-videos/small.mp4","id":968,"backgroundType":"video","minHeight":100,"className":"has-undefined-content"} -->
+<div class="wp-block-cover has-background-dim has-undefined-content" style="min-height:100px"><video class="wp-block-cover__video-background" autoplay muted loop src="http://techslides.com/demos/sample-videos/small.mp4"></video><div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","placeholder":"Write title…","fontSize":"large"} -->
+<p class="has-text-align-center has-large-font-size">This is an example of a cover block</p>
+<!-- /wp:paragraph --></div></div>
 <!-- /wp:cover -->
 
-<!-- wp:cover {"url":"https://picsum.photos/seed/photo5/800/400","align":"left","contentAlign":"left","id":560,"hasParallax":true,"dimRatio":80,"overlayColor":"vivid-red"} -->
-<div class="wp-block-cover has-background-dim-80 has-vivid-red-background-color has-background-dim has-parallax has-left-content alignleft" style="background-image:url(https://picsum.photos/seed/photo5/800/400)"><p class="wp-block-cover-text"><strong>This</strong> is an <em>example</em> of a <a href="#">cover</a> <del>block</del></p></div>
+<!-- wp:cover {"url":"http://techslides.com/demos/sample-videos/small.mp4","id":968,"dimRatio":80,"overlayColor":"vivid-green-cyan","backgroundType":"video","minHeight":100,"className":"has-undefined-content"} -->
+<div class="wp-block-cover has-background-dim-80 has-vivid-green-cyan-background-color has-background-dim has-undefined-content" style="min-height:100px"><video class="wp-block-cover__video-background" autoplay muted loop src="http://techslides.com/demos/sample-videos/small.mp4"></video><div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","placeholder":"Write title…","fontSize":"large"} -->
+<p class="has-text-align-center has-large-font-size">This is an example of a cover block</p>
+<!-- /wp:paragraph --></div></div>
 <!-- /wp:cover -->
 
-<!-- wp:cover {"url":"https://picsum.photos/seed/photo5/800/400","align":"right","contentAlign":"right","id":560,"hasParallax":true,"dimRatio":80,"overlayColor":"vivid-green-cyan"} -->
-<div class="wp-block-cover has-background-dim-80 has-vivid-green-cyan-background-color has-background-dim has-parallax has-right-content alignright" style="background-image:url(https://picsum.photos/seed/photo5/800/400)"><p class="wp-block-cover-text"><strong>This</strong> is an <em>example</em> of a <a href="#">cover</a> <del>block</del></p></div>
+<!-- wp:cover {"url":"http://techslides.com/demos/sample-videos/small.mp4","id":968,"dimRatio":80,"backgroundType":"video","minHeight":100,"gradient":"blush-bordeaux","className":"has-undefined-content"} -->
+<div class="wp-block-cover has-background-dim-80 has-background-dim has-background-gradient has-undefined-content" style="min-height:100px"><span aria-hidden="true" class="wp-block-cover__gradient-background has-blush-bordeaux-gradient-background"></span><video class="wp-block-cover__video-background" autoplay muted loop src="http://techslides.com/demos/sample-videos/small.mp4"></video><div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","placeholder":"Write title…","fontSize":"large"} -->
+<p class="has-text-align-center has-large-font-size">This is an example of a cover block</p>
+<!-- /wp:paragraph --></div></div>
+<!-- /wp:cover -->
+
+<!-- wp:cover {"url":"http://techslides.com/demos/sample-videos/small.mp4","id":968,"dimRatio":80,"backgroundType":"video","minHeight":100,"gradient":"blush-bordeaux","align":"right","className":"has-undefined-content"} -->
+<div class="wp-block-cover alignright has-background-dim-80 has-background-dim has-background-gradient has-undefined-content" style="min-height:100px"><span aria-hidden="true" class="wp-block-cover__gradient-background has-blush-bordeaux-gradient-background"></span><video class="wp-block-cover__video-background" autoplay muted loop src="http://techslides.com/demos/sample-videos/small.mp4"></video><div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","placeholder":"Write title…","fontSize":"large"} -->
+<p class="has-text-align-center has-large-font-size">This is an example of a cover block</p>
+<!-- /wp:paragraph --></div></div>
+<!-- /wp:cover -->
+
+<!-- wp:cover {"url":"http://techslides.com/demos/sample-videos/small.mp4","id":968,"dimRatio":80,"overlayColor":"vivid-green-cyan","backgroundType":"video","minHeight":100,"align":"left","className":"has-undefined-content"} -->
+<div class="wp-block-cover alignleft has-background-dim-80 has-vivid-green-cyan-background-color has-background-dim has-undefined-content" style="min-height:100px"><video class="wp-block-cover__video-background" autoplay muted loop src="http://techslides.com/demos/sample-videos/small.mp4"></video><div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","placeholder":"Write title…","fontSize":"large"} -->
+<p class="has-text-align-center has-large-font-size">This is an example of a cover block</p>
+<!-- /wp:paragraph --></div></div>
 <!-- /wp:cover -->
 
 <!-- wp:paragraph -->
 <p>Paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed iaculis justo sed libero lacinia cursus. Suspendisse potenti. Lorem ipsum dolor   sit amet, consectetur adipiscing elit.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:cover {"url":"https://picsum.photos/seed/photo5/800/400","align":"center","id":560,"hasParallax":true,"dimRatio":100} -->
-<div class="wp-block-cover has-background-dim-100 has-background-dim has-parallax aligncenter" style="background-image:url(https://picsum.photos/seed/photo5/800/400)"><p class="wp-block-cover-text"><strong>This</strong> is an <em>example</em> of a <a href="#">cover</a> <del>block</del></p></div>
+<!-- wp:cover {"url":"http://techslides.com/demos/sample-videos/small.mp4","id":968,"backgroundType":"video","minHeight":100,"align":"center","className":"has-undefined-content"} -->
+<div class="wp-block-cover aligncenter has-background-dim has-undefined-content" style="min-height:100px"><video class="wp-block-cover__video-background" autoplay muted loop src="http://techslides.com/demos/sample-videos/small.mp4"></video><div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","placeholder":"Write title…","fontSize":"large"} -->
+<p class="has-text-align-center has-large-font-size">This is an example of a cover block</p>
+<!-- /wp:paragraph --></div></div>
 <!-- /wp:cover -->
 
-<!-- wp:cover {"url":"https://picsum.photos/seed/photo5/800/400","align":"wide","id":560,"hasParallax":true,"dimRatio":80,"className":"has-undefined-content"} -->
-<div class="wp-block-cover has-background-dim-80 has-background-dim has-parallax alignwide has-undefined-content" style="background-image:url(https://picsum.photos/seed/photo5/800/400)"><p class="wp-block-cover-text"><strong>This</strong> is an <em>example</em> of a <a href="#">cover</a> <del>block</del></p></div>
+<!-- wp:cover {"url":"http://techslides.com/demos/sample-videos/small.mp4","id":968,"backgroundType":"video","minHeight":100,"align":"wide","className":"has-undefined-content"} -->
+<div class="wp-block-cover alignwide has-background-dim has-undefined-content" style="min-height:100px"><video class="wp-block-cover__video-background" autoplay muted loop src="http://techslides.com/demos/sample-videos/small.mp4"></video><div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","placeholder":"Write title…","fontSize":"large"} -->
+<p class="has-text-align-center has-large-font-size">This is an example of a cover block</p>
+<!-- /wp:paragraph --></div></div>
 <!-- /wp:cover -->
 
-<!-- wp:cover {"url":"https://picsum.photos/seed/photo5/800/400","align":"full","id":560,"hasParallax":true,"dimRatio":80,"className":"has-undefined-content"} -->
-<div class="wp-block-cover has-background-dim-80 has-background-dim has-parallax alignfull has-undefined-content" style="background-image:url(https://picsum.photos/seed/photo5/800/400)"><p class="wp-block-cover-text"><strong>This</strong> is an <em>example</em> of a <a href="#">cover</a> <del>block</del></p></div>
+<!-- wp:cover {"url":"http://techslides.com/demos/sample-videos/small.mp4","id":968,"backgroundType":"video","minHeight":100,"align":"full","className":"has-undefined-content"} -->
+<div class="wp-block-cover alignfull has-background-dim has-undefined-content" style="min-height:100px"><video class="wp-block-cover__video-background" autoplay muted loop src="http://techslides.com/demos/sample-videos/small.mp4"></video><div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","placeholder":"Write title…","fontSize":"large"} -->
+<p class="has-text-align-center has-large-font-size">This is an example of a cover block</p>
+<!-- /wp:paragraph --></div></div>
+<!-- /wp:cover -->
+
+<!-- wp:cover {"url":"https://picsum.photos/seed/photo5/800/400","id":560,"className":"has-undefined-content"} -->
+<div class="wp-block-cover has-background-dim has-undefined-content" style="background-image:url(https://picsum.photos/seed/photo5/800/400)"><div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","placeholder":"Write title…","fontSize":"large"} -->
+<p class="has-text-align-center has-large-font-size"><strong><strong>strong</strong>, <em>emphasis</em>, <a href="http://wp.local/wp-admin/post.php?post=11166&amp;action=edit#">hyperlink</a>, <code>code</code>, <s>strikethrough</s>, colour</strong></p>
+<!-- /wp:paragraph --></div></div>
+<!-- /wp:cover -->
+
+<!-- wp:cover {"url":"https://picsum.photos/seed/photo5/800/400","id":560,"minHeight":100,"className":"has-undefined-content"} -->
+<div class="wp-block-cover has-background-dim has-undefined-content" style="background-image:url(https://picsum.photos/seed/photo5/800/400);min-height:100px"><div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","placeholder":"Write title…","fontSize":"large"} -->
+<p class="has-text-align-center has-large-font-size">This is an example of a cover block</p>
+<!-- /wp:paragraph --></div></div>
+<!-- /wp:cover -->
+
+<!-- wp:cover {"url":"https://picsum.photos/seed/photo5/800/400","id":560,"focalPoint":{"x":"0.75","y":"0.62"},"minHeight":100,"className":"has-undefined-content"} -->
+<div class="wp-block-cover has-background-dim has-undefined-content" style="background-image:url(https://picsum.photos/seed/photo5/800/400);background-position:75% 62%;min-height:100px"><div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","placeholder":"Write title…","fontSize":"large"} -->
+<p class="has-text-align-center has-large-font-size">This is an example of a cover block</p>
+<!-- /wp:paragraph --></div></div>
+<!-- /wp:cover -->
+
+<!-- wp:cover {"url":"https://picsum.photos/seed/photo5/800/400","id":560,"hasParallax":true,"minHeight":100,"className":"has-undefined-content"} -->
+<div class="wp-block-cover has-background-dim has-parallax has-undefined-content" style="background-image:url(https://picsum.photos/seed/photo5/800/400);min-height:100px"><div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","placeholder":"Write title…","fontSize":"large"} -->
+<p class="has-text-align-center has-large-font-size">This is an example of a cover block</p>
+<!-- /wp:paragraph --></div></div>
+<!-- /wp:cover -->
+
+<!-- wp:cover {"url":"https://picsum.photos/seed/photo5/800/400","id":560,"dimRatio":80,"overlayColor":"vivid-green-cyan","focalPoint":{"x":"0.75","y":"0.62"},"minHeight":100,"className":"has-undefined-content"} -->
+<div class="wp-block-cover has-background-dim-80 has-vivid-green-cyan-background-color has-background-dim has-undefined-content" style="background-image:url(https://picsum.photos/seed/photo5/800/400);background-position:75% 62%;min-height:100px"><div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","placeholder":"Write title…","fontSize":"large"} -->
+<p class="has-text-align-center has-large-font-size">This is an example of a cover block</p>
+<!-- /wp:paragraph --></div></div>
+<!-- /wp:cover -->
+
+<!-- wp:cover {"url":"https://picsum.photos/seed/photo5/800/400","id":560,"hasParallax":true,"dimRatio":80,"minHeight":100,"gradient":"blush-bordeaux","className":"has-undefined-content"} -->
+<div class="wp-block-cover has-background-dim-80 has-background-dim has-parallax has-background-gradient has-undefined-content" style="background-image:url(https://picsum.photos/seed/photo5/800/400);min-height:100px"><span aria-hidden="true" class="wp-block-cover__gradient-background has-blush-bordeaux-gradient-background"></span><div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","placeholder":"Write title…","fontSize":"large"} -->
+<p class="has-text-align-center has-large-font-size">This is an example of a cover block</p>
+<!-- /wp:paragraph --></div></div>
+<!-- /wp:cover -->
+
+<!-- wp:cover {"url":"https://picsum.photos/seed/photo5/800/400","id":560,"hasParallax":true,"dimRatio":80,"overlayColor":"vivid-green-cyan","minHeight":100,"align":"left"} -->
+<div class="wp-block-cover alignleft has-background-dim-80 has-vivid-green-cyan-background-color has-background-dim has-parallax" style="background-image:url(https://picsum.photos/seed/photo5/800/400);min-height:100px"><div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"left","placeholder":"Write title…","fontSize":"large"} -->
+<p class="has-text-align-left has-large-font-size">This is an example of a cover block</p>
+<!-- /wp:paragraph --></div></div>
+<!-- /wp:cover -->
+
+<!-- wp:cover {"url":"https://picsum.photos/seed/photo5/800/400","id":560,"hasParallax":true,"dimRatio":80,"minHeight":100,"gradient":"blush-bordeaux","align":"right"} -->
+<div class="wp-block-cover alignright has-background-dim-80 has-background-dim has-parallax has-background-gradient" style="background-image:url(https://picsum.photos/seed/photo5/800/400);min-height:100px"><span aria-hidden="true" class="wp-block-cover__gradient-background has-blush-bordeaux-gradient-background"></span><div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"right","placeholder":"Write title…","fontSize":"large"} -->
+<p class="has-text-align-right has-large-font-size">This is an example of a cover block</p>
+<!-- /wp:paragraph --></div></div>
+<!-- /wp:cover -->
+
+<!-- wp:paragraph -->
+<p>Paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed iaculis justo sed libero lacinia cursus. Suspendisse potenti. Lorem ipsum dolor   sit amet, consectetur adipiscing elit.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:cover {"url":"https://picsum.photos/seed/photo5/800/400","id":560,"hasParallax":true,"minHeight":100,"align":"center"} -->
+<div class="wp-block-cover aligncenter has-background-dim has-parallax" style="background-image:url(https://picsum.photos/seed/photo5/800/400);min-height:100px"><div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","placeholder":"Write title…","fontSize":"large"} -->
+<p class="has-text-align-center has-large-font-size">This is an example of a cover block</p>
+<!-- /wp:paragraph --></div></div>
+<!-- /wp:cover -->
+
+<!-- wp:cover {"url":"https://picsum.photos/seed/photo5/800/400","id":560,"hasParallax":true,"minHeight":100,"align":"wide","className":"has-undefined-content"} -->
+<div class="wp-block-cover alignwide has-background-dim has-parallax has-undefined-content" style="background-image:url(https://picsum.photos/seed/photo5/800/400);min-height:100px"><div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","placeholder":"Write title…","fontSize":"large"} -->
+<p class="has-text-align-center has-large-font-size">This is an example of a cover block</p>
+<!-- /wp:paragraph --></div></div>
+<!-- /wp:cover -->
+
+<!-- wp:cover {"url":"https://picsum.photos/seed/photo5/800/400","id":560,"hasParallax":true,"minHeight":100,"align":"full","className":"has-undefined-content"} -->
+<div class="wp-block-cover alignfull has-background-dim has-parallax has-undefined-content" style="background-image:url(https://picsum.photos/seed/photo5/800/400);min-height:100px"><div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","placeholder":"Write title…","fontSize":"large"} -->
+<p class="has-text-align-center has-large-font-size">This is an example of a cover block</p>
+<!-- /wp:paragraph --></div></div>
 <!-- /wp:cover -->
 
 <!-- wp:spacer {"height":50} -->
@@ -292,15 +416,15 @@
 <!-- /wp:separator -->
 
 <!-- wp:audio {"id":969} -->
-<figure class="wp-block-audio"><audio controls src="https://file-examples.com/wp-content/uploads/2017/11/file_example_MP3_700KB.mp3" loop preload="auto"></audio><figcaption><strong>This</strong> is an <em>example</em> of an <a href="#">audio</a> <del>file</del></figcaption></figure>
+<figure class="wp-block-audio"><audio controls src="https://file-examples.com/wp-content/uploads/2017/11/file_example_MP3_700KB.mp3" loop preload="auto"></audio><figcaption><strong>strong</strong>, <em>emphasis</em>, <a href="http://wp.local/wp-admin/post.php?post=11166&amp;action=edit#">hyperlink</a>, <code>code</code>, <s>strikethrough</s>, <span class="has-inline-color has-vivid-red-color">colour</span></figcaption></figure>
 <!-- /wp:audio -->
 
 <!-- wp:audio {"id":969,"align":"left"} -->
-<figure class="wp-block-audio alignleft"><audio controls src="https://file-examples.com/wp-content/uploads/2017/11/file_example_MP3_700KB.mp3"></audio><figcaption><strong>This</strong> is an <em>example</em> of an <a href="#">audio</a> <del>file</del></figcaption></figure>
+<figure class="wp-block-audio alignleft"><audio controls src="https://file-examples.com/wp-content/uploads/2017/11/file_example_MP3_700KB.mp3"></audio><figcaption>This is an example of an audio file</figcaption></figure>
 <!-- /wp:audio -->
 
 <!-- wp:audio {"id":969,"align":"right"} -->
-<figure class="wp-block-audio alignright"><audio controls src="https://file-examples.com/wp-content/uploads/2017/11/file_example_MP3_700KB.mp3"></audio><figcaption><strong>This</strong> is an <em>example</em> of an <a href="#">audio</a> <del>file</del></figcaption></figure>
+<figure class="wp-block-audio alignright"><audio controls src="https://file-examples.com/wp-content/uploads/2017/11/file_example_MP3_700KB.mp3"></audio><figcaption>This is an example of an audio file</figcaption></figure>
 <!-- /wp:audio -->
 
 <!-- wp:paragraph -->
@@ -308,15 +432,15 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:audio {"id":969,"align":"center"} -->
-<figure class="wp-block-audio aligncenter"><audio controls src="https://file-examples.com/wp-content/uploads/2017/11/file_example_MP3_700KB.mp3"></audio><figcaption><strong>This</strong> is an <em>example</em> of an <a href="#">audio</a> <del>file</del></figcaption></figure>
+<figure class="wp-block-audio aligncenter"><audio controls src="https://file-examples.com/wp-content/uploads/2017/11/file_example_MP3_700KB.mp3"></audio><figcaption>This is an example of an audio file</figcaption></figure>
 <!-- /wp:audio -->
 
 <!-- wp:audio {"id":969,"align":"wide"} -->
-<figure class="wp-block-audio alignwide"><audio controls src="https://file-examples.com/wp-content/uploads/2017/11/file_example_MP3_700KB.mp3"></audio><figcaption><strong>This</strong> is an <em>example</em> of an <a href="#">audio</a> <del>file</del></figcaption></figure>
+<figure class="wp-block-audio alignwide"><audio controls src="https://file-examples.com/wp-content/uploads/2017/11/file_example_MP3_700KB.mp3"></audio><figcaption>This is an example of an audio file</figcaption></figure>
 <!-- /wp:audio -->
 
 <!-- wp:audio {"id":969,"align":"full"} -->
-<figure class="wp-block-audio alignfull"><audio controls src="https://file-examples.com/wp-content/uploads/2017/11/file_example_MP3_700KB.mp3"></audio><figcaption><strong>This</strong> is an <em>example</em> of an <a href="#">audio</a> <del>file</del></figcaption></figure>
+<figure class="wp-block-audio alignfull"><audio controls src="https://file-examples.com/wp-content/uploads/2017/11/file_example_MP3_700KB.mp3"></audio><figcaption>This is an example of an audio file</figcaption></figure>
 <!-- /wp:audio -->
 
 <!-- wp:spacer {"height":50} -->
@@ -332,19 +456,19 @@
 <!-- /wp:separator -->
 
 <!-- wp:video {"id":968} -->
-<figure class="wp-block-video"><video controls poster="https://picsum.photos/seed/photo5/800/400" preload="none" src="http://techslides.com/demos/sample-videos/small.mp4"></video><figcaption><strong>﻿This</strong> is an <em>example</em> of a video <del>file</del><br></figcaption></figure>
+<figure class="wp-block-video"><video controls poster="https://picsum.photos/seed/photo5/560/320" preload="none" src="http://techslides.com/demos/sample-videos/small.mp4"></video><figcaption><strong>strong</strong>, <em>emphasis</em>, <a href="http://wp.local/wp-admin/post.php?post=11166&amp;action=edit#">hyperlink</a>, <code>code</code>, <s>strikethrough</s>, <span class="has-inline-color has-vivid-red-color">colour</span></figcaption></figure>
 <!-- /wp:video -->
 
 <!-- wp:video {"id":968} -->
-<figure class="wp-block-video"><video autoplay controls loop muted poster="" src="http://techslides.com/demos/sample-videos/small.mp4"></video><figcaption><strong>This</strong> is an <em>example</em> of a <a href="#">video</a> <del>file</del></figcaption></figure>
+<figure class="wp-block-video"><video autoplay controls loop muted poster="" src="http://techslides.com/demos/sample-videos/small.mp4"></video><figcaption>This is an example of a video file</figcaption></figure>
 <!-- /wp:video -->
 
 <!-- wp:video {"id":968,"align":"left"} -->
-<figure class="wp-block-video alignleft"><video autoplay controls loop muted poster="" src="http://techslides.com/demos/sample-videos/small.mp4"></video><figcaption><strong>This</strong> is an <em>example</em> of a <a href="#">video</a> <del>file</del></figcaption></figure>
+<figure class="wp-block-video alignleft"><video autoplay controls loop muted poster="" src="http://techslides.com/demos/sample-videos/small.mp4"></video><figcaption>This is an example of a video file</figcaption></figure>
 <!-- /wp:video -->
 
 <!-- wp:video {"id":968,"align":"right"} -->
-<figure class="wp-block-video alignright"><video autoplay controls loop muted poster="" src="http://techslides.com/demos/sample-videos/small.mp4"></video><figcaption><strong>This</strong> is an <em>example</em> of a <a href="#">video</a> <del>file</del></figcaption></figure>
+<figure class="wp-block-video alignright"><video autoplay controls loop muted poster="" src="http://techslides.com/demos/sample-videos/small.mp4"></video><figcaption>This is an example of a video file</figcaption></figure>
 <!-- /wp:video -->
 
 <!-- wp:paragraph -->
@@ -352,15 +476,15 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:video {"id":968,"align":"center"} -->
-<figure class="wp-block-video aligncenter"><video autoplay controls loop muted poster="" src="http://techslides.com/demos/sample-videos/small.mp4"></video><figcaption><strong>This</strong> is an <em>example</em> of a <a href="#">video</a> <del>file</del></figcaption></figure>
+<figure class="wp-block-video aligncenter"><video autoplay controls loop muted poster="" src="http://techslides.com/demos/sample-videos/small.mp4"></video><figcaption>This is an example of a video file</figcaption></figure>
 <!-- /wp:video -->
 
 <!-- wp:video {"id":968,"align":"wide"} -->
-<figure class="wp-block-video alignwide"><video autoplay controls loop muted poster="" src="http://techslides.com/demos/sample-videos/small.mp4"></video><figcaption><strong>This</strong> is an <em>example</em> of a <a href="#">video</a> <del>file</del></figcaption></figure>
+<figure class="wp-block-video alignwide"><video autoplay controls loop muted poster="" src="http://techslides.com/demos/sample-videos/small.mp4"></video><figcaption>This is an example of a video file</figcaption></figure>
 <!-- /wp:video -->
 
 <!-- wp:video {"id":968,"align":"full"} -->
-<figure class="wp-block-video alignfull"><video autoplay controls loop muted poster="" src="http://techslides.com/demos/sample-videos/small.mp4"></video><figcaption><strong>This</strong> is an <em>example</em> of a <a href="#">video</a> <del>file</del></figcaption></figure>
+<figure class="wp-block-video alignfull"><video autoplay controls loop muted poster="" src="http://techslides.com/demos/sample-videos/small.mp4"></video><figcaption>This is an example of a video file</figcaption></figure>
 <!-- /wp:video -->
 
 <!-- wp:spacer {"height":50} -->
@@ -458,7 +582,14 @@
 <!-- /wp:separator -->
 
 <!-- wp:preformatted -->
-<pre class="wp-block-preformatted">// <strong>This</strong> is an <em>example</em> of <a href="#">preformatted</a> <del>text</del>:<br>function food_alert( <var>taste</var> ) {<br>    var <var>chinese_food</var> = "Chinese food is "+<var>taste</var>;<br>    console.log( <var>chinese_food</var> );<br>}<br>food_alert( <kbd>"Yummy!"</kbd> );<br>log: <samp>Chinese food is Yummy!</samp></pre>
+<pre class="wp-block-preformatted">// This is an example of preformatted text:
+function food_alert( <var>taste</var> ) {
+    var <var>chinese_food</var> = "Chinese food is "+<var>taste</var>;
+    console.log( <var>chinese_food</var> );
+}
+food_alert( <kbd>"Yummy!"</kbd> );
+log: <samp>Chinese food is Yummy!</samp>
+// <strong>strong</strong>, <em>emphasis</em>, <a href="#">hyperlink</a>, <code>code</code>, <s>strikethrough</s>, <span class="has-inline-color has-vivid-red-color">colour</span></pre>
 <!-- /wp:preformatted -->
 
 <!-- wp:spacer {"height":50} -->
@@ -496,15 +627,22 @@ log: Chinese food is Yummy!</code></pre>
 <!-- /wp:separator -->
 
 <!-- wp:verse {"textAlign":"left"} -->
-<pre style="text-align:left" class="wp-block-verse">O <strong>snail</strong><br><em>Climb</em> <a href="#">Mount</a> <del>Fuji</del>,<br>But slowly, slowly!<br></pre>
+<pre class="wp-block-verse has-text-align-left">// <strong>strong</strong>, <em>emphasis</em>, <a href="http://wp.local/wp-admin/post.php?post=11166&amp;action=edit#">hyperlink</a>, <code>code</code>, <s>strikethrough</s>, <span class="has-inline-color has-vivid-red-color">colour</span>
+O snail
+Climb Mount Fuji,
+But slowly, slowly!</pre>
 <!-- /wp:verse -->
 
 <!-- wp:verse {"textAlign":"center"} -->
-<pre style="text-align:center" class="wp-block-verse">Trusting the Buddha, good and bad,<br>I bid farewell<br>To the departing year.<br></pre>
+<pre class="wp-block-verse has-text-align-center">Trusting the Buddha, good and bad,
+I bid farewell
+To the departing year.</pre>
 <!-- /wp:verse -->
 
 <!-- wp:verse {"textAlign":"right"} -->
-<pre style="text-align:right" class="wp-block-verse">Everything I touch<br>with tenderness, alas,<br>pricks like a bramble.<br></pre>
+<pre class="wp-block-verse has-text-align-right">Everything I touch
+with tenderness, alas,
+pricks like a bramble.</pre>
 <!-- /wp:verse -->
 
 <!-- wp:spacer {"height":50} -->
@@ -520,39 +658,39 @@ log: Chinese food is Yummy!</code></pre>
 <!-- /wp:separator -->
 
 <!-- wp:pullquote -->
-<figure class="wp-block-pullquote"><blockquote><p><strong>Integer</strong> volutpat faucibus lorem nec <em>consectetur. Vestibulum placerat</em>, diam vitae <a href="#">vulputate</a> feugiat, nisl nibh egestas ante, eu <del>congue</del> leo   neque vel sem. Morbi vel justo massa, a imperdiet magna. Nam vulputate posuere blandit. Donec tincidunt sollicitudin viverra.</p><cite><strong>Citation</strong> <em>inside</em> <a href="#">block</a> <del>quote</del></cite></blockquote></figure>
+<figure class="wp-block-pullquote"><blockquote><p>Integer volutpat faucibus lorem nec consectetur. <strong>strong</strong>, <em>emphasis</em>, <a href="#">hyperlink</a>, <code>code</code>, <s>strikethrough</s>, <span class="has-inline-color has-vivid-green-cyan-color">colour</span>. Placerat, diam vitae vulputate feugiat, nisl nibh egestas ante, eu leu neque vel sem. Morbi vel justo massa, a imperdiet magna. Nam vulputate posuere blandit. Donec tincidunt sollicitudin viverra.</p><cite><strong>Citation</strong> <em>inside</em> <a href="#">block</a> <del>quote</del></cite></blockquote></figure>
 <!-- /wp:pullquote -->
 
-<!-- wp:pullquote {"mainColor":"very-light-gray","textColor":"vivid-red"} -->
-<figure class="wp-block-pullquote" style="border-color:#eeeeee"><blockquote class="has-text-color has-vivid-red-color"><p><strong>Integer</strong> volutpat faucibus lorem nec <em>consectetur. Vestibulum placerat</em>, diam vitae <a href="#">vulputate</a> feugiat, nisl nibh egestas ante, eu <del>congue</del> leo   neque vel sem. Morbi vel justo massa, a imperdiet magna. Nam vulputate posuere blandit. Donec tincidunt sollicitudin viverra.</p><cite><strong>Citation</strong> <em>inside</em> <a href="#">block</a> <del>quote</del></cite></blockquote></figure>
+<!-- wp:pullquote {"customMainColor":"#eeeeee","textColor":"vivid-red"} -->
+<figure class="wp-block-pullquote" style="border-color:#eeeeee"><blockquote class="has-text-color has-vivid-red-color"><p>Integer volutpat faucibus lorem nec consectetur. <strong>strong</strong>, <em>emphasis</em>, <a href="http://wp.local/wp-admin/post.php?post=11166&amp;action=edit#">hyperlink</a>, <code>code</code>, <s>strikethrough</s>, <span class="has-inline-color has-vivid-green-cyan-color">colour</span>. Placerat, diam vitae vulputate feugiat, nisl nibh egestas ante, eu leu neque vel sem. Morbi vel justo massa, a imperdiet magna. Nam vulputate posuere blandit. Donec tincidunt sollicitudin viverra.</p><cite><strong>Citation</strong> <em>inside</em> <a href="#">block</a> <del>quote</del></cite></blockquote></figure>
 <!-- /wp:pullquote -->
 
 <!-- wp:pullquote {"className":"is-style-solid-color"} -->
-<figure class="wp-block-pullquote is-style-solid-color"><blockquote><p><strong>Integer</strong> volutpat faucibus lorem nec <em>consectetur. Vestibulum placerat</em>, diam vitae <a href="#">vulputate</a> feugiat, nisl nibh egestas ante, eu <del>congue</del> leo   neque vel sem. Morbi vel justo massa, a imperdiet magna. Nam vulputate posuere blandit. Donec tincidunt sollicitudin viverra.</p><cite><strong>Citation</strong> <em>inside</em> <a href="#">block</a> <del>quote</del></cite></blockquote></figure>
+<figure class="wp-block-pullquote is-style-solid-color"><blockquote><p>Integer volutpat faucibus lorem nec consectetur. <strong>strong</strong>, <em>emphasis</em>, <a href="http://wp.local/wp-admin/post.php?post=11166&amp;action=edit#">hyperlink</a>, <code>code</code>, <s>strikethrough</s>, <span class="has-inline-color has-vivid-green-cyan-color">colour</span>. Placerat, diam vitae vulputate feugiat, nisl nibh egestas ante, eu leu neque vel sem. Morbi vel justo massa, a imperdiet magna. Nam vulputate posuere blandit. Donec tincidunt sollicitudin viverra.</p><cite><strong>Citation</strong> <em>inside</em> <a href="#">block</a> <del>quote</del></cite></blockquote></figure>
 <!-- /wp:pullquote -->
 
-<!-- wp:pullquote {"mainColor":"vivid-red","textColor":"very-light-gray","className":"has-vivid-red-background-color is-style-solid-color"} -->
-<figure class="wp-block-pullquote has-vivid-red-background-color is-style-solid-color"><blockquote class="has-text-color has-very-light-gray-color"><p><strong>Integer</strong> volutpat faucibus lorem nec <em>consectetur. Vestibulum placerat</em>, diam vitae <a href="#">vulputate</a> feugiat, nisl nibh egestas ante, eu <del>congue</del> leo   neque vel sem. Morbi vel justo massa, a imperdiet magna. Nam vulputate posuere blandit. Donec tincidunt sollicitudin viverra.</p><cite><strong>Citation</strong> <em>inside</em> <a href="#">block</a> <del>quote</del></cite></blockquote></figure>
+<!-- wp:pullquote {"mainColor":"vivid-red","textColor":"very-light-gray","className":"has-background has-vivid-red-background-color is-style-solid-color"} -->
+<figure class="wp-block-pullquote has-background has-vivid-red-background-color is-style-solid-color"><blockquote class="has-text-color has-very-light-gray-color"><p>Integer volutpat faucibus lorem nec consectetur. <strong>strong</strong>, <em>emphasis</em>, <a href="http://wp.local/wp-admin/post.php?post=11166&amp;action=edit#">hyperlink</a>, <code>code</code>, <s>strikethrough</s>, <span class="has-inline-color has-vivid-green-cyan-color">colour</span>. Placerat, diam vitae vulputate feugiat, nisl nibh egestas ante, eu leu neque vel sem. Morbi vel justo massa, a imperdiet magna. Nam vulputate posuere blandit. Donec tincidunt sollicitudin viverra.</p><cite><strong>Citation</strong> <em>inside</em> <a href="#">block</a> <del>quote</del></cite></blockquote></figure>
 <!-- /wp:pullquote -->
 
-<!-- wp:pullquote {"mainColor":"vivid-red","textColor":"very-light-gray","align":"left","className":"has-vivid-red-background-color is-style-solid-color"} -->
-<figure class="wp-block-pullquote alignleft has-vivid-red-background-color is-style-solid-color"><blockquote class="has-text-color has-very-light-gray-color"><p><strong>Integer</strong> volutpat faucibus lorem nec <em>consectetur. Vestibulum placerat</em>, diam vitae <a href="#">vulputate</a> feugiat, nisl nibh egestas ante, eu <del>congue</del> leo   neque vel sem. Morbi vel justo massa, a imperdiet magna. Nam vulputate posuere blandit. Donec tincidunt sollicitudin viverra.</p><cite><strong>Citation</strong> <em>inside</em> <a href="#">block</a> <del>quote</del></cite></blockquote></figure>
+<!-- wp:pullquote {"mainColor":"vivid-red","textColor":"very-light-gray","className":"has-background has-vivid-red-background-color alignleft is-style-solid-color"} -->
+<figure class="wp-block-pullquote has-background has-vivid-red-background-color alignleft is-style-solid-color"><blockquote class="has-text-color has-very-light-gray-color"><p>Integer volutpat faucibus lorem nec consectetur. Placerat, diam vitae vulputate feugiat, nisl nibh egestas ante, eu leu neque vel sem. Morbi vel justo massa, a imperdiet magna. Nam vulputate posuere blandit. Donec tincidunt sollicitudin viverra.</p><cite><strong>Citation inside block quote</strong></cite></blockquote></figure>
 <!-- /wp:pullquote -->
 
-<!-- wp:pullquote {"mainColor":"very-light-gray","textColor":"vivid-red","align":"right","className":"is-style-default"} -->
-<figure class="wp-block-pullquote alignright is-style-default" style="border-color:#eeeeee"><blockquote class="has-text-color has-vivid-red-color"><p><strong>Integer</strong> volutpat faucibus lorem nec <em>consectetur. Vestibulum placerat</em>, diam vitae <a href="#">vulputate</a> feugiat, nisl nibh egestas ante, eu <del>congue</del> leo   neque vel sem. Morbi vel justo massa, a imperdiet magna. Nam vulputate posuere blandit. Donec tincidunt sollicitudin viverra.</p><cite><strong>Citation</strong> <em>inside</em> <a href="#">block</a> <del>quote</del></cite></blockquote></figure>
+<!-- wp:pullquote {"customMainColor":"#eeeeee","textColor":"vivid-red","className":"alignright is-style-default"} -->
+<figure class="wp-block-pullquote alignright is-style-default" style="border-color:#eeeeee"><blockquote class="has-text-color has-vivid-red-color"><p>Integer volutpat faucibus lorem nec consectetur. Placerat, diam vitae vulputate feugiat, nisl nibh egestas ante, eu leu neque vel sem. Morbi vel justo massa, a imperdiet magna. Nam vulputate posuere blandit. Donec tincidunt sollicitudin viverra.</p><cite>Citation inside block quote</cite></blockquote></figure>
 <!-- /wp:pullquote -->
 
 <!-- wp:paragraph -->
 <p>Paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed iaculis justo sed libero lacinia cursus. Suspendisse potenti. Lorem ipsum dolor   sit amet, consectetur adipiscing elit.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:pullquote {"mainColor":"very-light-gray","textColor":"vivid-red","align":"wide","className":"is-style-default"} -->
-<figure class="wp-block-pullquote alignwide is-style-default" style="border-color:#eeeeee"><blockquote class="has-text-color has-vivid-red-color"><p><strong>Integer</strong> volutpat faucibus lorem nec <em>consectetur. Vestibulum placerat</em>, diam vitae <a href="#">vulputate</a> feugiat, nisl nibh egestas ante, eu <del>congue</del> leo   neque vel sem. Morbi vel justo massa, a imperdiet magna. Nam vulputate posuere blandit. Donec tincidunt sollicitudin viverra.</p><cite><strong>Citation</strong> <em>inside</em> <a href="#">block</a> <del>quote</del></cite></blockquote></figure>
+<!-- wp:pullquote {"customMainColor":"#eeeeee","textColor":"vivid-red","align":"wide","className":"is-style-default"} -->
+<figure class="wp-block-pullquote alignwide is-style-default" style="border-color:#eeeeee"><blockquote class="has-text-color has-vivid-red-color"><p>Integer volutpat faucibus lorem nec consectetur. Placerat, diam vitae vulputate feugiat, nisl nibh egestas ante, eu leu neque vel sem. Morbi vel justo massa, a imperdiet magna. Nam vulputate posuere blandit. Donec tincidunt sollicitudin viverra.</p><cite>citation inside block quote</cite></blockquote></figure>
 <!-- /wp:pullquote -->
 
-<!-- wp:pullquote {"mainColor":"vivid-red","textColor":"very-light-gray","align":"full","className":"has-vivid-red-background-color is-style-solid-color"} -->
-<figure class="wp-block-pullquote alignfull has-vivid-red-background-color is-style-solid-color"><blockquote class="has-text-color has-very-light-gray-color"><p><strong>Integer</strong> volutpat faucibus lorem nec <em>consectetur. Vestibulum placerat</em>, diam vitae <a href="#">vulputate</a> feugiat, nisl nibh egestas ante, eu <del>congue</del> leo   neque vel sem. Morbi vel justo massa, a imperdiet magna. Nam vulputate posuere blandit. Donec tincidunt sollicitudin viverra.</p><cite><strong>Citation</strong> <em>inside</em> <a href="#">block</a> <del>quote</del></cite></blockquote></figure>
+<!-- wp:pullquote {"mainColor":"vivid-red","textColor":"very-light-gray","className":"has-background has-vivid-red-background-color alignfull is-style-solid-color"} -->
+<figure class="wp-block-pullquote has-background has-vivid-red-background-color alignfull is-style-solid-color"><blockquote class="has-text-color has-very-light-gray-color"><p>Integer volutpat faucibus lorem nec consectetur. Placerat, diam vitae vulputate feugiat, nisl nibh egestas ante, eu leu neque vel sem. Morbi vel justo massa, a imperdiet magna. Nam vulputate posuere blandit. Donec tincidunt sollicitudin viverra.</p><cite>Citation inside block quote</cite></blockquote></figure>
 <!-- /wp:pullquote -->
 
 <!-- wp:spacer {"height":50} -->
@@ -568,19 +706,27 @@ log: Chinese food is Yummy!</code></pre>
 <!-- /wp:separator -->
 
 <!-- wp:table {"className":"responsive-table is-style-regular"} -->
-<table class="wp-block-table responsive-table is-style-regular"><thead><tr><th>Table Head</th><td>quisque sagittis</td><td>porta augue</td><td>ut imperdiet</td><td>donec enim</td></tr></thead><tbody><tr><th>Table Body</th><td><strong>risus</strong> <em>eu</em></td><td><a href="#">urna</a> <del>fringilla</del></td><td>sed libero</td><td>Fusce ultrices</td></tr><tr><th>vulputate</th><td>quis diam</td><td>porta tristique</td><td>donec enim</td><td>sed libero</td></tr><tr><th>posuere</th><td>risus eu</td><td>urna fringilla</td><td>sed libero</td><td>Fusce ultrices</td></tr><tr><th>tincidunt</th><td>quis diam</td><td>porta tristique</td><td>donec enim</td><td>sed libero</td></tr></tbody><tfoot><tr><th>Table Foot</th><td>cras tempus</td><td>tempor magna</td><td>Fusce ultrices</td><td>quisque sagittis</td></tr></tfoot></table>
+<figure class="wp-block-table responsive-table is-style-regular"><table><thead><tr><th>Table Head</th><td>quisque sagittis</td><td>porta augue</td><td>ut imperdiet</td><td>donec enim</td></tr></thead><tbody><tr><th>Table Body</th><td><strong>strong</strong>, <em>emphasis</em></td><td><a href="#">hyperlink</a>, <del>strikethrough</del></td><td><code>code</code>, <span class="has-inline-color has-vivid-red-color">colour</span></td><td>Fusce ultrices</td></tr><tr><th>vulputate</th><td>quis diam</td><td>porta tristique</td><td>donec enim</td><td>sed libero</td></tr><tr><th>posuere</th><td>risus eu</td><td>urna fringilla</td><td>sed libero</td><td>Fusce ultrices</td></tr><tr><th>tincidunt</th><td>quis diam</td><td>porta tristique</td><td>donec enim</td><td>sed libero</td></tr></tbody><tfoot><tr><th>Table Foot</th><td>cras tempus</td><td>tempor magna</td><td>Fusce ultrices</td><td>quisque sagittis</td></tr></tfoot></table><figcaption><strong>strong</strong>, <em>emphasis</em>, <a href="#">hyperlink</a>, <code>code</code>, <s>strikethrough</s>, <span class="has-inline-color has-vivid-red-color">colour</span></figcaption></figure>
+<!-- /wp:table -->
+
+<!-- wp:table {"backgroundColor":"subtle-pale-blue","className":"responsive-table is-style-regular"} -->
+<figure class="wp-block-table responsive-table is-style-regular"><table class="has-subtle-pale-blue-background-color has-background"><thead><tr><th>Table Head</th><td>quisque sagittis</td><td>porta augue</td><td>ut imperdiet</td><td>donec enim</td></tr></thead><tbody><tr><th>Table Body</th><td><strong>strong</strong>, <em>emphasis</em></td><td><a href="#">hyperlink</a>, <s>strikethrough</s></td><td><code>code</code>, <span class="has-inline-color has-vivid-red-color">colour</span></td><td>Fusce ultrices</td></tr><tr><th>vulputate</th><td>quis diam</td><td>porta tristique</td><td>donec enim</td><td>sed libero</td></tr><tr><th>posuere</th><td>risus eu</td><td>urna fringilla</td><td>sed libero</td><td>Fusce ultrices</td></tr><tr><th>tincidunt</th><td>quis diam</td><td>porta tristique</td><td>donec enim</td><td>sed libero</td></tr></tbody><tfoot><tr><th>Table Foot</th><td>cras tempus</td><td>tempor magna</td><td>Fusce ultrices</td><td>quisque sagittis</td></tr></tfoot></table><figcaption>This is a table caption</figcaption></figure>
 <!-- /wp:table -->
 
 <!-- wp:table {"hasFixedLayout":true,"className":"responsive-table is-style-stripes"} -->
-<table class="wp-block-table has-fixed-layout responsive-table is-style-stripes"><thead><tr><th>Table Head</th><td>quisque sagittis</td><td>porta augue</td><td>ut imperdiet</td><td>donec enim</td></tr></thead><tbody><tr><th>Table Body</th><td><strong>risus</strong> <em>eu</em></td><td><a href="#">urna</a> <del>fringilla</del></td><td>sed libero</td><td>Fusce ultrices</td></tr><tr><th>vulputate</th><td>quis diam</td><td>porta tristique</td><td>donec enim</td><td>sed libero</td></tr><tr><th>posuere</th><td>risus eu</td><td>urna fringilla</td><td>sed libero</td><td>Fusce ultrices</td></tr><tr><th>tincidunt</th><td>quis diam</td><td>porta tristique</td><td>donec enim</td><td>sed libero</td></tr></tbody><tfoot><tr><th>Table Foot</th><td>cras tempus</td><td>tempor magna</td><td>Fusce ultrices</td><td>quisque sagittis</td></tr></tfoot></table>
+<figure class="wp-block-table responsive-table is-style-stripes"><table class="has-fixed-layout"><thead><tr><th>Table Head</th><td>quisque sagittis</td><td>porta augue</td><td>ut imperdiet</td><td>donec enim</td></tr></thead><tbody><tr><th>Table Body</th><td><strong>strong</strong>, <em>emphasis</em></td><td><a href="#">hyperlink</a>, <del>strikethrough</del></td><td><code>code</code>, <span class="has-inline-color has-vivid-red-color">colour</span></td><td>Fusce ultrices</td></tr><tr><th>vulputate</th><td>quis diam</td><td>porta tristique</td><td>donec enim</td><td>sed libero</td></tr><tr><th>posuere</th><td>risus eu</td><td>urna fringilla</td><td>sed libero</td><td>Fusce ultrices</td></tr><tr><th>tincidunt</th><td>quis diam</td><td>porta tristique</td><td>donec enim</td><td>sed libero</td></tr></tbody><tfoot><tr><th>Table Foot</th><td>cras tempus</td><td>tempor magna</td><td>Fusce ultrices</td><td>quisque sagittis</td></tr></tfoot></table><figcaption><strong>strong</strong>, <em>emphasis</em>, <a href="#">hyperlink</a>, <code>code</code>, <s>strikethrough</s>, <span class="has-inline-color has-vivid-red-color">colour</span></figcaption></figure>
+<!-- /wp:table -->
+
+<!-- wp:table {"hasFixedLayout":true,"backgroundColor":"subtle-pale-blue","className":"responsive-table is-style-stripes"} -->
+<figure class="wp-block-table responsive-table is-style-stripes"><table class="has-subtle-pale-blue-background-color has-fixed-layout has-background"><thead><tr><th>Table Head</th><td>quisque sagittis</td><td>porta augue</td><td>ut imperdiet</td><td>donec enim</td></tr></thead><tbody><tr><th>Table Body</th><td><strong>strong</strong>, <em>emphasis</em></td><td><a href="#">hyperlink</a>, <del>strikethrough</del></td><td><code>code</code>, <span class="has-inline-color has-vivid-red-color">colour</span></td><td>Fusce ultrices</td></tr><tr><th>vulputate</th><td>quis diam</td><td>porta tristique</td><td>donec enim</td><td>sed libero</td></tr><tr><th>posuere</th><td>risus eu</td><td>urna fringilla</td><td>sed libero</td><td>Fusce ultrices</td></tr><tr><th>tincidunt</th><td>quis diam</td><td>porta tristique</td><td>donec enim</td><td>sed libero</td></tr></tbody><tfoot><tr><th>Table Foot</th><td>cras tempus</td><td>tempor magna</td><td>Fusce ultrices</td><td>quisque sagittis</td></tr></tfoot></table><figcaption><strong>strong</strong>, <em>emphasis</em>, <a href="#">hyperlink</a>, <code>code</code>, <s>strikethrough</s>, <span class="has-inline-color has-vivid-red-color">colour</span></figcaption></figure>
 <!-- /wp:table -->
 
 <!-- wp:table {"hasFixedLayout":true,"align":"left","className":"responsive-table is-style-stripes"} -->
-<table class="wp-block-table alignleft has-fixed-layout responsive-table is-style-stripes"><thead><tr><th>Table Head</th><td>quisque sagittis</td><td>porta augue</td><td>ut imperdiet</td><td>donec enim</td></tr></thead><tbody><tr><th>Table Body</th><td><strong>risus</strong> <em>eu</em></td><td><a href="#">urna</a> <del>fringilla</del></td><td>sed libero</td><td>Fusce ultrices</td></tr><tr><th>vulputate</th><td>quis diam</td><td>porta tristique</td><td>donec enim</td><td>sed libero</td></tr><tr><th>posuere</th><td>risus eu</td><td>urna fringilla</td><td>sed libero</td><td>Fusce ultrices</td></tr><tr><th>tincidunt</th><td>quis diam</td><td>porta tristique</td><td>donec enim</td><td>sed libero</td></tr></tbody><tfoot><tr><th>Table Foot</th><td>cras tempus</td><td>tempor magna</td><td>Fusce ultrices</td><td>quisque sagittis</td></tr></tfoot></table>
+<figure class="wp-block-table alignleft responsive-table is-style-stripes"><table class="has-fixed-layout"><tbody><tr><th>Table Body</th><td>risus eu</td><td>urna fringilla</td><td>sed libero</td><td>Fusce ultrices</td></tr><tr><th>vulputate</th><td>quis diam</td><td>porta tristique</td><td>donec enim</td><td>sed libero</td></tr><tr><th>posuere</th><td>risus eu</td><td>urna fringilla</td><td>sed libero</td><td>Fusce ultrices</td></tr><tr><th>tincidunt</th><td>quis diam</td><td>porta tristique</td><td>donec enim</td><td>sed libero</td></tr></tbody></table></figure>
 <!-- /wp:table -->
 
-<!-- wp:table {"hasFixedLayout":true,"align":"right","className":"responsive-table is-style-stripes"} -->
-<table class="wp-block-table alignright has-fixed-layout responsive-table is-style-stripes"><thead><tr><th>Table Head</th><td>quisque sagittis</td><td>porta augue</td><td>ut imperdiet</td><td>donec enim</td></tr></thead><tbody><tr><th>Table Body</th><td><strong>risus</strong> <em>eu</em></td><td><a href="#">urna</a> <del>fringilla</del></td><td>sed libero</td><td>Fusce ultrices</td></tr><tr><th>vulputate</th><td>quis diam</td><td>porta tristique</td><td>donec enim</td><td>sed libero</td></tr><tr><th>posuere</th><td>risus eu</td><td>urna fringilla</td><td>sed libero</td><td>Fusce ultrices</td></tr><tr><th>tincidunt</th><td>quis diam</td><td>porta tristique</td><td>donec enim</td><td>sed libero</td></tr></tbody><tfoot><tr><th>Table Foot</th><td>cras tempus</td><td>tempor magna</td><td>Fusce ultrices</td><td>quisque sagittis</td></tr></tfoot></table>
+<!-- wp:table {"hasFixedLayout":true,"backgroundColor":"subtle-pale-blue","align":"right","className":"responsive-table is-style-stripes"} -->
+<figure class="wp-block-table alignright responsive-table is-style-stripes"><table class="has-subtle-pale-blue-background-color has-fixed-layout has-background"><tbody><tr><th>Table Body</th><td>risus eu</td><td>urna fringilla</td><td>sed libero</td><td>Fusce ultrices</td></tr><tr><th>vulputate</th><td>quis diam</td><td>porta tristique</td><td>donec enim</td><td>sed libero</td></tr><tr><th>posuere</th><td>risus eu</td><td>urna fringilla</td><td>sed libero</td><td>Fusce ultrices</td></tr><tr><th>tincidunt</th><td>quis diam</td><td>porta tristique</td><td>donec enim</td><td>sed libero</td></tr></tbody></table></figure>
 <!-- /wp:table -->
 
 <!-- wp:paragraph -->
@@ -588,15 +734,15 @@ log: Chinese food is Yummy!</code></pre>
 <!-- /wp:paragraph -->
 
 <!-- wp:table {"hasFixedLayout":true,"align":"center","className":"responsive-table is-style-stripes"} -->
-<table class="wp-block-table aligncenter has-fixed-layout responsive-table is-style-stripes"><thead><tr><th>Table Head</th><td>quisque sagittis</td><td>porta augue</td><td>ut imperdiet</td><td>donec enim</td></tr></thead><tbody><tr><th>Table Body</th><td><strong>risus</strong> <em>eu</em></td><td><a href="#">urna</a> <del>fringilla</del></td><td>sed libero</td><td>Fusce ultrices</td></tr><tr><th>vulputate</th><td>quis diam</td><td>porta tristique</td><td>donec enim</td><td>sed libero</td></tr><tr><th>posuere</th><td>risus eu</td><td>urna fringilla</td><td>sed libero</td><td>Fusce ultrices</td></tr><tr><th>tincidunt</th><td>quis diam</td><td>porta tristique</td><td>donec enim</td><td>sed libero</td></tr></tbody><tfoot><tr><th>Table Foot</th><td>cras tempus</td><td>tempor magna</td><td>Fusce ultrices</td><td>quisque sagittis</td></tr></tfoot></table>
+<figure class="wp-block-table aligncenter responsive-table is-style-stripes"><table class="has-fixed-layout"><tbody><tr><th>Table Body</th><td>risus eu</td><td>urna fringilla</td><td>sed libero</td><td>Fusce ultrices</td></tr><tr><th>vulputate</th><td>quis diam</td><td>porta tristique</td><td>donec enim</td><td>sed libero</td></tr><tr><th>posuere</th><td>risus eu</td><td>urna fringilla</td><td>sed libero</td><td>Fusce ultrices</td></tr><tr><th>tincidunt</th><td>quis diam</td><td>porta tristique</td><td>donec enim</td><td>sed libero</td></tr></tbody></table></figure>
 <!-- /wp:table -->
 
 <!-- wp:table {"hasFixedLayout":true,"align":"wide","className":"responsive-table is-style-stripes"} -->
-<table class="wp-block-table alignwide has-fixed-layout responsive-table is-style-stripes"><thead><tr><th>Table Head</th><td>quisque sagittis</td><td>porta augue</td><td>ut imperdiet</td><td>donec enim</td></tr></thead><tbody><tr><th>Table Body</th><td><strong>risus</strong> <em>eu</em></td><td><a href="#">urna</a> <del>fringilla</del></td><td>sed libero</td><td>Fusce ultrices</td></tr><tr><th>vulputate</th><td>quis diam</td><td>porta tristique</td><td>donec enim</td><td>sed libero</td></tr><tr><th>posuere</th><td>risus eu</td><td>urna fringilla</td><td>sed libero</td><td>Fusce ultrices</td></tr><tr><th>tincidunt</th><td>quis diam</td><td>porta tristique</td><td>donec enim</td><td>sed libero</td></tr></tbody><tfoot><tr><th>Table Foot</th><td>cras tempus</td><td>tempor magna</td><td>Fusce ultrices</td><td>quisque sagittis</td></tr></tfoot></table>
+<figure class="wp-block-table alignwide responsive-table is-style-stripes"><table class="has-fixed-layout"><tbody><tr><th>Table Body</th><td>risus eu</td><td>urna fringilla</td><td>sed libero</td><td>Fusce ultrices</td></tr><tr><th>vulputate</th><td>quis diam</td><td>porta tristique</td><td>donec enim</td><td>sed libero</td></tr><tr><th>posuere</th><td>risus eu</td><td>urna fringilla</td><td>sed libero</td><td>Fusce ultrices</td></tr><tr><th>tincidunt</th><td>quis diam</td><td>porta tristique</td><td>donec enim</td><td>sed libero</td></tr></tbody></table></figure>
 <!-- /wp:table -->
 
 <!-- wp:table {"hasFixedLayout":true,"align":"full","className":"responsive-table is-style-stripes"} -->
-<table class="wp-block-table alignfull has-fixed-layout responsive-table is-style-stripes"><thead><tr><th>Table Head</th><td>quisque sagittis</td><td>porta augue</td><td>ut imperdiet</td><td>donec enim</td></tr></thead><tbody><tr><th>Table Body</th><td><strong>risus</strong> <em>eu</em></td><td><a href="#">urna</a> <del>fringilla</del></td><td>sed libero</td><td>Fusce ultrices</td></tr><tr><th>vulputate</th><td>quis diam</td><td>porta tristique</td><td>donec enim</td><td>sed libero</td></tr><tr><th>posuere</th><td>risus eu</td><td>urna fringilla</td><td>sed libero</td><td>Fusce ultrices</td></tr><tr><th>tincidunt</th><td>quis diam</td><td>porta tristique</td><td>donec enim</td><td>sed libero</td></tr></tbody><tfoot><tr><th>Table Foot</th><td>cras tempus</td><td>tempor magna</td><td>Fusce ultrices</td><td>quisque sagittis</td></tr></tfoot></table>
+<figure class="wp-block-table alignfull responsive-table is-style-stripes"><table class="has-fixed-layout"><tbody><tr><th>Table Body</th><td>risus eu</td><td>urna fringilla</td><td>sed libero</td><td>Fusce ultrices</td></tr><tr><th>vulputate</th><td>quis diam</td><td>porta tristique</td><td>donec enim</td><td>sed libero</td></tr><tr><th>posuere</th><td>risus eu</td><td>urna fringilla</td><td>sed libero</td><td>Fusce ultrices</td></tr><tr><th>tincidunt</th><td>quis diam</td><td>porta tristique</td><td>donec enim</td><td>sed libero</td></tr></tbody></table></figure>
 <!-- /wp:table -->
 
 <!-- wp:nextpage -->
@@ -647,6 +793,10 @@ log: Chinese food is Yummy!</code></pre>
 <hr class="wp-block-separator"/>
 <!-- /wp:separator -->
 
+<!-- wp:separator {"color":"vivid-red","className":"is-style-default"} -->
+<hr class="wp-block-separator has-text-color has-background has-vivid-red-background-color has-vivid-red-color is-style-default"/>
+<!-- /wp:separator -->
+
 <!-- wp:paragraph -->
 <p>Wide line:</p>
 <!-- /wp:paragraph -->
@@ -655,12 +805,20 @@ log: Chinese food is Yummy!</code></pre>
 <hr class="wp-block-separator is-style-wide"/>
 <!-- /wp:separator -->
 
+<!-- wp:separator {"color":"vivid-red","className":"is-style-wide"} -->
+<hr class="wp-block-separator has-text-color has-background has-vivid-red-background-color has-vivid-red-color is-style-wide"/>
+<!-- /wp:separator -->
+
 <!-- wp:paragraph -->
 <p>Dots:</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:separator {"className":"is-style-dots"} -->
 <hr class="wp-block-separator is-style-dots"/>
+<!-- /wp:separator -->
+
+<!-- wp:separator {"color":"vivid-red","className":"is-style-dots"} -->
+<hr class="wp-block-separator has-text-color has-background has-vivid-red-background-color has-vivid-red-color is-style-dots"/>
 <!-- /wp:separator -->
 
 <!-- wp:spacer {"height":50} -->
@@ -675,6 +833,130 @@ log: Chinese food is Yummy!</code></pre>
 <hr class="wp-block-separator is-style-wide"/>
 <!-- /wp:separator -->
 
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link" href="#">Fill button</a></div>
+<!-- /wp:button -->
+
+<!-- wp:button {"borderRadius":50,"className":"is-style-fill"} -->
+<div class="wp-block-button is-style-fill"><a class="wp-block-button__link" href="#" style="border-radius:50px">Fill button</a></div>
+<!-- /wp:button -->
+
+<!-- wp:button {"className":"is-style-outline"} -->
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link" href="#">Outline button</a></div>
+<!-- /wp:button -->
+
+<!-- wp:button {"borderRadius":50,"className":"is-style-outline"} -->
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link" href="#" style="border-radius:50px">Outline button</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button {"textColor":"luminous-vivid-amber","className":"is-style-fill"} -->
+<div class="wp-block-button is-style-fill"><a class="wp-block-button__link has-text-color has-luminous-vivid-amber-color">Text colour</a></div>
+<!-- /wp:button -->
+
+<!-- wp:button {"backgroundColor":"vivid-red","className":"is-style-fill"} -->
+<div class="wp-block-button is-style-fill"><a class="wp-block-button__link has-background has-vivid-red-background-color">Background colour</a></div>
+<!-- /wp:button -->
+
+<!-- wp:button {"gradient":"blush-bordeaux","className":"is-style-fill"} -->
+<div class="wp-block-button is-style-fill"><a class="wp-block-button__link has-background has-blush-bordeaux-gradient-background">Background gradient</a></div>
+<!-- /wp:button -->
+
+<!-- wp:button {"backgroundColor":"vivid-red","textColor":"luminous-vivid-amber","className":"is-style-fill"} -->
+<div class="wp-block-button is-style-fill"><a class="wp-block-button__link has-text-color has-luminous-vivid-amber-color has-background has-vivid-red-background-color">Text + Background</a></div>
+<!-- /wp:button -->
+
+<!-- wp:button {"textColor":"luminous-vivid-amber","gradient":"blush-bordeaux","className":"is-style-fill"} -->
+<div class="wp-block-button is-style-fill"><a class="wp-block-button__link has-text-color has-luminous-vivid-amber-color has-background has-blush-bordeaux-gradient-background">Text + Gradient</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button {"textColor":"vivid-red","className":"is-style-outline"} -->
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link has-text-color has-vivid-red-color">Text colour</a></div>
+<!-- /wp:button -->
+
+<!-- wp:button {"backgroundColor":"very-light-gray","className":"is-style-outline"} -->
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link has-background has-very-light-gray-background-color">Background colour</a></div>
+<!-- /wp:button -->
+
+<!-- wp:button {"gradient":"very-light-gray-to-cyan-bluish-gray","className":"is-style-outline"} -->
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link has-background has-very-light-gray-to-cyan-bluish-gray-gradient-background">Background gradient</a></div>
+<!-- /wp:button -->
+
+<!-- wp:button {"backgroundColor":"very-light-gray","textColor":"vivid-red","className":"is-style-outline"} -->
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link has-text-color has-vivid-red-color has-background has-very-light-gray-background-color">Text + Background</a></div>
+<!-- /wp:button -->
+
+<!-- wp:button {"textColor":"vivid-red","gradient":"very-light-gray-to-cyan-bluish-gray","className":"is-style-outline"} -->
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link has-text-color has-vivid-red-color has-background has-very-light-gray-to-cyan-bluish-gray-gradient-background">Text + Gradient</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons -->
+
+<!-- wp:buttons {"align":"left"} -->
+<div class="wp-block-buttons alignleft"><!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link" href="#">Fill button</a></div>
+<!-- /wp:button -->
+
+<!-- wp:button {"borderRadius":50,"className":"is-style-fill"} -->
+<div class="wp-block-button is-style-fill"><a class="wp-block-button__link" href="#" style="border-radius:50px">Fill button</a></div>
+<!-- /wp:button -->
+
+<!-- wp:button {"className":"is-style-outline"} -->
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link" href="#">Outline button</a></div>
+<!-- /wp:button -->
+
+<!-- wp:button {"borderRadius":50,"className":"is-style-outline"} -->
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link" href="#" style="border-radius:50px">Outline button</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons -->
+
+<!-- wp:buttons {"align":"right"} -->
+<div class="wp-block-buttons alignright"><!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link" href="#">Fill button</a></div>
+<!-- /wp:button -->
+
+<!-- wp:button {"borderRadius":50,"className":"is-style-fill"} -->
+<div class="wp-block-button is-style-fill"><a class="wp-block-button__link" href="#" style="border-radius:50px">Fill button</a></div>
+<!-- /wp:button -->
+
+<!-- wp:button {"className":"is-style-outline"} -->
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link" href="#">Outline button</a></div>
+<!-- /wp:button -->
+
+<!-- wp:button {"borderRadius":50,"className":"is-style-outline"} -->
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link" href="#" style="border-radius:50px">Outline button</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons -->
+
+<!-- wp:paragraph -->
+<p>Paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed iaculis justo sed libero lacinia cursus. Suspendisse potenti. Lorem ipsum dolor   sit amet, consectetur adipiscing elit.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons {"align":"center"} -->
+<div class="wp-block-buttons aligncenter"><!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link" href="#">Fill button</a></div>
+<!-- /wp:button -->
+
+<!-- wp:button {"borderRadius":50,"className":"is-style-fill"} -->
+<div class="wp-block-button is-style-fill"><a class="wp-block-button__link" href="#" style="border-radius:50px">Fill button</a></div>
+<!-- /wp:button -->
+
+<!-- wp:button {"className":"is-style-outline"} -->
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link" href="#">Outline button</a></div>
+<!-- /wp:button -->
+
+<!-- wp:button {"borderRadius":50,"className":"is-style-outline"} -->
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link" href="#" style="border-radius:50px">Outline button</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons -->
+
+<!-- wp:heading {"level":4} -->
+<h4>(Legacy button blocks)</h4>
+<!-- /wp:heading -->
+
 <!-- wp:button -->
 <div class="wp-block-button"><a class="wp-block-button__link" href="https://www.google.com">Button</a></div>
 <!-- /wp:button -->
@@ -683,8 +965,8 @@ log: Chinese food is Yummy!</code></pre>
 <div class="wp-block-button is-style-outline"><a class="wp-block-button__link" href="https://www.google.com">Button</a></div>
 <!-- /wp:button -->
 
-<!-- wp:button {"className":"is-style-squared"} -->
-<div class="wp-block-button is-style-squared"><a class="wp-block-button__link" href="https://www.google.com">Button</a></div>
+<!-- wp:button {"borderRadius":0,"align":"none"} -->
+<div class="wp-block-button"><a class="wp-block-button__link no-border-radius" href="https://www.google.com">Button</a></div>
 <!-- /wp:button -->
 
 <!-- wp:button {"backgroundColor":"vivid-red","textColor":"luminous-vivid-amber","className":"is-style-outline"} -->
@@ -719,8 +1001,22 @@ log: Chinese food is Yummy!</code></pre>
 <hr class="wp-block-separator is-style-wide"/>
 <!-- /wp:separator -->
 
-<!-- wp:columns {"columns":4} -->
-<div class="wp-block-columns has-4-columns"><!-- wp:column -->
+<!-- wp:columns -->
+<div class="wp-block-columns"><!-- wp:column -->
+<div class="wp-block-column"><!-- wp:paragraph -->
+<p><strong>Multi-column grid.</strong>&nbsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pulvinar diam quis dictum scelerisque.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column"><!-- wp:paragraph -->
+<p>Aliquam porttitor est non congue sollicitudin. </p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns -->
+
+<!-- wp:columns -->
+<div class="wp-block-columns"><!-- wp:column -->
 <div class="wp-block-column"><!-- wp:paragraph -->
 <p><strong>Multi-column grid.</strong>&nbsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pulvinar diam quis dictum scelerisque.</p>
 <!-- /wp:paragraph --></div>
@@ -736,66 +1032,216 @@ log: Chinese food is Yummy!</code></pre>
 <div class="wp-block-column"><!-- wp:paragraph -->
 <p>Proin mollis dapibus vehicula. Pellentesque aliquam arcu eu sapien consectetur vehicula. Mauris interdum congue ex.</p>
 <!-- /wp:paragraph --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns -->
+
+<!-- wp:columns {"backgroundColor":"vivid-red","textColor":"very-light-gray"} -->
+<div class="wp-block-columns has-background has-text-color has-vivid-red-background-color has-very-light-gray-color"><!-- wp:column -->
+<div class="wp-block-column"><!-- wp:paragraph -->
+<p>Column 1</p>
+<!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
 <!-- wp:column -->
 <div class="wp-block-column"><!-- wp:paragraph -->
-<p>In vel feugiat tortor. Praesent et posuere mi. Cras ut vulputate diam. Vestibulum cursus, tellus vel dictum varius, justo sapien dictum magna.</p>
+<p>Column 2</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column"><!-- wp:paragraph -->
+<p>Column 3</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns -->
 
-<!-- wp:columns {"columns":4,"align":"wide"} -->
-<div class="wp-block-columns alignwide has-4-columns"><!-- wp:column -->
-<div class="wp-block-column"><!-- wp:paragraph -->
+<!-- wp:columns -->
+<div class="wp-block-columns"><!-- wp:column {"width":25} -->
+<div class="wp-block-column" style="flex-basis:25%"><!-- wp:paragraph -->
 <p><strong>Multi-column grid.</strong>&nbsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pulvinar diam quis dictum scelerisque.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
-<!-- wp:column -->
-<div class="wp-block-column"><!-- wp:paragraph -->
+<!-- wp:column {"width":50} -->
+<div class="wp-block-column" style="flex-basis:50%"><!-- wp:paragraph -->
 <p>Aliquam porttitor est non congue sollicitudin. </p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
-<!-- wp:column -->
-<div class="wp-block-column"><!-- wp:paragraph -->
+<!-- wp:column {"width":25} -->
+<div class="wp-block-column" style="flex-basis:25%"><!-- wp:paragraph -->
 <p>Proin mollis dapibus vehicula. Pellentesque aliquam arcu eu sapien consectetur vehicula. Mauris interdum congue ex.</p>
-<!-- /wp:paragraph --></div>
-<!-- /wp:column -->
-
-<!-- wp:column -->
-<div class="wp-block-column"><!-- wp:paragraph -->
-<p>In vel feugiat tortor. Praesent et posuere mi. Cras ut vulputate diam. Vestibulum cursus, tellus vel dictum varius, justo sapien dictum magna.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns -->
 
-<!-- wp:columns {"columns":4,"align":"full"} -->
-<div class="wp-block-columns alignfull has-4-columns"><!-- wp:column -->
-<div class="wp-block-column"><!-- wp:paragraph -->
+<!-- wp:columns {"verticalAlignment":"top"} -->
+<div class="wp-block-columns are-vertically-aligned-top"><!-- wp:column {"verticalAlignment":"top"} -->
+<div class="wp-block-column is-vertically-aligned-top"><!-- wp:paragraph -->
 <p><strong>Multi-column grid.</strong>&nbsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pulvinar diam quis dictum scelerisque.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
-<!-- wp:column -->
-<div class="wp-block-column"><!-- wp:paragraph -->
+<!-- wp:column {"verticalAlignment":"top"} -->
+<div class="wp-block-column is-vertically-aligned-top"><!-- wp:paragraph -->
 <p>Aliquam porttitor est non congue sollicitudin. </p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
-<!-- wp:column -->
-<div class="wp-block-column"><!-- wp:paragraph -->
+<!-- wp:column {"verticalAlignment":"top"} -->
+<div class="wp-block-column is-vertically-aligned-top"><!-- wp:paragraph -->
 <p>Proin mollis dapibus vehicula. Pellentesque aliquam arcu eu sapien consectetur vehicula. Mauris interdum congue ex.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
-<!-- wp:column -->
-<div class="wp-block-column"><!-- wp:paragraph -->
+<!-- wp:column {"verticalAlignment":"top"} -->
+<div class="wp-block-column is-vertically-aligned-top"><!-- wp:paragraph -->
 <p>In vel feugiat tortor. Praesent et posuere mi. Cras ut vulputate diam. Vestibulum cursus, tellus vel dictum varius, justo sapien dictum magna.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns -->
+
+<!-- wp:columns {"verticalAlignment":"center","align":"wide"} -->
+<div class="wp-block-columns alignwide are-vertically-aligned-center"><!-- wp:column {"verticalAlignment":"center"} -->
+<div class="wp-block-column is-vertically-aligned-center"><!-- wp:paragraph -->
+<p><strong>Multi-column grid.</strong>&nbsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pulvinar diam quis dictum scelerisque.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"verticalAlignment":"center"} -->
+<div class="wp-block-column is-vertically-aligned-center"><!-- wp:paragraph -->
+<p>Aliquam porttitor est non congue sollicitudin. </p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"verticalAlignment":"center"} -->
+<div class="wp-block-column is-vertically-aligned-center"><!-- wp:paragraph -->
+<p>Proin mollis dapibus vehicula. Pellentesque aliquam arcu eu sapien consectetur vehicula. Mauris interdum congue ex.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"verticalAlignment":"center"} -->
+<div class="wp-block-column is-vertically-aligned-center"><!-- wp:paragraph -->
+<p>In vel feugiat tortor. Praesent et posuere mi. Cras ut vulputate diam. Vestibulum cursus, tellus vel dictum varius, justo sapien dictum magna.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"verticalAlignment":"center"} -->
+<div class="wp-block-column is-vertically-aligned-center"><!-- wp:paragraph -->
+<p>Suspendisse varius turpis arcu, sed hendrerit erat tempor at. Donec a tortor eu diam rhoncus consequat.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns -->
+
+<!-- wp:columns {"align":"full"} -->
+<div class="wp-block-columns alignfull"><!-- wp:column {"verticalAlignment":"bottom"} -->
+<div class="wp-block-column is-vertically-aligned-bottom"><!-- wp:paragraph -->
+<p><strong>Multi-column grid.</strong>&nbsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pulvinar diam quis dictum scelerisque.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"verticalAlignment":"bottom"} -->
+<div class="wp-block-column is-vertically-aligned-bottom"><!-- wp:paragraph -->
+<p>Aliquam porttitor est non congue sollicitudin. </p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"verticalAlignment":"bottom"} -->
+<div class="wp-block-column is-vertically-aligned-bottom"><!-- wp:paragraph -->
+<p>Proin mollis dapibus vehicula. Pellentesque aliquam arcu eu sapien consectetur vehicula. Mauris interdum congue ex.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"verticalAlignment":"bottom"} -->
+<div class="wp-block-column is-vertically-aligned-bottom"><!-- wp:paragraph -->
+<p>In vel feugiat tortor. Praesent et posuere mi. Cras ut vulputate diam. Vestibulum cursus, tellus vel dictum varius, justo sapien dictum magna.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"verticalAlignment":"center"} -->
+<div class="wp-block-column is-vertically-aligned-center"><!-- wp:paragraph -->
+<p>Suspendisse varius turpis arcu, sed hendrerit erat tempor at. Donec a tortor eu diam rhoncus consequat.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"verticalAlignment":"top"} -->
+<div class="wp-block-column is-vertically-aligned-top"><!-- wp:paragraph -->
+<p>Morbi non diam auctor, efficitur lorem et.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns -->
+
+<!-- wp:spacer {"height":50} -->
+<div style="height:50px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->
+
+<!-- wp:heading {"level":3} -->
+<h3>Groups</h3>
+<!-- /wp:heading -->
+
+<!-- wp:separator {"className":"is-style-wide"} -->
+<hr class="wp-block-separator is-style-wide"/>
+<!-- /wp:separator -->
+
+<!-- wp:group -->
+<div class="wp-block-group"><div class="wp-block-group__inner-container"><!-- wp:heading {"level":4} -->
+<h4>Heading within a group block</h4>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Proin mollis dapibus vehicula. Pellentesque aliquam arcu eu sapien consectetur vehicula. Mauris interdum congue ex. In vel feugiat tortor. Praesent et posuere mi. Cras ut vulputate diam. Vestibulum cursus, tellus vel dictum varius, justo sapien dictum magna. Suspendisse varius turpis arcu, sed hendrerit erat tempor at. Donec a tortor eu diam rhoncus consequat.</p>
+<!-- /wp:paragraph --></div></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"align":"wide"} -->
+<div class="wp-block-group alignwide"><div class="wp-block-group__inner-container"><!-- wp:heading {"level":4} -->
+<h4>Heading within a group block</h4>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Proin mollis dapibus vehicula. Pellentesque aliquam arcu eu sapien consectetur vehicula. Mauris interdum congue ex. In vel feugiat tortor. Praesent et posuere mi. Cras ut vulputate diam. Vestibulum cursus, tellus vel dictum varius, justo sapien dictum magna. Suspendisse varius turpis arcu, sed hendrerit erat tempor at. Donec a tortor eu diam rhoncus consequat.</p>
+<!-- /wp:paragraph --></div></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"align":"full"} -->
+<div class="wp-block-group alignfull"><div class="wp-block-group__inner-container"><!-- wp:heading {"level":4} -->
+<h4>Heading within a group block</h4>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Proin mollis dapibus vehicula. Pellentesque aliquam arcu eu sapien consectetur vehicula. Mauris interdum congue ex. In vel feugiat tortor. Praesent et posuere mi. Cras ut vulputate diam. Vestibulum cursus, tellus vel dictum varius, justo sapien dictum magna. Suspendisse varius turpis arcu, sed hendrerit erat tempor at. Donec a tortor eu diam rhoncus consequat.</p>
+<!-- /wp:paragraph --></div></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"backgroundColor":"vivid-red","textColor":"very-light-gray"} -->
+<div class="wp-block-group has-vivid-red-background-color has-very-light-gray-color has-text-color has-background"><div class="wp-block-group__inner-container"><!-- wp:heading {"level":4} -->
+<h4>Heading within a group block</h4>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Proin mollis dapibus vehicula. Pellentesque aliquam arcu eu sapien consectetur vehicula. Mauris interdum congue ex. In vel feugiat tortor. Praesent et posuere mi. Cras ut vulputate diam. Vestibulum cursus, tellus vel dictum varius, justo sapien dictum magna. Suspendisse varius turpis arcu, sed hendrerit erat tempor at. Donec a tortor eu diam rhoncus consequat.</p>
+<!-- /wp:paragraph --></div></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"backgroundColor":"vivid-red","textColor":"very-light-gray","align":"wide"} -->
+<div class="wp-block-group alignwide has-vivid-red-background-color has-very-light-gray-color has-text-color has-background"><div class="wp-block-group__inner-container"><!-- wp:heading {"level":4} -->
+<h4>Heading within a group block</h4>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Proin mollis dapibus vehicula. Pellentesque aliquam arcu eu sapien consectetur vehicula. Mauris interdum congue ex. In vel feugiat tortor. Praesent et posuere mi. Cras ut vulputate diam. Vestibulum cursus, tellus vel dictum varius, justo sapien dictum magna. Suspendisse varius turpis arcu, sed hendrerit erat tempor at. Donec a tortor eu diam rhoncus consequat.</p>
+<!-- /wp:paragraph --></div></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"backgroundColor":"vivid-red","textColor":"very-light-gray","align":"full"} -->
+<div class="wp-block-group alignfull has-vivid-red-background-color has-very-light-gray-color has-text-color has-background"><div class="wp-block-group__inner-container"><!-- wp:heading {"level":4} -->
+<h4>Heading within a group block</h4>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Proin mollis dapibus vehicula. Pellentesque aliquam arcu eu sapien consectetur vehicula. Mauris interdum congue ex. In vel feugiat tortor. Praesent et posuere mi. Cras ut vulputate diam. Vestibulum cursus, tellus vel dictum varius, justo sapien dictum magna. Suspendisse varius turpis arcu, sed hendrerit erat tempor at. Donec a tortor eu diam rhoncus consequat.</p>
+<!-- /wp:paragraph --></div></div>
+<!-- /wp:group -->
 
 <!-- wp:spacer {"height":50} -->
 <div style="height:50px" aria-hidden="true" class="wp-block-spacer"></div>
@@ -809,43 +1255,143 @@ log: Chinese food is Yummy!</code></pre>
 <hr class="wp-block-separator is-style-wide"/>
 <!-- /wp:separator -->
 
-<!-- wp:media-text {"align":"","mediaId":560,"mediaType":"image"} -->
-<div class="wp-block-media-text"><figure class="wp-block-media-text__media"><img src="https://picsum.photos/seed/photo5/800/400" alt="" class="wp-image-560"/></figure><div class="wp-block-media-text__content"><!-- wp:heading {"level":4} -->
+<!-- wp:media-text {"align":"","mediaId":560,"mediaType":"image","isStackedOnMobile":false} -->
+<div class="wp-block-media-text"><figure class="wp-block-media-text__media"><img src="https://picsum.photos/seed/photo6/400/400" alt="" class="wp-image-560"/></figure><div class="wp-block-media-text__content"><!-- wp:heading {"level":4} -->
 <h4>This is an example of the "Media and Text" blok</h4>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"placeholder":"Content…"} -->
-<p><strong>Aenean</strong> <em>pretium</em>, <a href="#">sem</a> a <del>ornare</del> gravida, quam nisi efficitur ipsum, et semper est orci at libero. Mauris tincidunt fringilla turpis, maximus pharetra purus.</p>
+<p>Aenean pretium, sem a ornare gravida, quam nisi efficitur ipsum, et semper est orci at libero. Mauris tincidunt fringilla turpis, maximus pharetra purus.</p>
 <!-- /wp:paragraph --></div></div>
 <!-- /wp:media-text -->
 
-<!-- wp:media-text {"align":"","backgroundColor":"luminous-vivid-amber","mediaPosition":"right","mediaId":968,"mediaType":"video","isStackedOnMobile":true} -->
-<div class="wp-block-media-text has-media-on-the-right has-luminous-vivid-amber-background-color is-stacked-on-mobile"><figure class="wp-block-media-text__media"><video controls src="http://techslides.com/demos/sample-videos/small.mp4"></video></figure><div class="wp-block-media-text__content"><!-- wp:heading {"level":4} -->
+<!-- wp:media-text {"align":"","mediaId":560,"mediaType":"image","mediaWidth":31,"verticalAlignment":"top"} -->
+<div class="wp-block-media-text is-stacked-on-mobile is-vertically-aligned-top" style="grid-template-columns:31% auto"><figure class="wp-block-media-text__media"><a href="https://google.com"><img src="https://picsum.photos/seed/photo6/400/400" alt="" class="wp-image-560"/></a></figure><div class="wp-block-media-text__content"><!-- wp:heading {"level":4} -->
 <h4>This is an example of the "Media and Text" blok</h4>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"placeholder":"Content…"} -->
-<p><strong>Aenean</strong> <em>pretium</em>, <a href="#">sem</a> a <del>ornare</del> gravida, quam nisi efficitur ipsum, et semper est orci at libero. Mauris tincidunt fringilla turpis, maximus pharetra purus.</p>
+<p>Aenean pretium, sem a ornare gravida, quam nisi efficitur ipsum, et semper est orci at libero. Mauris tincidunt fringilla turpis, maximus pharetra purus.</p>
 <!-- /wp:paragraph --></div></div>
 <!-- /wp:media-text -->
 
-<!-- wp:media-text {"backgroundColor":"luminous-vivid-amber","mediaPosition":"right","mediaId":968,"mediaType":"video","isStackedOnMobile":true} -->
-<div class="wp-block-media-text alignwide has-media-on-the-right has-luminous-vivid-amber-background-color is-stacked-on-mobile"><figure class="wp-block-media-text__media"><video controls src="http://techslides.com/demos/sample-videos/small.mp4"></video></figure><div class="wp-block-media-text__content"><!-- wp:heading {"level":4} -->
+<!-- wp:media-text {"align":"","mediaPosition":"right","mediaId":560,"linkDestination":"none","mediaType":"image","isStackedOnMobile":false,"verticalAlignment":"center","imageFill":true,"focalPoint":{"x":"0.50","y":"0.50"}} -->
+<div class="wp-block-media-text has-media-on-the-right is-vertically-aligned-center is-image-fill"><figure class="wp-block-media-text__media" style="background-image:url(https://picsum.photos/seed/photo6/400/400);background-position:50% 50%"><img src="https://picsum.photos/seed/photo6/400/400" alt="" class="wp-image-560"/></figure><div class="wp-block-media-text__content"><!-- wp:heading {"level":4} -->
 <h4>This is an example of the "Media and Text" blok</h4>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"placeholder":"Content…"} -->
-<p><strong>Aenean</strong> <em>pretium</em>, <a href="#">sem</a> a <del>ornare</del> gravida, quam nisi efficitur ipsum, et semper est orci at libero. Mauris tincidunt fringilla turpis, maximus pharetra purus.</p>
+<p>Aenean pretium, sem a ornare gravida, quam nisi efficitur ipsum, et semper est orci at libero. Mauris tincidunt fringilla turpis, maximus pharetra purus.</p>
 <!-- /wp:paragraph --></div></div>
 <!-- /wp:media-text -->
 
-<!-- wp:media-text {"align":"full","backgroundColor":"luminous-vivid-amber","mediaPosition":"right","mediaId":968,"mediaType":"video","isStackedOnMobile":true} -->
-<div class="wp-block-media-text alignfull has-media-on-the-right has-luminous-vivid-amber-background-color is-stacked-on-mobile"><figure class="wp-block-media-text__media"><video controls src="http://techslides.com/demos/sample-videos/small.mp4"></video></figure><div class="wp-block-media-text__content"><!-- wp:heading {"level":4} -->
+<!-- wp:media-text {"align":"","mediaPosition":"right","mediaId":560,"mediaType":"image","mediaWidth":27,"verticalAlignment":"bottom","imageFill":true,"focalPoint":{"x":"0.90","y":"0.75"}} -->
+<div class="wp-block-media-text has-media-on-the-right is-stacked-on-mobile is-vertically-aligned-bottom is-image-fill" style="grid-template-columns:auto 27%"><figure class="wp-block-media-text__media" style="background-image:url(https://picsum.photos/seed/photo6/400/400);background-position:90% 75%"><a href="https://google.com"><img src="https://picsum.photos/seed/photo6/400/400" alt="" class="wp-image-560"/></a></figure><div class="wp-block-media-text__content"><!-- wp:heading {"level":4} -->
 <h4>This is an example of the "Media and Text" blok</h4>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"placeholder":"Content…"} -->
-<p><strong>Aenean</strong> <em>pretium</em>, <a href="#">sem</a> a <del>ornare</del> gravida, quam nisi efficitur ipsum, et semper est orci at libero. Mauris tincidunt fringilla turpis, maximus pharetra purus.</p>
+<p>Aenean pretium, sem a ornare gravida, quam nisi efficitur ipsum, et semper est orci at libero. Mauris tincidunt fringilla turpis, maximus pharetra purus.</p>
+<!-- /wp:paragraph --></div></div>
+<!-- /wp:media-text -->
+
+<!-- wp:media-text {"align":"","backgroundColor":"luminous-vivid-amber","mediaPosition":"right","mediaId":560,"linkDestination":"none","mediaType":"image","isStackedOnMobile":false,"verticalAlignment":"center","imageFill":true,"focalPoint":{"x":"0.50","y":"0.50"}} -->
+<div class="wp-block-media-text has-media-on-the-right has-background has-luminous-vivid-amber-background-color is-vertically-aligned-center is-image-fill"><figure class="wp-block-media-text__media" style="background-image:url(https://picsum.photos/seed/photo6/400/400);background-position:50% 50%"><img src="https://picsum.photos/seed/photo6/400/400" alt="" class="wp-image-560"/></figure><div class="wp-block-media-text__content"><!-- wp:heading {"level":4} -->
+<h4>This is an example of the "Media and Text" blok</h4>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"placeholder":"Content…"} -->
+<p>Aenean pretium, sem a ornare gravida, quam nisi efficitur ipsum, et semper est orci at libero. Mauris tincidunt fringilla turpis, maximus pharetra purus.</p>
+<!-- /wp:paragraph --></div></div>
+<!-- /wp:media-text -->
+
+<!-- wp:media-text {"align":"","backgroundColor":"luminous-vivid-amber","mediaPosition":"right","mediaId":560,"linkDestination":"none","mediaType":"image","verticalAlignment":"center","imageFill":true,"focalPoint":{"x":"0.50","y":"0.50"}} -->
+<div class="wp-block-media-text has-media-on-the-right has-background has-luminous-vivid-amber-background-color is-stacked-on-mobile is-vertically-aligned-center is-image-fill"><figure class="wp-block-media-text__media" style="background-image:url(https://picsum.photos/seed/photo6/400/400);background-position:50% 50%"><img src="https://picsum.photos/seed/photo6/400/400" alt="" class="wp-image-560"/></figure><div class="wp-block-media-text__content"><!-- wp:heading {"level":4} -->
+<h4>This is an example of the "Media and Text" blok</h4>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"placeholder":"Content…"} -->
+<p>Aenean pretium, sem a ornare gravida, quam nisi efficitur ipsum, et semper est orci at libero. Mauris tincidunt fringilla turpis, maximus pharetra purus.</p>
+<!-- /wp:paragraph --></div></div>
+<!-- /wp:media-text -->
+
+<!-- wp:media-text {"mediaId":560,"linkDestination":"none","mediaType":"image","isStackedOnMobile":false,"verticalAlignment":"center","imageFill":true,"focalPoint":{"x":"0.50","y":"0.50"}} -->
+<div class="wp-block-media-text alignwide is-vertically-aligned-center is-image-fill"><figure class="wp-block-media-text__media" style="background-image:url(https://picsum.photos/seed/photo6/400/400);background-position:50% 50%"><img src="https://picsum.photos/seed/photo6/400/400" alt="" class="wp-image-560"/></figure><div class="wp-block-media-text__content"><!-- wp:heading {"level":4} -->
+<h4>This is an example of the "Media and Text" blok</h4>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"placeholder":"Content…"} -->
+<p>Aenean pretium, sem a ornare gravida, quam nisi efficitur ipsum, et semper est orci at libero. Mauris tincidunt fringilla turpis, maximus pharetra purus.</p>
+<!-- /wp:paragraph --></div></div>
+<!-- /wp:media-text -->
+
+<!-- wp:media-text {"align":"full","mediaPosition":"right","mediaId":560,"linkDestination":"none","mediaType":"image","verticalAlignment":"center","imageFill":true,"focalPoint":{"x":"0.50","y":"0.50"}} -->
+<div class="wp-block-media-text alignfull has-media-on-the-right is-stacked-on-mobile is-vertically-aligned-center is-image-fill"><figure class="wp-block-media-text__media" style="background-image:url(https://picsum.photos/seed/photo6/400/400);background-position:50% 50%"><img src="https://picsum.photos/seed/photo6/400/400" alt="" class="wp-image-560"/></figure><div class="wp-block-media-text__content"><!-- wp:heading {"level":4} -->
+<h4>This is an example of the "Media and Text" blok</h4>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"placeholder":"Content…"} -->
+<p>Aenean pretium, sem a ornare gravida, quam nisi efficitur ipsum, et semper est orci at libero. Mauris tincidunt fringilla turpis, maximus pharetra purus.</p>
+<!-- /wp:paragraph --></div></div>
+<!-- /wp:media-text -->
+
+<!-- wp:media-text {"backgroundColor":"luminous-vivid-amber","mediaId":560,"linkDestination":"none","mediaType":"image","isStackedOnMobile":false,"verticalAlignment":"center","imageFill":true,"focalPoint":{"x":"0.50","y":"0.50"}} -->
+<div class="wp-block-media-text alignwide has-background has-luminous-vivid-amber-background-color is-vertically-aligned-center is-image-fill"><figure class="wp-block-media-text__media" style="background-image:url(https://picsum.photos/seed/photo6/400/400);background-position:50% 50%"><img src="https://picsum.photos/seed/photo6/400/400" alt="" class="wp-image-560"/></figure><div class="wp-block-media-text__content"><!-- wp:heading {"level":4} -->
+<h4>This is an example of the "Media and Text" blok</h4>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"placeholder":"Content…"} -->
+<p>Aenean pretium, sem a ornare gravida, quam nisi efficitur ipsum, et semper est orci at libero. Mauris tincidunt fringilla turpis, maximus pharetra purus.</p>
+<!-- /wp:paragraph --></div></div>
+<!-- /wp:media-text -->
+
+<!-- wp:media-text {"align":"full","backgroundColor":"luminous-vivid-amber","mediaPosition":"right","mediaId":560,"linkDestination":"none","mediaType":"image","verticalAlignment":"center","imageFill":true,"focalPoint":{"x":"0.50","y":"0.50"}} -->
+<div class="wp-block-media-text alignfull has-media-on-the-right has-background has-luminous-vivid-amber-background-color is-stacked-on-mobile is-vertically-aligned-center is-image-fill"><figure class="wp-block-media-text__media" style="background-image:url(https://picsum.photos/seed/photo6/400/400);background-position:50% 50%"><img src="https://picsum.photos/seed/photo6/400/400" alt="" class="wp-image-560"/></figure><div class="wp-block-media-text__content"><!-- wp:heading {"level":4} -->
+<h4>This is an example of the "Media and Text" blok</h4>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"placeholder":"Content…"} -->
+<p>Aenean pretium, sem a ornare gravida, quam nisi efficitur ipsum, et semper est orci at libero. Mauris tincidunt fringilla turpis, maximus pharetra purus.</p>
+<!-- /wp:paragraph --></div></div>
+<!-- /wp:media-text -->
+
+<!-- wp:media-text {"align":"","mediaId":968,"mediaType":"video","isStackedOnMobile":false} -->
+<div class="wp-block-media-text"><figure class="wp-block-media-text__media"><video controls src="http://techslides.com/demos/sample-videos/small.mp4"></video></figure><div class="wp-block-media-text__content"><!-- wp:heading {"level":4} -->
+<h4>This is an example of the "Media and Text" blok</h4>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"placeholder":"Content…"} -->
+<p>Aenean pretium, sem a ornare gravida, quam nisi efficitur ipsum, et semper est orci at libero. Mauris tincidunt fringilla turpis, maximus pharetra purus.</p>
+<!-- /wp:paragraph --></div></div>
+<!-- /wp:media-text -->
+
+<!-- wp:media-text {"align":"","mediaPosition":"right","mediaId":968,"mediaType":"video","isStackedOnMobile":false} -->
+<div class="wp-block-media-text has-media-on-the-right"><figure class="wp-block-media-text__media"><video controls src="http://techslides.com/demos/sample-videos/small.mp4"></video></figure><div class="wp-block-media-text__content"><!-- wp:heading {"level":4} -->
+<h4>This is an example of the "Media and Text" blok</h4>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"placeholder":"Content…"} -->
+<p>Aenean pretium, sem a ornare gravida, quam nisi efficitur ipsum, et semper est orci at libero. Mauris tincidunt fringilla turpis, maximus pharetra purus.</p>
+<!-- /wp:paragraph --></div></div>
+<!-- /wp:media-text -->
+
+<!-- wp:media-text {"mediaId":968,"mediaType":"video"} -->
+<div class="wp-block-media-text alignwide is-stacked-on-mobile"><figure class="wp-block-media-text__media"><video controls src="http://techslides.com/demos/sample-videos/small.mp4"></video></figure><div class="wp-block-media-text__content"><!-- wp:heading {"level":4} -->
+<h4>This is an example of the "Media and Text" blok</h4>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"placeholder":"Content…"} -->
+<p>Aenean pretium, sem a ornare gravida, quam nisi efficitur ipsum, et semper est orci at libero. Mauris tincidunt fringilla turpis, maximus pharetra purus.</p>
+<!-- /wp:paragraph --></div></div>
+<!-- /wp:media-text -->
+
+<!-- wp:media-text {"align":"full","mediaPosition":"right","mediaId":968,"mediaType":"video"} -->
+<div class="wp-block-media-text alignfull has-media-on-the-right is-stacked-on-mobile"><figure class="wp-block-media-text__media"><video controls src="http://techslides.com/demos/sample-videos/small.mp4"></video></figure><div class="wp-block-media-text__content"><!-- wp:heading {"level":4} -->
+<h4>This is an example of the "Media and Text" blok</h4>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"placeholder":"Content…"} -->
+<p>Aenean pretium, sem a ornare gravida, quam nisi efficitur ipsum, et semper est orci at libero. Mauris tincidunt fringilla turpis, maximus pharetra purus.</p>
 <!-- /wp:paragraph --></div></div>
 <!-- /wp:media-text -->
 
@@ -870,7 +1416,7 @@ log: Chinese food is Yummy!</code></pre>
 <!-- /wp:separator -->
 
 <!-- wp:shortcode -->
-[caption width="300"]<img src="https://picsum.photos/seed/photo5/800/400" alt="Sample Artwork" title="Artwork by Flavio Martinez" width="300" /> Nullam mattis lectus vel aliquet [/caption]
+[caption width="300"]<img src="https://picsum.photos/seed/photo5/800/400" alt="Sample Artwork" title="Artwork by Flavio Martinez" width="300"> Nullam mattis lectus vel aliquet [/caption]
 <!-- /wp:shortcode -->
 
 <!-- wp:spacer {"height":50} -->
@@ -899,6 +1445,10 @@ log: Chinese food is Yummy!</code></pre>
 
 <!-- wp:archives {"align":"center","showPostCounts":true} /-->
 
+<!-- wp:archives {"align":"wide","showPostCounts":true} /-->
+
+<!-- wp:archives {"align":"full","showPostCounts":true} /-->
+
 <!-- wp:archives {"displayAsDropdown":true,"showPostCounts":true} /-->
 
 <!-- wp:archives {"align":"left","displayAsDropdown":true,"showPostCounts":true} /-->
@@ -910,6 +1460,10 @@ log: Chinese food is Yummy!</code></pre>
 <!-- /wp:paragraph -->
 
 <!-- wp:archives {"align":"center","displayAsDropdown":true,"showPostCounts":true} /-->
+
+<!-- wp:archives {"align":"wide","displayAsDropdown":true,"showPostCounts":true} /-->
+
+<!-- wp:archives {"align":"full","displayAsDropdown":true,"showPostCounts":true} /-->
 
 <!-- wp:spacer {"height":50} -->
 <div style="height:50px" aria-hidden="true" class="wp-block-spacer"></div>
@@ -937,6 +1491,8 @@ log: Chinese food is Yummy!</code></pre>
 
 <!-- wp:categories {"align":"center","showHierarchy":true,"showPostCounts":true} /-->
 
+<!-- wp:categories {"align":"wide","showHierarchy":true,"showPostCounts":true} /-->
+
 <!-- wp:categories {"align":"full","showHierarchy":true,"showPostCounts":true} /-->
 
 <!-- wp:categories {"displayAsDropdown":true,"showHierarchy":true,"showPostCounts":true} /-->
@@ -950,6 +1506,8 @@ log: Chinese food is Yummy!</code></pre>
 <!-- /wp:paragraph -->
 
 <!-- wp:categories {"align":"center","displayAsDropdown":true,"showHierarchy":true,"showPostCounts":true} /-->
+
+<!-- wp:categories {"align":"wide","displayAsDropdown":true,"showHierarchy":true,"showPostCounts":true} /-->
 
 <!-- wp:categories {"align":"full","displayAsDropdown":true,"showHierarchy":true,"showPostCounts":true} /-->
 
@@ -965,9 +1523,9 @@ log: Chinese food is Yummy!</code></pre>
 <hr class="wp-block-separator is-style-wide"/>
 <!-- /wp:separator -->
 
-<!-- wp:latest-comments /-->
-
 <!-- wp:latest-comments {"displayAvatar":false,"displayDate":false,"displayExcerpt":false} /-->
+
+<!-- wp:latest-comments /-->
 
 <!-- wp:latest-comments {"align":"left"} /-->
 
@@ -997,31 +1555,297 @@ log: Chinese food is Yummy!</code></pre>
 
 <!-- wp:latest-posts /-->
 
-<!-- wp:latest-posts {"postsToShow":3,"displayPostDate":true,"order":"asc","orderBy":"title"} /-->
+<!-- wp:latest-posts {"postsToShow":3,"displayPostContent":true,"displayPostDate":true,"order":"asc","orderBy":"title","displayFeaturedImage":true} /-->
 
-<!-- wp:latest-posts {"postsToShow":3,"displayPostDate":true,"align":"center","order":"asc","orderBy":"title"} /-->
+<!-- wp:latest-posts {"postsToShow":3,"displayPostContent":true,"displayPostContentRadio":"full_post","displayPostDate":true,"order":"asc","orderBy":"title","displayFeaturedImage":true,"featuredImageAlign":"left"} /-->
 
-<!-- wp:latest-posts {"postsToShow":3,"displayPostDate":true,"align":"wide","order":"asc","orderBy":"title"} /-->
+<!-- wp:latest-posts {"postsToShow":3,"displayPostContent":true,"displayPostContentRadio":"full_post","displayPostDate":true,"order":"asc","orderBy":"title","displayFeaturedImage":true,"featuredImageAlign":"center"} /-->
 
-<!-- wp:latest-posts {"postsToShow":3,"displayPostDate":true,"align":"full","order":"asc","orderBy":"title"} /-->
+<!-- wp:latest-posts {"postsToShow":3,"displayPostContent":true,"displayPostContentRadio":"full_post","displayPostDate":true,"order":"asc","orderBy":"title","displayFeaturedImage":true,"featuredImageAlign":"right"} /-->
+
+<!-- wp:latest-posts {"align":"left","postsToShow":3,"displayPostDate":true,"order":"asc","orderBy":"title","displayFeaturedImage":true,"featuredImageAlign":"left"} /-->
+
+<!-- wp:latest-posts {"align":"right","postsToShow":3,"displayPostDate":true,"order":"asc","orderBy":"title","displayFeaturedImage":true,"featuredImageAlign":"right"} /-->
+
+<!-- wp:paragraph -->
+<p>Paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed iaculis justo sed libero lacinia cursus. Suspendisse potenti. Lorem ipsum dolor   sit amet, consectetur adipiscing elit.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:latest-posts {"align":"center","postsToShow":3,"displayPostContent":true,"displayPostDate":true,"order":"asc","orderBy":"title","displayFeaturedImage":true} /-->
+
+<!-- wp:latest-posts {"align":"wide","postsToShow":3,"displayPostContent":true,"displayPostDate":true,"order":"asc","orderBy":"title","displayFeaturedImage":true} /-->
+
+<!-- wp:latest-posts {"align":"full","postsToShow":3,"displayPostContent":true,"displayPostDate":true,"order":"asc","orderBy":"title","displayFeaturedImage":true} /-->
 
 <!-- wp:latest-posts {"postLayout":"grid"} /-->
 
-<!-- wp:latest-posts {"postsToShow":6,"displayPostDate":true,"postLayout":"grid","columns":2,"order":"asc","orderBy":"title"} /-->
+<!-- wp:latest-posts {"postsToShow":6,"displayPostContent":true,"excerptLength":30,"displayPostDate":true,"postLayout":"grid","displayFeaturedImage":true} /-->
 
-<!-- wp:latest-posts {"postsToShow":6,"displayPostDate":true,"postLayout":"grid","order":"asc","orderBy":"title"} /-->
+<!-- wp:latest-posts {"postsToShow":6,"displayPostContent":true,"excerptLength":30,"displayPostDate":true,"postLayout":"grid","columns":2,"displayFeaturedImage":true,"featuredImageAlign":"left"} /-->
 
-<!-- wp:latest-posts {"postsToShow":6,"displayPostDate":true,"postLayout":"grid","columns":4,"order":"asc","orderBy":"title"} /-->
+<!-- wp:latest-posts {"postsToShow":6,"displayPostContent":true,"excerptLength":30,"displayPostDate":true,"postLayout":"grid","columns":4,"displayFeaturedImage":true,"featuredImageAlign":"center"} /-->
 
-<!-- wp:latest-posts {"postsToShow":6,"displayPostDate":true,"postLayout":"grid","columns":5,"order":"asc","orderBy":"title"} /-->
+<!-- wp:latest-posts {"displayPostContent":true,"excerptLength":30,"displayPostDate":true,"postLayout":"grid","columns":5,"displayFeaturedImage":true,"featuredImageAlign":"right"} /-->
 
-<!-- wp:latest-posts {"postsToShow":6,"displayPostDate":true,"postLayout":"grid","columns":6,"order":"asc","orderBy":"title"} /-->
+<!-- wp:latest-posts {"postsToShow":6,"displayPostContent":true,"excerptLength":30,"displayPostDate":true,"postLayout":"grid","columns":6,"displayFeaturedImage":true,"featuredImageAlign":"right"} /-->
 
-<!-- wp:latest-posts {"postsToShow":6,"displayPostDate":true,"postLayout":"grid","columns":6,"align":"center","order":"asc","orderBy":"title"} /-->
+<!-- wp:latest-posts {"align":"left","postsToShow":4,"displayPostContent":true,"excerptLength":30,"displayPostDate":true,"postLayout":"grid","columns":4,"displayFeaturedImage":true,"featuredImageAlign":"right"} /-->
 
-<!-- wp:latest-posts {"postsToShow":6,"displayPostDate":true,"postLayout":"grid","columns":6,"align":"wide","order":"asc","orderBy":"title"} /-->
+<!-- wp:latest-posts {"align":"right","postsToShow":4,"displayPostContent":true,"excerptLength":30,"displayPostDate":true,"postLayout":"grid","columns":4,"displayFeaturedImage":true,"featuredImageAlign":"right"} /-->
 
-<!-- wp:latest-posts {"postsToShow":6,"displayPostDate":true,"postLayout":"grid","columns":6,"align":"full","order":"asc","orderBy":"title"} /-->
+<!-- wp:paragraph -->
+<p>Paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed iaculis justo sed libero lacinia cursus. Suspendisse potenti. Lorem ipsum dolor   sit amet, consectetur adipiscing elit.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:latest-posts {"align":"center","postsToShow":4,"displayPostContent":true,"excerptLength":30,"displayPostDate":true,"postLayout":"grid","columns":4,"displayFeaturedImage":true,"featuredImageAlign":"right"} /-->
+
+<!-- wp:latest-posts {"align":"wide","postsToShow":4,"displayPostContent":true,"excerptLength":30,"displayPostDate":true,"postLayout":"grid","columns":4,"displayFeaturedImage":true,"featuredImageAlign":"right"} /-->
+
+<!-- wp:latest-posts {"align":"full","postsToShow":4,"displayPostContent":true,"excerptLength":30,"displayPostDate":true,"postLayout":"grid","columns":4,"displayFeaturedImage":true,"featuredImageAlign":"right"} /-->
+
+<!-- wp:spacer {"height":50} -->
+<div style="height:50px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->
+
+<!-- wp:heading {"level":3} -->
+<h3>Calendar</h3>
+<!-- /wp:heading -->
+
+<!-- wp:separator {"className":"is-style-wide"} -->
+<hr class="wp-block-separator is-style-wide"/>
+<!-- /wp:separator -->
+
+<!-- wp:calendar /-->
+
+<!-- wp:calendar {"align":"left"} /-->
+
+<!-- wp:calendar {"align":"right"} /-->
+
+<!-- wp:paragraph -->
+<p>Paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed iaculis justo sed libero lacinia cursus. Suspendisse potenti. Lorem ipsum dolor   sit amet, consectetur adipiscing elit.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:calendar {"align":"center"} /-->
+
+<!-- wp:calendar {"align":"wide"} /-->
+
+<!-- wp:calendar {"align":"full"} /-->
+
+<!-- wp:spacer {"height":50} -->
+<div style="height:50px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->
+
+<!-- wp:heading {"level":3} -->
+<h3>RSS</h3>
+<!-- /wp:heading -->
+
+<!-- wp:separator {"className":"is-style-wide"} -->
+<hr class="wp-block-separator is-style-wide"/>
+<!-- /wp:separator -->
+
+<!-- wp:rss {"feedURL":"https://wptavern.com/feed"} /-->
+
+<!-- wp:rss {"feedURL":"https://wptavern.com/feed","itemsToShow":3,"displayExcerpt":true,"displayAuthor":true,"displayDate":true,"excerptLength":30} /-->
+
+<!-- wp:rss {"align":"left","feedURL":"https://wptavern.com/feed","itemsToShow":3,"displayExcerpt":true,"displayAuthor":true,"displayDate":true,"excerptLength":30} /-->
+
+<!-- wp:rss {"align":"right","feedURL":"https://wptavern.com/feed","itemsToShow":3,"displayExcerpt":true,"displayAuthor":true,"displayDate":true,"excerptLength":30} /-->
+
+<!-- wp:paragraph -->
+<p>Paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed iaculis justo sed libero lacinia cursus. Suspendisse potenti. Lorem ipsum dolor   sit amet, consectetur adipiscing elit.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:rss {"align":"center","feedURL":"https://wptavern.com/feed","itemsToShow":3,"displayExcerpt":true,"displayAuthor":true,"displayDate":true,"excerptLength":30} /-->
+
+<!-- wp:rss {"align":"wide","feedURL":"https://wptavern.com/feed","itemsToShow":3,"displayExcerpt":true,"displayAuthor":true,"displayDate":true,"excerptLength":30} /-->
+
+<!-- wp:rss {"align":"full","feedURL":"https://wptavern.com/feed","itemsToShow":3,"displayExcerpt":true,"displayAuthor":true,"displayDate":true,"excerptLength":30} /-->
+
+<!-- wp:rss {"blockLayout":"grid","feedURL":"https://wptavern.com/feed","excerptLength":30} /-->
+
+<!-- wp:rss {"blockLayout":"grid","feedURL":"https://wptavern.com/feed","itemsToShow":4,"displayExcerpt":true,"displayAuthor":true,"displayDate":true,"excerptLength":30} /-->
+
+<!-- wp:rss {"columns":3,"blockLayout":"grid","feedURL":"https://wptavern.com/feed","itemsToShow":4,"displayExcerpt":true,"displayAuthor":true,"displayDate":true,"excerptLength":30} /-->
+
+<!-- wp:rss {"columns":4,"blockLayout":"grid","feedURL":"https://wptavern.com/feed","itemsToShow":4,"displayExcerpt":true,"displayAuthor":true,"displayDate":true,"excerptLength":30} /-->
+
+<!-- wp:rss {"columns":5,"blockLayout":"grid","feedURL":"https://wptavern.com/feed","displayExcerpt":true,"displayAuthor":true,"displayDate":true,"excerptLength":30} /-->
+
+<!-- wp:rss {"columns":6,"blockLayout":"grid","feedURL":"https://wptavern.com/feed","itemsToShow":6,"displayExcerpt":true,"displayAuthor":true,"displayDate":true,"excerptLength":30} /-->
+
+<!-- wp:rss {"align":"left","blockLayout":"grid","feedURL":"https://wptavern.com/feed","itemsToShow":2,"displayExcerpt":true,"displayAuthor":true,"displayDate":true,"excerptLength":30} /-->
+
+<!-- wp:paragraph -->
+<p>Paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed iaculis justo sed libero lacinia cursus. Suspendisse potenti. Lorem ipsum dolor   sit amet, consectetur adipiscing elit.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:rss {"align":"right","blockLayout":"grid","feedURL":"https://wptavern.com/feed","itemsToShow":2,"displayExcerpt":true,"displayAuthor":true,"displayDate":true,"excerptLength":30} /-->
+
+<!-- wp:rss {"align":"center","blockLayout":"grid","feedURL":"https://wptavern.com/feed","itemsToShow":2,"displayExcerpt":true,"displayAuthor":true,"displayDate":true,"excerptLength":30} /-->
+
+<!-- wp:rss {"align":"wide","blockLayout":"grid","feedURL":"https://wptavern.com/feed","itemsToShow":2,"displayExcerpt":true,"displayAuthor":true,"displayDate":true,"excerptLength":30} /-->
+
+<!-- wp:rss {"align":"full","blockLayout":"grid","feedURL":"https://wptavern.com/feed","itemsToShow":2,"displayExcerpt":true,"displayAuthor":true,"displayDate":true,"excerptLength":30} /-->
+
+<!-- wp:spacer {"height":50} -->
+<div style="height:50px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->
+
+<!-- wp:heading {"level":3} -->
+<h3>Search</h3>
+<!-- /wp:heading -->
+
+<!-- wp:separator {"className":"is-style-wide"} -->
+<hr class="wp-block-separator is-style-wide"/>
+<!-- /wp:separator -->
+
+<!-- wp:search /-->
+
+<!-- wp:search {"label":"Custom Search Label. \u003cstrong\u003estrong\u003c/strong\u003e, \u003cem\u003eemphasis\u003c/em\u003e, \u003ccode\u003ecode\u003c/code\u003e, \u003cs\u003estrikethrough\u003c/s\u003e, \u003cspan class=\u0022has-inline-color has-vivid-red-color\u0022\u003ecolour\u003c/span\u003e","placeholder":"Custom placeholder text","buttonText":"Custom button label"} /-->
+
+<!-- wp:search {"align":"left","label":"Custom Search Label. \u003cstrong\u003estrong\u003c/strong\u003e, \u003cem\u003eemphasis\u003c/em\u003e, \u003ccode\u003ecode\u003c/code\u003e, \u003cs\u003estrikethrough\u003c/s\u003e, \u003cspan class=\u0022has-inline-color has-vivid-red-color\u0022\u003ecolour\u003c/span\u003e","placeholder":"Custom placeholder text","buttonText":"Custom button label"} /-->
+
+<!-- wp:search {"align":"right","label":"Custom Search Label. \u003cstrong\u003estrong\u003c/strong\u003e, \u003cem\u003eemphasis\u003c/em\u003e, \u003ccode\u003ecode\u003c/code\u003e, \u003cs\u003estrikethrough\u003c/s\u003e, \u003cspan class=\u0022has-inline-color has-vivid-red-color\u0022\u003ecolour\u003c/span\u003e","placeholder":"Custom placeholder text","buttonText":"Custom button label"} /-->
+
+<!-- wp:paragraph -->
+<p>Paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed iaculis justo sed libero lacinia cursus. Suspendisse potenti. Lorem ipsum dolor   sit amet, consectetur adipiscing elit.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:search {"align":"center","label":"Custom Search Label. \u003cstrong\u003estrong\u003c/strong\u003e, \u003cem\u003eemphasis\u003c/em\u003e, \u003ccode\u003ecode\u003c/code\u003e, \u003cs\u003estrikethrough\u003c/s\u003e, \u003cspan class=\u0022has-inline-color has-vivid-red-color\u0022\u003ecolour\u003c/span\u003e","placeholder":"Custom placeholder text","buttonText":"Custom button label"} /-->
+
+<!-- wp:search {"align":"wide","label":"Custom Search Label. \u003cstrong\u003estrong\u003c/strong\u003e, \u003cem\u003eemphasis\u003c/em\u003e, \u003ccode\u003ecode\u003c/code\u003e, \u003cs\u003estrikethrough\u003c/s\u003e, \u003cspan class=\u0022has-inline-color has-vivid-red-color\u0022\u003ecolour\u003c/span\u003e","placeholder":"Custom placeholder text","buttonText":"Custom button label"} /-->
+
+<!-- wp:search {"align":"full","label":"Custom Search Label. \u003cstrong\u003estrong\u003c/strong\u003e, \u003cem\u003eemphasis\u003c/em\u003e, \u003ccode\u003ecode\u003c/code\u003e, \u003cs\u003estrikethrough\u003c/s\u003e, \u003cspan class=\u0022has-inline-color has-vivid-red-color\u0022\u003ecolour\u003c/span\u003e","placeholder":"Custom placeholder text","buttonText":"Custom button label"} /-->
+
+<!-- wp:spacer {"height":50} -->
+<div style="height:50px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->
+
+<!-- wp:heading {"level":3} -->
+<h3>Social Icons</h3>
+<!-- /wp:heading -->
+
+<!-- wp:separator {"className":"is-style-wide"} -->
+<hr class="wp-block-separator is-style-wide"/>
+<!-- /wp:separator -->
+
+<!-- wp:social-links -->
+<ul class="wp-block-social-links"><!-- wp:social-link {"url":"https://wordpress.org","service":"wordpress","label":""} /-->
+
+<!-- wp:social-link {"url":"https://www.facebook.com","service":"facebook"} /-->
+
+<!-- wp:social-link {"url":"https://www.twitter.com","service":"twitter"} /-->
+
+<!-- wp:social-link {"url":"https://www.instagram.com","service":"instagram"} /-->
+
+<!-- wp:social-link {"url":"https://www.linkedin.com","service":"linkedin"} /-->
+
+<!-- wp:social-link {"url":"https://www.youtube.com","service":"youtube"} /--></ul>
+<!-- /wp:social-links -->
+
+<!-- wp:social-links {"className":"is-style-logos-only"} -->
+<ul class="wp-block-social-links is-style-logos-only"><!-- wp:social-link {"url":"https://wordpress.org","service":"wordpress","label":""} /-->
+
+<!-- wp:social-link {"url":"https://www.facebook.com","service":"facebook"} /-->
+
+<!-- wp:social-link {"url":"https://www.twitter.com","service":"twitter"} /-->
+
+<!-- wp:social-link {"url":"https://www.instagram.com","service":"instagram"} /-->
+
+<!-- wp:social-link {"url":"https://www.linkedin.com","service":"linkedin"} /-->
+
+<!-- wp:social-link {"url":"https://www.youtube.com","service":"youtube"} /--></ul>
+<!-- /wp:social-links -->
+
+<!-- wp:social-links {"className":"is-style-pill-shape"} -->
+<ul class="wp-block-social-links is-style-pill-shape"><!-- wp:social-link {"url":"https://wordpress.org","service":"wordpress","label":""} /-->
+
+<!-- wp:social-link {"url":"https://www.facebook.com","service":"facebook"} /-->
+
+<!-- wp:social-link {"url":"https://www.twitter.com","service":"twitter"} /-->
+
+<!-- wp:social-link {"url":"https://www.instagram.com","service":"instagram"} /-->
+
+<!-- wp:social-link {"url":"https://www.linkedin.com","service":"linkedin"} /-->
+
+<!-- wp:social-link {"url":"https://www.youtube.com","service":"youtube"} /--></ul>
+<!-- /wp:social-links -->
+
+<!-- wp:social-links {"align":"left","className":"is-style-pill-shape"} -->
+<ul class="wp-block-social-links alignleft is-style-pill-shape"><!-- wp:social-link {"url":"https://wordpress.org","service":"wordpress","label":""} /-->
+
+<!-- wp:social-link {"url":"https://www.facebook.com","service":"facebook"} /-->
+
+<!-- wp:social-link {"url":"https://www.twitter.com","service":"twitter"} /-->
+
+<!-- wp:social-link {"url":"https://www.instagram.com","service":"instagram"} /-->
+
+<!-- wp:social-link {"url":"https://www.linkedin.com","service":"linkedin"} /-->
+
+<!-- wp:social-link {"url":"https://www.youtube.com","service":"youtube"} /--></ul>
+<!-- /wp:social-links -->
+
+<!-- wp:social-links {"align":"right","className":"is-style-pill-shape"} -->
+<ul class="wp-block-social-links alignright is-style-pill-shape"><!-- wp:social-link {"url":"https://wordpress.org","service":"wordpress","label":""} /-->
+
+<!-- wp:social-link {"url":"https://www.facebook.com","service":"facebook"} /-->
+
+<!-- wp:social-link {"url":"https://www.twitter.com","service":"twitter"} /-->
+
+<!-- wp:social-link {"url":"https://www.instagram.com","service":"instagram"} /-->
+
+<!-- wp:social-link {"url":"https://www.linkedin.com","service":"linkedin"} /-->
+
+<!-- wp:social-link {"url":"https://www.youtube.com","service":"youtube"} /--></ul>
+<!-- /wp:social-links -->
+
+<!-- wp:paragraph -->
+<p>Paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed iaculis justo sed libero lacinia cursus. Suspendisse potenti. Lorem ipsum dolor   sit amet, consectetur adipiscing elit.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:social-links {"align":"center","className":"is-style-pill-shape"} -->
+<ul class="wp-block-social-links aligncenter is-style-pill-shape"><!-- wp:social-link {"url":"https://wordpress.org","service":"wordpress","label":""} /-->
+
+<!-- wp:social-link {"url":"https://www.facebook.com","service":"facebook"} /-->
+
+<!-- wp:social-link {"url":"https://www.twitter.com","service":"twitter"} /-->
+
+<!-- wp:social-link {"url":"https://www.instagram.com","service":"instagram"} /-->
+
+<!-- wp:social-link {"url":"https://www.linkedin.com","service":"linkedin"} /-->
+
+<!-- wp:social-link {"url":"https://www.youtube.com","service":"youtube"} /--></ul>
+<!-- /wp:social-links -->
+
+<!-- wp:spacer {"height":50} -->
+<div style="height:50px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->
+
+<!-- wp:heading {"level":3} -->
+<h3>Tag Cloud</h3>
+<!-- /wp:heading -->
+
+<!-- wp:separator {"className":"is-style-wide"} -->
+<hr class="wp-block-separator is-style-wide"/>
+<!-- /wp:separator -->
+
+<!-- wp:tag-cloud /-->
+
+<!-- wp:tag-cloud {"taxonomy":"category","showTagCounts":true} /-->
+
+<!-- wp:tag-cloud {"align":"left","taxonomy":"category","showTagCounts":true} /-->
+
+<!-- wp:tag-cloud {"align":"right","taxonomy":"category","showTagCounts":true} /-->
+
+<!-- wp:paragraph -->
+<p>Paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed iaculis justo sed libero lacinia cursus. Suspendisse potenti. Lorem ipsum dolor   sit amet, consectetur adipiscing elit.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:tag-cloud {"align":"center","taxonomy":"category","showTagCounts":true} /-->
+
+<!-- wp:tag-cloud {"align":"wide","taxonomy":"category","showTagCounts":true} /-->
+
+<!-- wp:tag-cloud {"align":"full","taxonomy":"category","showTagCounts":true} /-->
 
 <!-- wp:nextpage -->
 <!--nextpage-->
@@ -1081,6 +1905,14 @@ https://www.dailymotion.com/video/x6v7npu
 </div><figcaption><em>Probando</em> videos <del>de</del> <strong>Dailymotion</strong></figcaption></figure>
 <!-- /wp:core-embed/dailymotion -->
 
-<!-- wp:paragraph -->
-<p></p>
-<!-- /wp:paragraph -->
+<!-- wp:core-embed/instagram {"url":"https://www.instagram.com/p/B61pDFfBx8O/","type":"rich","providerNameSlug":"instagram","className":""} -->
+<figure class="wp-block-embed-instagram wp-block-embed is-type-rich is-provider-instagram"><div class="wp-block-embed__wrapper">
+https://www.instagram.com/p/B61pDFfBx8O/
+</div></figure>
+<!-- /wp:core-embed/instagram -->
+
+<!-- wp:core-embed/spotify {"url":"https://open.spotify.com/track/3AzjcOeAmA57TIOr9zF1ZW","type":"rich","providerNameSlug":"spotify","className":"wp-embed-aspect-9-16 wp-has-aspect-ratio"} -->
+<figure class="wp-block-embed-spotify wp-block-embed is-type-rich is-provider-spotify wp-embed-aspect-9-16 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+https://open.spotify.com/track/3AzjcOeAmA57TIOr9zF1ZW
+</div></figure>
+<!-- /wp:core-embed/spotify -->
