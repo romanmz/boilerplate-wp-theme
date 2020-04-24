@@ -24,6 +24,8 @@
 	&.aligncenter {}
 	&.alignleft {}
 	&.alignright {}
+	&.alignwide {}
+	&.alignfull {}
 }
 
 
@@ -48,6 +50,7 @@
 	&.aligncenter {}
 	&.alignleft {}
 	&.alignright {}
+	&.alignwide {}
 	&.alignfull {}
 }
 
@@ -60,6 +63,8 @@
 	.wp-block-latest-comments__comment {
 		font: inherit;
 		margin-bottom: 1rem;
+		
+		article {}
 	}
 	.avatar, .wp-block-latest-comments__comment-avatar {}
 	
@@ -98,62 +103,106 @@
 // Latest Posts block [gutenberg]
 // ------------------------------
 .wp-block-latest-posts {
-	li {}
+	padding: 0;
+	
+	li {
+		margin: 1rem 0;
+		overflow: hidden;
+	}
+	.wp-block-latest-posts__featured-image {
+		img {
+			display: block;
+			width: 12rem;
+			border-radius: 2px;
+			
+			@include screen-below( small ) {
+				margin: 0 auto;
+			}
+		}
+		
+		&.alignleft,
+		&.alignright {
+			margin-bottom: 0;
+		}
+		&.aligncenter {
+			img {
+				margin: 0 auto;
+			}
+		}
+	}
 	a {}
 	.wp-block-latest-posts__post-date {
 		font: inherit;
 		color: $grey-medium;
 	}
-	
-	// Block settings
-	&.has-dates {}
+	.wp-block-latest-posts__post-excerpt {
+		margin: 0;
+	}
+	.wp-block-latest-posts__post-full-content {
+		> :last-child {
+			margin-bottom: 0;
+		}
+	}
 	
 	// Style variation: Grid
 	&.is-grid {
-		margin: 0 0 0 -#{$space};
-		
 		li {
-			flex: none;
-			margin: 0 0 $space $space;
+			flex: 0 0 100%;
+			margin: 0;
 			border: 1px solid $grey-lighter;
 			padding: 1rem;
 			border-radius: 5px;
 			width: calc( 100% - #{$space} );
 			box-sizing: border-box;
 			
-			@include screen-above( small ) {
-				width: calc( 100% / 2 - #{$space} );
+			@include screen-below( small ) {
+				&:nth-child( n+2 ) { margin-top: $space }
+			}
+			@include screen-between( small, medium ) {
+				flex-basis: calc( 100% / 2 - #{ $space } );
+				&:nth-child( n+3 ) { margin-top: $space }
+				&:nth-child( 2n+2 ) { margin-left: $space }
+			}
+		}
+		@include screen-above( medium ) {
+			li {
+				margin: $space 0 0 $space;
+			}
+			&.columns-2 li {
+				flex-basis: calc( 100% / 2 - #{ $space * 1 } / 2 );
+				&:nth-child( 2n+1 ) { margin-left: 0; }
+				&:nth-child( -n+2 ) { margin-top: 0; }
+			}
+			&.columns-3 li {
+				flex-basis: calc( 100% / 3 - #{ $space * 2 } / 3 );
+				&:nth-child( 3n+1 ) { margin-left: 0; }
+				&:nth-child( -n+3 ) { margin-top: 0; }
+			}
+			&.columns-4 li {
+				flex-basis: calc( 100% / 4 - #{ $space * 3 } / 4 );
+				&:nth-child( 4n+1 ) { margin-left: 0; }
+				&:nth-child( -n+4 ) { margin-top: 0; }
+			}
+			&.columns-5 li {
+				flex-basis: calc( 100% / 5 - #{ $space * 4 } / 5 );
+				&:nth-child( 5n+1 ) { margin-left: 0; }
+				&:nth-child( -n+5 ) { margin-top: 0; }
+			}
+			&.columns-6 li {
+				flex-basis: calc( 100% / 6 - #{ $space * 5 } / 6 );
+				&:nth-child( 6n+1 ) { margin-left: 0; }
+				&:nth-child( -n+6 ) { margin-top: 0; }
 			}
 		}
 	}
-	@include screen-above( medium ) {
-		&.columns-3 li {
-			width: calc( 100% / 3 - #{$space} );
-		}
-		&.columns-4 li {
-			width: calc( 100% / 4 - #{$space} );
-		}
-		&.columns-5 li {
-			width: calc( 100% / 5 - #{$space} );
-		}
-		&.columns-6 li {
-			width: calc( 100% / 6 - #{$space} );
-		}
-	}
+	
+	// Block settings
+	&.has-dates {}
 	
 	// Alignment variations
 	&.aligncenter {}
-	&.alignwide {
-		&.is-grid {
-			margin-left: calc( 50% - #{$space / 2} );
-			width: calc( 100% + 24rem + #{$space} );
-			max-width: calc( 100vw + #{$space} );
-		}
-	}
-	&.alignfull {
-		&.is-grid {
-			margin-left: calc( 50% - #{$space / 2} );
-			width: calc( 100vw + #{$space} );
-		}
-	}
+	&.alignleft {}
+	&.alignright {}
+	&.alignwide {}
+	&.alignfull {}
 }
