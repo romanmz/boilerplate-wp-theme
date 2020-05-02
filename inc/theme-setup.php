@@ -203,10 +203,10 @@ function theme_setup_widgets() {
 }
 
 
-// Frontend scripts
+// Frontend assets
 // ------------------------------
-add_action( 'wp_enqueue_scripts', 'theme_load_frontend_scripts' );
-function theme_load_frontend_scripts() {
+add_action( 'wp_enqueue_scripts', 'theme_load_frontend_assets' );
+function theme_load_frontend_assets() {
 	
 	// Load jQuery from a CDN
 	wp_deregister_script( 'jquery' );
@@ -228,17 +228,25 @@ function theme_load_frontend_scripts() {
 }
 
 
-// Login scripts
+// Login assets
 // ------------------------------
-add_action( 'login_enqueue_scripts', 'theme_load_login_scripts' );
-function theme_load_login_scripts() {
+add_action( 'login_enqueue_scripts', 'theme_load_login_assets' );
+function theme_load_login_assets() {
 	wp_enqueue_style( 'theme-login', THEME_STYLES.'/login.css', [], THEME_VERSION );
 }
 
 
-// Admin scripts
+// Admin assets
 // ------------------------------
-add_action( 'admin_enqueue_scripts', 'theme_load_admin_scripts' );
-function theme_load_admin_scripts() {
+add_action( 'admin_enqueue_scripts', 'theme_load_admin_assets' );
+function theme_load_admin_assets() {
 	wp_enqueue_style( 'theme-admin', THEME_STYLES.'/admin.css', [], THEME_VERSION );
+}
+
+
+// Gutenberg editor assets
+// ------------------------------
+add_action( 'enqueue_block_editor_assets', 'theme_load_blocks_editor_assets' );
+function theme_load_blocks_editor_assets() {
+	wp_enqueue_style( 'theme-block-editor', THEME_STYLES.'/blocks-editor.css', [], THEME_VERSION );
 }

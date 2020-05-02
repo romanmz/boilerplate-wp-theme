@@ -3,6 +3,7 @@ let mix = require('laravel-mix');
 // mix.extract(['jquery']);
 mix.sass('_source/scss/admin.scss', 'assets/css/', {outputStyle: 'expanded'});
 mix.sass('_source/scss/editor.scss', 'assets/css/', {outputStyle: 'expanded'});
+mix.sass('_source/scss/blocks-editor.scss', 'assets/css/', {outputStyle: 'expanded'});
 mix.sass('_source/scss/login.scss', 'assets/css/', {outputStyle: 'expanded'});
 mix.sass('_source/scss/main.scss', 'assets/css/', {outputStyle: 'expanded'});
 mix.sass('_source/scss/print.scss', 'assets/css/', {outputStyle: 'expanded'});

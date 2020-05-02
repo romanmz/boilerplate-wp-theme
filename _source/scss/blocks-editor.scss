@@ -8,5 +8,10 @@
 
 
 // ==================================================
-// Backend Styles
+// Gutenberg Editor Screen
 // ==================================================
+
+// Make sure that 'rem' units behave the same as in the frontend
+html {
+	font-size: 62.5%;
+}
