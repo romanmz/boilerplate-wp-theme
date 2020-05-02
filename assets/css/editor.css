@@ -1436,6 +1436,14 @@ body:not(.editor-styles-wrapper){
   margin:20px;
 }
 
+.block-editor-block-toolbar button,
+.block-editor-block-toolbar input{
+  overflow:hidden;
+}
+.block-editor-block-toolbar svg{
+  max-width:none;
+}
+
 .wp-block{
   max-width:120rem;
 }

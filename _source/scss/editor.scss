@@ -42,18 +42,26 @@ body:not( .editor-styles-wrapper ) {
 // ==================================================
 // Gutenberg Editor
 // ==================================================
-// A fix for rem units was added to admin.scss
-// this is because gutenberg automatically prefixes a class to all rules included in this stylesheet
-// but we need the fix for rem units to be on the root <html> element
+// Styles included here affect only the editable content area of the editor screen
+// If you need styles that are applied to the entire block editor screen, use the 'blocks-editor' file
 
+// Fix for SVGs used in buttons within toolbars
+.block-editor-block-toolbar {
+	button,
+	input {
+		overflow: hidden;
+	}
+	svg {
+		max-width: none;
+	}
+}
 
-// Column widths
-// ------------------------------
+// Block widths
 .wp-block {
-	max-width: 120rem;
+	max-width: $main_wrapper_width; // default: 580px
 	
 	&[data-align="wide"] {
-		max-width: 144rem;
+		max-width: $wide_blocks_width; // default: 1100px
 	}
 	&[data-align="full"] {
 		max-width: none;
