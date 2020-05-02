@@ -56,6 +56,14 @@ body:not( .editor-styles-wrapper ) {
 	}
 }
 
+// Post title
+.editor-post-title__input {
+	@include font-size-h1;
+	font-family: $font-body;
+	font-weight: $font-bold;
+	color: $grey-dark;
+}
+
 // Block widths
 .wp-block {
 	max-width: $main_wrapper_width; // default: 580px

@@ -1444,6 +1444,14 @@ body:not(.editor-styles-wrapper){
   max-width:none;
 }
 
+.editor-post-title__input{
+  font-size:5rem;
+  line-height:1.2;
+  font-family:Helvetica, Arial, sans-serif;
+  font-weight:700;
+  color:#333;
+}
+
 .wp-block{
   max-width:120rem;
 }
