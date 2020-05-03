@@ -34,7 +34,8 @@ samp {
 	color: $grey-lighter;
 	background: $grey-dark;
 	
-	code {
+	code,
+	.block-editor-plain-text {
 		color: inherit;
 		background: inherit;
 	}

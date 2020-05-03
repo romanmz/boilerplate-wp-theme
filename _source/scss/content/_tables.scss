@@ -27,6 +27,9 @@ caption {
 	@include caption-text;
 	margin-bottom: 1rem;
 }
+thead, tfoot, tbody {
+	border: none;
+}
 tr {
 	thead &,
 	tfoot & {
@@ -36,6 +39,7 @@ tr {
 }
 td, th {
 	padding: .5em 1em;
+	border: none;
 	border-bottom: 1px solid $grey-lighter;
 	text-align: left;
 	vertical-align: top;

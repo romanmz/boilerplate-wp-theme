@@ -489,7 +489,8 @@ samp{
   color:#EEE;
   background:#333;
 }
-.wp-block-code code{
+.wp-block-code code,
+.wp-block-code .block-editor-plain-text{
   color:inherit;
   background:inherit;
 }
@@ -737,12 +738,17 @@ caption{
   margin-bottom:1rem;
 }
 
+thead, tfoot, tbody{
+  border:none;
+}
+
 thead tr, tfoot tr{
   background-color:#EEE;
   mix-blend-mode:multiply;
 }
 td, th{
   padding:0.5em 1em;
+  border:none;
   border-bottom:1px solid #EEE;
   text-align:left;
   vertical-align:top;
