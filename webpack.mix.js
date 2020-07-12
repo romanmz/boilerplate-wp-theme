@@ -1,12 +1,13 @@
 let mix = require('laravel-mix');
 // mix.js(['_source/js/main.js'], 'assets/js/main.js');
 // mix.extract(['jquery']);
-mix.sass('_source/scss/admin.scss', 'assets/css/', {outputStyle: 'expanded'});
-mix.sass('_source/scss/editor.scss', 'assets/css/', {outputStyle: 'expanded'});
-mix.sass('_source/scss/blocks-editor.scss', 'assets/css/', {outputStyle: 'expanded'});
-mix.sass('_source/scss/login.scss', 'assets/css/', {outputStyle: 'expanded'});
-mix.sass('_source/scss/main.scss', 'assets/css/', {outputStyle: 'expanded'});
-mix.sass('_source/scss/print.scss', 'assets/css/', {outputStyle: 'expanded'});
+const sassOpts = {sassOptions: {outputStyle: 'expanded'}};
+mix.sass('_source/scss/admin.scss', 'assets/css/', sassOpts);
+mix.sass('_source/scss/editor.scss', 'assets/css/', sassOpts);
+mix.sass('_source/scss/blocks-editor.scss', 'assets/css/', sassOpts);
+mix.sass('_source/scss/login.scss', 'assets/css/', sassOpts);
+mix.sass('_source/scss/main.scss', 'assets/css/', sassOpts);
+mix.sass('_source/scss/print.scss', 'assets/css/', sassOpts);
 mix.options({
 	autoprefixer: { options: { browsers: ['last 2 versions'] } },
 	processCssUrls: false,
